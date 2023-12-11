@@ -146,7 +146,7 @@ def run_pipeline():
     
   # update status JSON
   with status_paths['city'].open("w") as f:
-    json.dump(statuses["city"], f)
+    json.dump(statuses["city"], f, indent=2)
 
   # get output files, do further processing and combine
   city_data = {}
@@ -173,7 +173,7 @@ def run_pipeline():
 
   # update status JSON
   with status_paths['osm'].open('w') as f:
-    json.dump(statuses['osm'], f)
+    json.dump(statuses['osm'], f, indent=2)
 
   # get output files, do further processing and combine
   osm_data_list = []
