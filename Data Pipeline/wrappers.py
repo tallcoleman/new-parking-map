@@ -24,7 +24,7 @@ class BikeData(ABC):
     pass
 
   @abstractmethod
-  def normalize_geojson(self, filter_properties, transform_properties, *, format="geodataframe"):
+  def normalize(self, filter_properties, transform_properties, *, format="geodataframe"):
     pass
 
 
@@ -64,7 +64,7 @@ class BikeDataToronto(BikeData):
     """GeoJSON returned from request"""
     return self._response.json()
 
-  def normalize_geojson(self, filter_properties, transform_properties, *, format="geodataframe"):
+  def normalize(self, filter_properties, transform_properties, *, format="geodataframe"):
     """Downloads, filters, and transforms open cycling data from open.toronto.ca
     
     Parameters
@@ -166,7 +166,7 @@ class BikeDataOSM(BikeData):
     
     return response_out
 
-  def normalize_geojson(self, filter_properties, transform_properties, *, format="geodataframe"):
+  def normalize(self, filter_properties, transform_properties, *, format="geodataframe"):
     """Downloads, filters, and transforms amenity=bicycle_parking features from the from the OpenStreetMap overpass API.
     
     Parameters

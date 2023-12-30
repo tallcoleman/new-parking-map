@@ -102,7 +102,7 @@ def run_pipeline():
       # get normalized output
       filter_properties = conversions.get_filter(bike_data.dataset_name)
       transform_properties = conversions.get_transform(bike_data.dataset_name)
-      normalized_geojson = bike_data.normalize_geojson(
+      normalized_gdf = bike_data.normalize(
         filter_properties, 
         transform_properties
       )
@@ -113,9 +113,9 @@ def run_pipeline():
       if not ofp.exists():
         ofp.mkdir()
       with open(f"../Output Files/{bike_data.dataset_name}-normalized.geojson", "w") as f:
-        f.write(normalized_geojson.to_json(na=na_option, drop_id=True))
+        f.write(normalized_gdf.to_json(na=na_option, drop_id=True))
 
-      num_normalized_features = len(normalized_geojson)
+      num_normalized_features = len(normalized_gdf)
 
       # update status from metadata
       dataset_status["last_updated"] = bike_data.last_updated.isoformat()
