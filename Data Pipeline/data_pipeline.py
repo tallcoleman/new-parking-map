@@ -47,12 +47,12 @@ def run_pipeline():
 
   # load paths to .json files specifying details and status of data sources
   source_paths = {
-    "city": Path("open_toronto_ca_sources.json"),
-    "osm": Path("openstreetmap_sources.json")
+    "city": Path("sources/open_toronto_ca_sources.json"),
+    "osm": Path("sources/openstreetmap_sources.json")
   }
   status_paths = {
-    "city": Path("open_toronto_ca_statuses.json"),
-    "osm": Path("openstreetmap_statuses.json")
+    "city": Path("statuses/open_toronto_ca_statuses.json"),
+    "osm": Path("statuses/openstreetmap_statuses.json")
   }
   sources = load_paths(source_paths)
   statuses = load_paths(status_paths)
@@ -97,7 +97,7 @@ def run_pipeline():
       if not sfp.exists():
         sfp.mkdir()
       with open(f"../Source Files/{bike_data.dataset_name}.geojson", "w") as f:
-        geojson.dump(bike_data.response_geojson, f)
+        geojson.dump(bike_data.response_geojson, f, indent=2)
 
       # get normalized output
       filter_properties = conversions.get_filter(bike_data.dataset_name)
@@ -113,7 +113,7 @@ def run_pipeline():
       if not ofp.exists():
         ofp.mkdir()
       with open(f"../Output Files/{bike_data.dataset_name}-normalized.geojson", "w") as f:
-        f.write(normalized_gdf.to_json(na=na_option, drop_id=True))
+        f.write(normalized_gdf.to_json(na=na_option, drop_id=True, indent=2))
 
       num_normalized_features = len(normalized_gdf)
 
@@ -262,10 +262,10 @@ def run_pipeline():
     dfp.mkdir()
 
   with open(f"../Display Files/open_toronto_ca.geojson", "w") as f:
-    f.write(city_full.to_json(na='drop', drop_id=True))
+    f.write(city_full.to_json(na='drop', drop_id=True, indent=2))
 
   with open(f"../Display Files/openstreetmap.geojson", "w") as f:
-    f.write(osm_filtered.to_json(na='drop', drop_id=True))
+    f.write(osm_filtered.to_json(na='drop', drop_id=True, indent=2))
 
  
 # Script Execution
