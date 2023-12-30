@@ -2,7 +2,13 @@
 
 Development for new BikeSpace Toronto parking map
 
-## DATA PROCESSING SCRIPT - TORONTO BICYCLE PARKING LOCATIONS
+Folder content is as follows:
+
+* Source Files: data received from the original source before any upstream filtering or transformation
+* Output Files: data after upstream filtering and transformation
+* Display Files: final data after downstream filtering and transformation
+
+## Data Processing Script - Toronto Bicycle Parking Locations
 
 `Data Pipeline/data_pipeline.py`
 
@@ -24,6 +30,7 @@ The City of Toronto Open Data portal has four current datasets:
 - "bicycle-parking-racks"
 - "bicycle-parking-bike-stations-indoor"
 - "street-furniture-bicycle-parking"
+
 More information about these datasets can be found on open.toronto.ca
 
 ### Upstream Filtering
@@ -32,14 +39,21 @@ Upstream filtering removes irrelevant features (e.g. features in City data that 
 
 ### Upstream Transformation
 
-The primary goal of upstream data transformations is to ensure a consistent output format. The output format is based on the OpenStreetMap tagging schema, with the addition of fields with the "meta_" prefix for information that may be useful but does not fit with a logical OpenStreetMap tag. (In many cases,in OpenStreetMap this meta information would be inferred from the edit history, the geography, or added as a relation).
+The primary goal of upstream data transformations is to ensure a consistent output format. The output format is based on the OpenStreetMap tagging schema, with the addition of fields with the "meta_" prefix for information that may be useful but does not fit with a logical OpenStreetMap tag. (In many cases, in OpenStreetMap this meta information would be inferred from the edit history, the geography, or added as a relation).
 
 ### Downstream Filtering and Transformation
 
-Downstream filtering and transformation is applied to clean and organize the data in more complex ways, including:
+Downstream filtering and transformation is applied to clean and organize the data in more complex ways, and requires analyzing features and datasets in relation to each other. Examples include:
 
-Handling of overlapping entries between City data and OpenStreetMap - currently removes all OpenStreetMap entries where the operator is like "City of Toronto" unless there is a specific ref tag linking the feature to a City dataset. Features with this specific ref tag are removed from the City data passed through.
+Handling of overlapping entries between City data and OpenStreetMap. Features are currently retained or excluded as follows:
 
-Clustering of city ring and posts to reduce clutter - ring and post features within 5m of each other are combined into a single point.
+OpenStreetMap:
+* Retain: OpenStreetMap features that have a ref tag linking the feature to a City dataset (e.g. `ref:open.toronto.ca:street-furniture-bicycle-parking:id`)
+* Exclude: Any other feature with operator like "City of Toronto".
 
-De-duplication of bicycle racks across multiple City datasets - in many cases, racks from different datasets within 30m of each other are duplicates. Since there may be cases where they are not duplicates, the processing combines the features but retains the properties of all of them.
+City of Toronto:
+* Exclude: features where the ID matches a retained feature from OpenStreetMap
+
+Clustering of city ring and posts (i.e. `"bicycle_parking"="bollard"`) to reduce clutter - ring and post features within 5m of each other are combined into a single point.
+
+De-duplication of bicycle racks across multiple City datasets - in many cases, racks from different City datasets within 30m of each other are duplicates. Since there may be cases where they are not duplicates, the processing combines the features into a single point that retains the properties of all of them.
