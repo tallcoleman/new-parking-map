@@ -9,6 +9,7 @@
 
 from datetime import datetime, timezone
 import json
+from zoneinfo import ZoneInfo
 
 import geojson
 import geopandas
@@ -29,6 +30,22 @@ from downstream import group_proximate_rings, group_proximate_racks
 print("Loading sources and statuses...")
 def run_pipeline():
   """Main function to run the data processing pipeline."""
+
+  # get today's date and use to set output folders
+  # unlike other dates in this script, uses Toronto time not UTC
+  today_toronto_isodate = datetime.now(ZoneInfo("America/Toronto")).strftime('%Y-%m-%d')
+
+  sfp = Path(f"Source Files/")
+  sfp_archive = sfp / f"{today_toronto_isodate}/"
+  ofp = Path(f"Output Files/")
+  ofp_archive = ofp / f"{today_toronto_isodate}/"
+  dfp = Path(f"Display Files/")
+  dfp_archive = dfp / f"{today_toronto_isodate}/"
+
+  for p in [sfp, sfp_archive, ofp, ofp_archive, dfp, dfp_archive]:
+    if not p.exists():
+      p.mkdir()
+  
 
   # load in details and status
   def load_paths(paths: dict) -> dict:
@@ -90,36 +107,32 @@ def run_pipeline():
       else datetime(1, 1, 1, tzinfo=timezone.utc) # None not allowed in date comparsion; this is like datetime.min but tz aware
     )
 
-    # update data if newer than last recorded
-    if (bike_data.last_updated > rec_last_updated):
-      # save source file
-      sfp = Path("Source Files/")
-      if not sfp.exists():
-        sfp.mkdir()
-      with open(f"Source Files/{bike_data.dataset_name}.geojson", "w") as f:
-        geojson.dump(bike_data.response_geojson, f, indent=2)
+    # save source file
+    with open(sfp / f"{bike_data.dataset_name}.geojson", "w") as f:
+      geojson.dump(bike_data.response_geojson, f, indent=2)
+    with open(sfp_archive / f"{bike_data.dataset_name}.geojson", "w") as f:
+      geojson.dump(bike_data.response_geojson, f, indent=2)
 
-      # get normalized output
-      filter_properties = conversions.get_filter(bike_data.dataset_name)
-      transform_properties = conversions.get_transform(bike_data.dataset_name)
-      normalized_gdf = bike_data.normalize(
-        filter_properties, 
-        transform_properties
-      )
-      
-      # save normalized output
-      na_option = 'drop' if (type(bike_data) == BikeDataOSM) else 'null'
-      ofp = Path("Output Files/")
-      if not ofp.exists():
-        ofp.mkdir()
-      with open(f"Output Files/{bike_data.dataset_name}-normalized.geojson", "w") as f:
-        f.write(normalized_gdf.to_json(na=na_option, drop_id=True, indent=2))
+    # get normalized output
+    filter_properties = conversions.get_filter(bike_data.dataset_name)
+    transform_properties = conversions.get_transform(bike_data.dataset_name)
+    normalized_gdf = bike_data.normalize(
+      filter_properties, 
+      transform_properties
+    )
+    
+    # save normalized output
+    na_option = 'drop' if (type(bike_data) == BikeDataOSM) else 'null'
+    with open(ofp / f"{bike_data.dataset_name}-normalized.geojson", "w") as f:
+      f.write(normalized_gdf.to_json(na=na_option, drop_id=True, indent=2))
+    with open(ofp_archive / f"{bike_data.dataset_name}-normalized.geojson", "w") as f:
+      f.write(normalized_gdf.to_json(na=na_option, drop_id=True, indent=2))
 
-      num_normalized_features = len(normalized_gdf)
+    num_normalized_features = len(normalized_gdf)
 
-      # update status from metadata
-      dataset_status["last_updated"] = bike_data.last_updated.isoformat()
-      dataset_status["num_normalized_features"] = num_normalized_features
+    # update status from metadata
+    dataset_status["last_updated"] = bike_data.last_updated.isoformat()
+    dataset_status["num_normalized_features"] = num_normalized_features
     
     # update check datetime
     last_checked = datetime.now(timezone.utc)
@@ -154,7 +167,7 @@ def run_pipeline():
   # get output files, do further processing and combine
   city_data = {}
   for dataset in sources['city']['datasets']:
-    gdf = geopandas.read_file(f"Output Files/{dataset['dataset_name']}-normalized.geojson")
+    gdf = geopandas.read_file(ofp / f"{dataset['dataset_name']}-normalized.geojson")
     gdf['meta_source_last_updated'] = gdf['meta_source_last_updated'].astype('str')
     gdf = gdf.explode(index_parts=False)
     gdf.insert(0, 'source', dataset['dataset_name'])
@@ -181,7 +194,7 @@ def run_pipeline():
   # get output files, do further processing and combine
   osm_data_list = []
   for dataset in sources['osm']['datasets']:
-    gdf = geopandas.read_file(f"Output Files/{dataset['dataset_name']}-normalized.geojson")
+    gdf = geopandas.read_file(ofp / f"{dataset['dataset_name']}-normalized.geojson")
     gdf['meta_source_last_updated'] = gdf['meta_source_last_updated'].astype('str')
     gdf['meta_feature_last_updated'] = gdf['meta_feature_last_updated'].astype('str')
     osm_data_list.append(gdf)
@@ -260,14 +273,14 @@ def run_pipeline():
   # ------------------
   print("Saving display files...")
 
-  dfp = Path("Display Files/")
-  if not dfp.exists():
-    dfp.mkdir()
-
-  with open(f"Display Files/open_toronto_ca.geojson", "w") as f:
+  with open(dfp / "open_toronto_ca.geojson", "w") as f:
+    f.write(city_full.to_json(na='drop', drop_id=True, indent=2))
+  with open(dfp_archive / "open_toronto_ca.geojson", "w") as f:
     f.write(city_full.to_json(na='drop', drop_id=True, indent=2))
 
-  with open(f"Display Files/openstreetmap.geojson", "w") as f:
+  with open(dfp / "openstreetmap.geojson", "w") as f:
+    f.write(osm_filtered.to_json(na='drop', drop_id=True, indent=2))
+  with open(dfp_archive / "openstreetmap.geojson", "w") as f:
     f.write(osm_filtered.to_json(na='drop', drop_id=True, indent=2))
 
  
