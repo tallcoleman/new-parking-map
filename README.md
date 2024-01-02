@@ -1,4 +1,4 @@
-# new-parking-map
+# New Toronto Bicycle Parking Map
 
 Development for new BikeSpace Toronto parking map
 
@@ -10,12 +10,11 @@ Folder content is as follows:
 
 ## Data Processing Script - Toronto Bicycle Parking Locations
 
-`Data Pipeline/data_pipeline.py`
+Main script is `Data Pipeline/data_pipeline.py`
 
 Run with:
 ```
-$ cd "Data Pipeline/"
-$ python data_pipeline.py
+$ python "Data Pipeline/data_pipeline.py"
 ```
 
 ### About
