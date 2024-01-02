@@ -63,16 +63,16 @@ def transform_properties(input_props: InputProps, global_props: dict):
   return (
     {
       "amenity": "bicycle_parking",
-      "bicycle_parking": ,
-      "capacity": ,
-      "operator": ,
-      "covered": ,
-      "access": ,
-      "fee": ,
-      "colour": , #optional
-      "description": , #optional
-      "image": , #optional
-      "meta_regex_name": None # example placeholder
+      "bicycle_parking": None,
+      "capacity": None,
+      "operator": None,
+      "covered": None,
+      "access": None,
+      "fee": None,
+      "colour": None, #optional
+      "description": None, #optional
+      "image": None, #optional
+      "meta_regex_name": None, # example placeholder
       "meta_regex_number": None # example placeholder
     } 
     | _convert_regex_example(input_props['REGEX_EXAMPLE']) # example merge

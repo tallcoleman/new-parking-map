@@ -47,12 +47,12 @@ def run_pipeline():
 
   # load paths to .json files specifying details and status of data sources
   source_paths = {
-    "city": Path("sources/open_toronto_ca_sources.json"),
-    "osm": Path("sources/openstreetmap_sources.json")
+    "city": Path("Data Pipeline/sources/open_toronto_ca_sources.json"),
+    "osm": Path("Data Pipeline/sources/openstreetmap_sources.json")
   }
   status_paths = {
-    "city": Path("statuses/open_toronto_ca_statuses.json"),
-    "osm": Path("statuses/openstreetmap_statuses.json")
+    "city": Path("Data Pipeline/statuses/open_toronto_ca_statuses.json"),
+    "osm": Path("Data Pipeline/statuses/openstreetmap_statuses.json")
   }
   sources = load_paths(source_paths)
   statuses = load_paths(status_paths)
@@ -93,10 +93,10 @@ def run_pipeline():
     # update data if newer than last recorded
     if (bike_data.last_updated > rec_last_updated):
       # save source file
-      sfp = Path("../Source Files/")
+      sfp = Path("Source Files/")
       if not sfp.exists():
         sfp.mkdir()
-      with open(f"../Source Files/{bike_data.dataset_name}.geojson", "w") as f:
+      with open(f"Source Files/{bike_data.dataset_name}.geojson", "w") as f:
         geojson.dump(bike_data.response_geojson, f, indent=2)
 
       # get normalized output
@@ -109,10 +109,10 @@ def run_pipeline():
       
       # save normalized output
       na_option = 'drop' if (type(bike_data) == BikeDataOSM) else 'null'
-      ofp = Path("../Output Files/")
+      ofp = Path("Output Files/")
       if not ofp.exists():
         ofp.mkdir()
-      with open(f"../Output Files/{bike_data.dataset_name}-normalized.geojson", "w") as f:
+      with open(f"Output Files/{bike_data.dataset_name}-normalized.geojson", "w") as f:
         f.write(normalized_gdf.to_json(na=na_option, drop_id=True, indent=2))
 
       num_normalized_features = len(normalized_gdf)
@@ -145,13 +145,16 @@ def run_pipeline():
     )
     
   # update status JSON
+  status_fp = Path("Data Pipeline/statuses/")
+  if not status_fp.exists():
+    status_fp.mkdir()
   with status_paths['city'].open("w") as f:
     json.dump(statuses["city"], f, indent=2)
 
   # get output files, do further processing and combine
   city_data = {}
   for dataset in sources['city']['datasets']:
-    gdf = geopandas.read_file(f"../Output Files/{dataset['dataset_name']}-normalized.geojson")
+    gdf = geopandas.read_file(f"Output Files/{dataset['dataset_name']}-normalized.geojson")
     gdf['meta_source_last_updated'] = gdf['meta_source_last_updated'].astype('str')
     gdf = gdf.explode(index_parts=False)
     gdf.insert(0, 'source', dataset['dataset_name'])
@@ -178,7 +181,7 @@ def run_pipeline():
   # get output files, do further processing and combine
   osm_data_list = []
   for dataset in sources['osm']['datasets']:
-    gdf = geopandas.read_file(f"../Output Files/{dataset['dataset_name']}-normalized.geojson")
+    gdf = geopandas.read_file(f"Output Files/{dataset['dataset_name']}-normalized.geojson")
     gdf['meta_source_last_updated'] = gdf['meta_source_last_updated'].astype('str')
     gdf['meta_feature_last_updated'] = gdf['meta_feature_last_updated'].astype('str')
     osm_data_list.append(gdf)
@@ -257,14 +260,14 @@ def run_pipeline():
   # ------------------
   print("Saving display files...")
 
-  dfp = Path("../Display Files/")
+  dfp = Path("Display Files/")
   if not dfp.exists():
     dfp.mkdir()
 
-  with open(f"../Display Files/open_toronto_ca.geojson", "w") as f:
+  with open(f"Display Files/open_toronto_ca.geojson", "w") as f:
     f.write(city_full.to_json(na='drop', drop_id=True, indent=2))
 
-  with open(f"../Display Files/openstreetmap.geojson", "w") as f:
+  with open(f"Display Files/openstreetmap.geojson", "w") as f:
     f.write(osm_filtered.to_json(na='drop', drop_id=True, indent=2))
 
  
