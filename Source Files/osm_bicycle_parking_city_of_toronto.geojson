@@ -1002,8 +1002,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3944,
-          43.659487
+          -79.394382,
+          43.65946
         ]
       },
       "properties": {
@@ -1011,7 +1011,7 @@
         "bicycle_parking": "stands",
         "capacity": "2",
         "covered": "no",
-        "meta_feature_last_updated": "2021-11-06T20:58:19+00:00",
+        "meta_feature_last_updated": "2024-01-03T22:46:09+00:00",
         "meta_osm_node_id": 773398444
       }
     },
@@ -2115,7 +2115,9 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2011-06-09T14:12:13+00:00",
+        "bicycle_parking": "wall_loops",
+        "check_date": "2024-01-02",
+        "meta_feature_last_updated": "2024-01-02T21:48:51+00:00",
         "meta_osm_node_id": 1113697053
       }
     },
@@ -2371,12 +2373,20 @@
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
         "capacity": "14",
+        "cargo_bike": "yes",
         "check_date": "2023-09-07",
         "covered": "no",
-        "meta_feature_last_updated": "2023-09-07T23:10:16+00:00",
+        "description": "ring and post",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "Victoria University",
+        "quantity": "7",
+        "meta_feature_last_updated": "2024-01-04T23:52:59+00:00",
         "meta_osm_node_id": 1133995910
       }
     },
@@ -3044,13 +3054,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.399741,
-          43.708247
+          -79.399429,
+          43.708154
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2011-05-26T16:24:55+00:00",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "City of Toronto",
+        "ref:open.toronto.ca": "yes",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
         "meta_osm_node_id": 1300016130
       }
     },
@@ -3572,14 +3593,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.400113,
-          43.70762
+          -79.40042,
+          43.707741
         ]
       },
       "properties": {
+        "access": "permissive",
         "amenity": "bicycle_parking",
-        "note": "well hidden, but there are signs pointing to it",
-        "meta_feature_last_updated": "2013-08-07T21:25:46+00:00",
+        "bicycle_parking": "rack",
+        "capacity": "20",
+        "cargo_bike": "yes",
+        "colour": "black",
+        "covered": "no",
+        "description": "well hidden",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pqQHmr",
+        "indoor": "no",
+        "lit": "yes",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
         "meta_osm_node_id": 2410390558
       }
     },
@@ -26150,10 +26181,10 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "capacity": "3",
+        "capacity": "4",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2023-04-25T16:59:47+00:00",
+        "meta_feature_last_updated": "2024-01-05T22:00:35+00:00",
         "meta_osm_node_id": 10840086869
       }
     },
@@ -28127,34 +28158,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.408237,
-          43.704729
+          -79.408221,
+          43.704765
         ]
       },
       "properties": {
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:36:54+00:00",
+        "capacity": "6",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
         "meta_osm_node_id": 11265683417
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 11265683418,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.408098,
-          43.704757
-        ]
-      },
-      "properties": {
-        "access": "yes",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:36:54+00:00",
-        "meta_osm_node_id": 11265683418
       }
     },
     {
@@ -28163,34 +28185,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.412451,
-          43.703837
+          -79.412421,
+          43.703866
         ]
       },
       "properties": {
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:36:11+00:00",
+        "capacity": "4",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "quantity": "2",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
         "meta_osm_node_id": 11265688477
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 11265688478,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.412371,
-          43.703853
-        ]
-      },
-      "properties": {
-        "access": "yes",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:36:11+00:00",
-        "meta_osm_node_id": 11265688478
       }
     },
     {
@@ -28207,7 +28220,15 @@
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:36:11+00:00",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
         "meta_osm_node_id": 11265688479
       }
     },
@@ -28217,34 +28238,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.413435,
-          43.70363
+          -79.413358,
+          43.70367
         ]
       },
       "properties": {
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:36:11+00:00",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
         "meta_osm_node_id": 11265688480
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 11265688481,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.411896,
-          43.703955
-        ]
-      },
-      "properties": {
-        "access": "yes",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:36:11+00:00",
-        "meta_osm_node_id": 11265688481
       }
     },
     {
@@ -28253,34 +28264,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.411854,
-          43.703964
+          -79.411866,
+          43.703988
         ]
       },
       "properties": {
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:36:11+00:00",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
         "meta_osm_node_id": 11265688482
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 11265688483,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.411815,
-          43.703972
-        ]
-      },
-      "properties": {
-        "access": "yes",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:36:11+00:00",
-        "meta_osm_node_id": 11265688483
       }
     },
     {
@@ -28315,7 +28316,15 @@
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:36:11+00:00",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
         "meta_osm_node_id": 11265688485
       }
     },
@@ -28333,7 +28342,15 @@
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:36:11+00:00",
+        "capacity": "2",
+        "cargo_bike": "no",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
         "meta_osm_node_id": 11265688486
       }
     },
@@ -28351,7 +28368,14 @@
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:36:11+00:00",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
         "meta_osm_node_id": 11265688487
       }
     },
@@ -28369,7 +28393,15 @@
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:36:11+00:00",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
         "meta_osm_node_id": 11265688488
       }
     },
@@ -28387,7 +28419,15 @@
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:36:11+00:00",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
         "meta_osm_node_id": 11265688489
       }
     },
@@ -28397,34 +28437,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.409722,
-          43.70441
+          -79.409696,
+          43.704444
         ]
       },
       "properties": {
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:36:11+00:00",
+        "capacity": "4",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "quantity": "2",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
         "meta_osm_node_id": 11265688490
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 11265688491,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.409653,
-          43.704427
-        ]
-      },
-      "properties": {
-        "access": "yes",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:36:11+00:00",
-        "meta_osm_node_id": 11265688491
       }
     },
     {
@@ -28433,52 +28464,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.415116,
-          43.703267
+          -79.415142,
+          43.703295
         ]
       },
       "properties": {
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:29:11+00:00",
+        "capacity": "4",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "quantity": "2",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
         "meta_osm_node_id": 11265750664
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 11265750665,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.415159,
-          43.703258
-        ]
-      },
-      "properties": {
-        "access": "yes",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:29:11+00:00",
-        "meta_osm_node_id": 11265750665
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 11265750666,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.415183,
-          43.703253
-        ]
-      },
-      "properties": {
-        "access": "yes",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:29:11+00:00",
-        "meta_osm_node_id": 11265750666
       }
     },
     {
@@ -28487,15 +28491,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.415297,
-          43.703229
+          -79.415304,
+          43.703253
         ]
       },
       "properties": {
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:29:11+00:00",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
         "meta_osm_node_id": 11265750667
       }
     },
@@ -28505,15 +28516,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.415441,
-          43.703198
+          -79.415421,
+          43.703241
         ]
       },
       "properties": {
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:29:11+00:00",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
         "meta_osm_node_id": 11265750668
       }
     },
@@ -30319,6 +30337,571 @@
     },
     {
       "type": "Feature",
+      "id": 11483939934,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.383111,
+          43.668434
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "4",
+        "colour": "blue",
+        "covered": "no",
+        "indoor": "no",
+        "meta_feature_last_updated": "2024-01-03T22:37:17+00:00",
+        "meta_osm_node_id": 11483939934
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11492659939,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.451924,
+          43.733288
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "4",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-01-05T22:00:35+00:00",
+        "meta_osm_node_id": 11492659939
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11492659958,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.455444,
+          43.732296
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2024-01-05T22:00:35+00:00",
+        "meta_osm_node_id": 11492659958
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11492659959,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.456252,
+          43.73038
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "meta_feature_last_updated": "2024-01-05T22:00:35+00:00",
+        "meta_osm_node_id": 11492659959
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11492659960,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.453086,
+          43.731373
+        ]
+      },
+      "properties": {
+        "access": "permissive",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wave",
+        "capacity": "6",
+        "covered": "yes",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-01-05T22:00:35+00:00",
+        "meta_osm_node_id": 11492659960
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11492813611,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.449603,
+          43.73437
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "8",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-01-06T00:01:09+00:00",
+        "meta_osm_node_id": 11492813611
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11492899967,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.425033,
+          43.650449
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "capacity": "4",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "yes",
+        "meta_feature_last_updated": "2024-01-06T00:24:06+00:00",
+        "meta_osm_node_id": 11492899967
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11495625492,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.403834,
+          43.706231
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "31",
+        "cargo_bike": "yes",
+        "colour": "black",
+        "covered": "no",
+        "description": "six black coat hanger style racks",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pqVmxB",
+        "indoor": "no",
+        "lit": "yes",
+        "operator": "City of Toronto",
+        "quantity": "6",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
+        "meta_osm_node_id": 11495625492
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11495625493,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.406396,
+          43.70515
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
+        "meta_osm_node_id": 11495625493
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11495625494,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.416435,
+          43.703042
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
+        "meta_osm_node_id": 11495625494
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11495625495,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.414715,
+          43.703396
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "yes",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
+        "meta_osm_node_id": 11495625495
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11495625496,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.413536,
+          43.703647
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "cargo_bike": "no",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
+        "meta_osm_node_id": 11495625496
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11495625497,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.414686,
+          43.703215
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pqUJNL",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
+        "meta_osm_node_id": 11495625497
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11495625498,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.412681,
+          43.703819
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
+        "meta_osm_node_id": 11495625498
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11495625499,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.414543,
+          43.703425
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
+        "meta_osm_node_id": 11495625499
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11495625500,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.409236,
+          43.704369
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
+        "meta_osm_node_id": 11495625500
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11495625501,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.415966,
+          43.703
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "4",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pqVtHW",
+        "indoor": "no",
+        "lit": "yes",
+        "operator": "The Eglinton Way BIA",
+        "quantity": "2",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
+        "meta_osm_node_id": 11495625501
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11495625502,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.407423,
+          43.704942
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pqWPZ1",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
+        "meta_osm_node_id": 11495625502
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11495625503,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.416674,
+          43.702985
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "4",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "quantity": "2",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
+        "meta_osm_node_id": 11495625503
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11495625504,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.414352,
+          43.703464
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
+        "meta_osm_node_id": 11495625504
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11495625505,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.414945,
+          43.703159
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "6",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pqQ3wT",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "quantity": "3",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
+        "meta_osm_node_id": 11495625505
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11495625506,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.416481,
+          43.702826
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "yes",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "quantity": "2",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
+        "meta_osm_node_id": 11495625506
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11495625507,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.414113,
+          43.703522
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
+        "meta_osm_node_id": 11495625507
+      }
+    },
+    {
+      "type": "Feature",
       "id": 135331961,
       "geometry": {
         "type": "LineString",
@@ -30620,24 +31203,24 @@
         "type": "LineString",
         "coordinates": [
           [
-            -79.398031,
-            43.66207
+            -79.398039,
+            43.662076
           ],
           [
-            -79.397941,
-            43.662088
+            -79.397949,
+            43.662093
           ],
           [
-            -79.397927,
-            43.662053
+            -79.397935,
+            43.662058
           ],
           [
-            -79.398017,
-            43.662035
+            -79.398025,
+            43.66204
           ],
           [
-            -79.398031,
-            43.66207
+            -79.398039,
+            43.662076
           ]
         ]
       },
