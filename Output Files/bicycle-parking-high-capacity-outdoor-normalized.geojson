@@ -20,7 +20,7 @@
         "meta_ward_name": "Toronto Centre",
         "meta_ward_number": "13",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -51,7 +51,7 @@
         "meta_ward_name": "Davenport",
         "meta_ward_number": "9",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -82,7 +82,7 @@
         "meta_ward_name": "Davenport",
         "meta_ward_number": "9",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -113,7 +113,7 @@
         "meta_ward_name": "Toronto-St. Paul's",
         "meta_ward_number": "12",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -144,7 +144,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -175,7 +175,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -206,7 +206,7 @@
         "meta_ward_name": "Davenport",
         "meta_ward_number": "9",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -237,7 +237,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -268,7 +268,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -299,7 +299,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -330,7 +330,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -361,7 +361,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -392,7 +392,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -423,7 +423,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -454,7 +454,7 @@
         "meta_ward_name": "Parkdale-High Park",
         "meta_ward_number": "4",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -485,7 +485,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -516,7 +516,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -547,7 +547,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -578,7 +578,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -609,7 +609,7 @@
         "meta_ward_name": "Scarborough Centre",
         "meta_ward_number": "21",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -640,7 +640,7 @@
         "meta_ward_name": "Toronto Centre",
         "meta_ward_number": "13",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -671,7 +671,7 @@
         "meta_ward_name": "Toronto Centre",
         "meta_ward_number": "13",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -702,7 +702,7 @@
         "meta_ward_name": "Toronto Centre",
         "meta_ward_number": "13",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -733,7 +733,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -764,7 +764,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -795,7 +795,7 @@
         "meta_ward_name": "Toronto Centre",
         "meta_ward_number": "13",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -826,7 +826,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -857,7 +857,7 @@
         "meta_ward_name": "Toronto-St. Paul's",
         "meta_ward_number": "12",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -888,7 +888,7 @@
         "meta_ward_name": "Eglinton-Lawrence",
         "meta_ward_number": "8",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -919,7 +919,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -950,7 +950,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -981,7 +981,7 @@
         "meta_ward_name": "Toronto Centre",
         "meta_ward_number": "13",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1012,7 +1012,7 @@
         "meta_ward_name": "Toronto Centre",
         "meta_ward_number": "13",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1043,7 +1043,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1074,7 +1074,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1105,7 +1105,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1136,7 +1136,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1167,7 +1167,7 @@
         "meta_ward_name": "Toronto Centre",
         "meta_ward_number": "13",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1198,7 +1198,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1229,7 +1229,7 @@
         "meta_ward_name": "York South-Weston",
         "meta_ward_number": "5",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1260,7 +1260,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1291,7 +1291,7 @@
         "meta_ward_name": "Toronto-Danforth",
         "meta_ward_number": "14",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1322,7 +1322,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1353,7 +1353,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1384,7 +1384,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1415,7 +1415,7 @@
         "meta_ward_name": "Toronto-Danforth",
         "meta_ward_number": "14",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1446,7 +1446,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1477,7 +1477,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1508,7 +1508,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1539,7 +1539,7 @@
         "meta_ward_name": "Davenport",
         "meta_ward_number": "9",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1570,7 +1570,7 @@
         "meta_ward_name": "Davenport",
         "meta_ward_number": "9",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1601,7 +1601,7 @@
         "meta_ward_name": "Davenport",
         "meta_ward_number": "9",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1632,7 +1632,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1663,7 +1663,7 @@
         "meta_ward_name": "Toronto Centre",
         "meta_ward_number": "13",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1694,7 +1694,7 @@
         "meta_ward_name": "Davenport",
         "meta_ward_number": "9",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1725,7 +1725,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1756,7 +1756,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1787,7 +1787,7 @@
         "meta_ward_name": "Davenport",
         "meta_ward_number": "9",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1818,7 +1818,7 @@
         "meta_ward_name": "Davenport",
         "meta_ward_number": "9",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1849,7 +1849,7 @@
         "meta_ward_name": "Toronto Centre",
         "meta_ward_number": "13",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1880,7 +1880,7 @@
         "meta_ward_name": "Scarborough-Agincourt",
         "meta_ward_number": "22",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1911,7 +1911,7 @@
         "meta_ward_name": "Toronto-Danforth",
         "meta_ward_number": "14",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1942,7 +1942,7 @@
         "meta_ward_name": "Davenport",
         "meta_ward_number": "9",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -1973,7 +1973,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2004,7 +2004,7 @@
         "meta_ward_name": "Toronto Centre",
         "meta_ward_number": "13",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2035,7 +2035,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2066,7 +2066,7 @@
         "meta_ward_name": "Davenport",
         "meta_ward_number": "9",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2097,7 +2097,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2128,7 +2128,7 @@
         "meta_ward_name": "Toronto-St. Paul's",
         "meta_ward_number": "12",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2159,7 +2159,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2190,7 +2190,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2221,7 +2221,7 @@
         "meta_ward_name": "Scarborough-Agincourt",
         "meta_ward_number": "22",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2252,7 +2252,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2283,7 +2283,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2314,7 +2314,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2345,7 +2345,7 @@
         "meta_ward_name": "Toronto-Danforth",
         "meta_ward_number": "14",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2376,7 +2376,7 @@
         "meta_ward_name": "Etobicoke-Lakeshore",
         "meta_ward_number": "3",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2407,7 +2407,7 @@
         "meta_ward_name": "Davenport",
         "meta_ward_number": "9",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2438,7 +2438,7 @@
         "meta_ward_name": "Toronto Centre",
         "meta_ward_number": "13",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2469,7 +2469,7 @@
         "meta_ward_name": "Toronto Centre",
         "meta_ward_number": "13",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2500,7 +2500,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2531,7 +2531,7 @@
         "meta_ward_name": "Parkdale-High Park",
         "meta_ward_number": "4",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2562,7 +2562,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2593,7 +2593,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2624,7 +2624,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2655,7 +2655,7 @@
         "meta_ward_name": "Scarborough-Agincourt",
         "meta_ward_number": "22",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2686,7 +2686,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2717,7 +2717,7 @@
         "meta_ward_name": "Toronto-St. Paul's",
         "meta_ward_number": "12",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2748,7 +2748,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2779,7 +2779,7 @@
         "meta_ward_name": "Davenport",
         "meta_ward_number": "9",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2810,7 +2810,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2841,7 +2841,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2872,7 +2872,7 @@
         "meta_ward_name": "Davenport",
         "meta_ward_number": "9",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2903,7 +2903,7 @@
         "meta_ward_name": "Davenport",
         "meta_ward_number": "9",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2934,7 +2934,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2965,7 +2965,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -2996,7 +2996,7 @@
         "meta_ward_name": "Toronto Centre",
         "meta_ward_number": "13",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -3027,7 +3027,7 @@
         "meta_ward_name": "Eglinton-Lawrence",
         "meta_ward_number": "8",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -3058,7 +3058,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -3089,7 +3089,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -3120,7 +3120,7 @@
         "meta_ward_name": "Toronto-St. Paul's",
         "meta_ward_number": "12",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -3151,7 +3151,7 @@
         "meta_ward_name": "Toronto-Danforth",
         "meta_ward_number": "14",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -3182,7 +3182,7 @@
         "meta_ward_name": "Toronto Centre",
         "meta_ward_number": "13",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -3213,7 +3213,7 @@
         "meta_ward_name": "Davenport",
         "meta_ward_number": "9",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -3244,7 +3244,7 @@
         "meta_ward_name": "Toronto-Danforth",
         "meta_ward_number": "14",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -3275,7 +3275,7 @@
         "meta_ward_name": "University-Rosedale",
         "meta_ward_number": "11",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -3306,7 +3306,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -3337,7 +3337,7 @@
         "meta_ward_name": "Toronto Centre",
         "meta_ward_number": "13",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -3368,7 +3368,7 @@
         "meta_ward_name": "Toronto Centre",
         "meta_ward_number": "13",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -3399,7 +3399,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -3430,7 +3430,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -3461,7 +3461,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -3492,7 +3492,7 @@
         "meta_ward_name": "Beaches-East York",
         "meta_ward_number": "19",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -3523,7 +3523,7 @@
         "meta_ward_name": "Davenport",
         "meta_ward_number": "9",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -3554,7 +3554,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -3585,7 +3585,7 @@
         "meta_ward_name": "Scarborough Southwest",
         "meta_ward_number": "20",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",
@@ -3616,7 +3616,7 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_last_updated": "2023-10-05T03:03:38.480949+00:00"
+        "meta_source_last_updated": "2024-01-12T03:07:21.062197+00:00"
       },
       "geometry": {
         "type": "MultiPoint",

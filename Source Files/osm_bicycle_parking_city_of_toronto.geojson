@@ -1843,12 +1843,19 @@
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
+        "bicycle_parking": "bollard",
         "capacity": "10",
+        "cargo_bike": "yes",
         "check_date": "2023-09-07",
         "covered": "no",
-        "meta_feature_last_updated": "2023-09-07T23:08:27+00:00",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "yes",
+        "operator": "Victoria University",
+        "quantity": "6",
+        "meta_feature_last_updated": "2024-01-10T03:05:45+00:00",
         "meta_osm_node_id": 949014806
       }
     },
@@ -1863,9 +1870,19 @@
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "30",
+        "cargo_bike": "yes",
+        "covered": "no",
         "description": "15x ring post",
-        "meta_feature_last_updated": "2011-02-27T06:46:24+00:00",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "Victoria University",
+        "quantity": "15",
+        "meta_feature_last_updated": "2024-01-10T03:05:45+00:00",
         "meta_osm_node_id": 949014811
       }
     },
@@ -3231,8 +3248,10 @@
         "covered": "no",
         "description": "Sculptural bicycle stands in the shape of a plant",
         "fee": "no",
+        "operator": "City of Toronto",
         "quantity": "3",
-        "meta_feature_last_updated": "2023-12-21T16:52:27+00:00",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2024-01-10T22:36:34+00:00",
         "meta_osm_node_id": 1486350388
       }
     },
@@ -18936,11 +18955,13 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "capacity": "14",
+        "bicycle_parking": "wall_loops",
+        "capacity": "10",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2021-10-18T22:28:11+00:00",
+        "lit": "no",
+        "operator": "Postmedia Place",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 8934159951
       }
     },
@@ -18960,7 +18981,8 @@
         "capacity": "4",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2021-10-18T22:28:11+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 8934159953
       }
     },
@@ -18980,7 +19002,8 @@
         "capacity": "6",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2021-10-18T22:28:11+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 8934159956
       }
     },
@@ -19000,7 +19023,8 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2021-10-14T12:57:29+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 8934159958
       }
     },
@@ -19020,7 +19044,8 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2021-07-19T22:49:44+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 8934159961
       }
     },
@@ -19040,7 +19065,8 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2021-07-19T22:49:44+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 8934159965
       }
     },
@@ -19060,7 +19086,8 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2021-07-19T22:49:44+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 8934159966
       }
     },
@@ -19080,7 +19107,8 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2021-07-19T22:49:44+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 8934159968
       }
     },
@@ -19787,7 +19815,8 @@
         "fee": "no",
         "indoor": "no",
         "lit": "yes",
-        "meta_feature_last_updated": "2021-10-03T13:41:33+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9141818297
       }
     },
@@ -19809,7 +19838,8 @@
         "fee": "no",
         "indoor": "no",
         "lit": "yes",
-        "meta_feature_last_updated": "2021-10-03T13:41:33+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9141818298
       }
     },
@@ -19831,7 +19861,8 @@
         "fee": "no",
         "indoor": "no",
         "lit": "yes",
-        "meta_feature_last_updated": "2021-10-03T13:41:33+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9141818300
       }
     },
@@ -19853,7 +19884,8 @@
         "fee": "no",
         "indoor": "no",
         "lit": "yes",
-        "meta_feature_last_updated": "2021-10-03T13:41:33+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9141818302
       }
     },
@@ -19875,7 +19907,8 @@
         "fee": "no",
         "indoor": "no",
         "lit": "yes",
-        "meta_feature_last_updated": "2021-10-03T13:41:33+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9141818303
       }
     },
@@ -19897,7 +19930,8 @@
         "fee": "no",
         "indoor": "no",
         "lit": "yes",
-        "meta_feature_last_updated": "2021-10-03T13:41:33+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9141818304
       }
     },
@@ -19919,7 +19953,8 @@
         "fee": "no",
         "indoor": "no",
         "lit": "yes",
-        "meta_feature_last_updated": "2021-10-03T13:41:33+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9141818305
       }
     },
@@ -19941,7 +19976,8 @@
         "fee": "no",
         "indoor": "no",
         "lit": "yes",
-        "meta_feature_last_updated": "2021-10-03T13:41:33+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9141818306
       }
     },
@@ -20167,7 +20203,8 @@
         "capacity": "10",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2021-10-18T22:28:11+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9181373385
       }
     },
@@ -20184,10 +20221,11 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
-        "capacity": "18",
+        "capacity": "9",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2021-10-18T22:28:11+00:00",
+        "operator": "Rogers Communications Inc",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9181373392
       }
     },
@@ -20224,11 +20262,12 @@
       "properties": {
         "access": "private",
         "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
+        "bicycle_parking": "wall_loops",
         "capacity": "10",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2021-10-18T22:28:11+00:00",
+        "operator": "Rogers Communications Inc",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9181373402
       }
     },
@@ -20308,7 +20347,8 @@
         "capacity": "12",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2021-10-18T22:28:11+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9181373411
       }
     },
@@ -20328,7 +20368,8 @@
         "capacity": "6",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2021-10-18T22:28:11+00:00",
+        "operator": "Rogers Communications Inc",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9181373412
       }
     },
@@ -20438,7 +20479,8 @@
         "fee": "no",
         "indoor": "no",
         "lit": "yes",
-        "meta_feature_last_updated": "2021-10-23T16:42:57+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9196100941
       }
     },
@@ -20460,7 +20502,8 @@
         "fee": "no",
         "indoor": "no",
         "lit": "yes",
-        "meta_feature_last_updated": "2022-10-25T04:36:20+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9196100949
       }
     },
@@ -20478,11 +20521,15 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "18",
+        "cargo_bike": "yes",
         "covered": "no",
+        "description": "very old ring, and post design",
         "fee": "no",
+        "image": "https://flic.kr/p/2prUUnf",
         "indoor": "no",
         "lit": "yes",
-        "meta_feature_last_updated": "2021-10-23T16:42:57+00:00",
+        "quantity": "9",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9196100969
       }
     },
@@ -20504,7 +20551,8 @@
         "fee": "no",
         "indoor": "no",
         "lit": "yes",
-        "meta_feature_last_updated": "2021-10-23T16:42:57+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9196100971
       }
     },
@@ -20526,7 +20574,8 @@
         "fee": "no",
         "indoor": "no",
         "lit": "yes",
-        "meta_feature_last_updated": "2021-10-23T16:42:57+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9196100977
       }
     },
@@ -20548,7 +20597,8 @@
         "fee": "no",
         "indoor": "no",
         "lit": "yes",
-        "meta_feature_last_updated": "2021-10-23T16:42:57+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9196100980
       }
     },
@@ -20570,7 +20620,8 @@
         "fee": "no",
         "indoor": "no",
         "lit": "yes",
-        "meta_feature_last_updated": "2021-10-23T16:42:57+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9196100985
       }
     },
@@ -20592,7 +20643,8 @@
         "fee": "no",
         "indoor": "no",
         "lit": "yes",
-        "meta_feature_last_updated": "2021-10-23T16:42:57+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9196100986
       }
     },
@@ -20614,7 +20666,8 @@
         "fee": "no",
         "indoor": "no",
         "lit": "yes",
-        "meta_feature_last_updated": "2021-10-23T16:42:57+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9196100990
       }
     },
@@ -20736,7 +20789,8 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2021-10-27T21:20:27+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9206281416
       }
     },
@@ -20988,7 +21042,8 @@
         "capacity": "4",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2021-10-27T21:20:27+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9206317931
       }
     },
@@ -21437,7 +21492,8 @@
         "capacity": "8",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2022-10-23T03:49:43+00:00",
+        "operator": "Manulife",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9236518654
       }
     },
@@ -21492,11 +21548,11 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
+        "bicycle_parking": "wall_loops",
         "capacity": "8",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2021-11-08T22:58:36+00:00",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9236518657
       }
     },
@@ -21550,11 +21606,11 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
+        "bicycle_parking": "wall_loops",
         "capacity": "8",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2021-11-08T22:58:36+00:00",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9236518664
       }
     },
@@ -21712,7 +21768,8 @@
         "capacity": "4",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2021-11-08T22:58:36+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
         "meta_osm_node_id": 9236518678
       }
     },
@@ -24084,9 +24141,17 @@
         ]
       },
       "properties": {
+        "access": "no",
         "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "bike_ride": "yes",
         "covered": "yes",
-        "meta_feature_last_updated": "2022-10-08T20:43:12+00:00",
+        "description": "In construction bicycle facility at west entrance of Kennedy station of Eglinton LRT",
+        "image": "https://flic.kr/p/2prKo3b",
+        "indoor": "yes",
+        "lit": "yes",
+        "operator": "Metrolinx",
+        "meta_feature_last_updated": "2024-01-11T00:13:19+00:00",
         "meta_osm_node_id": 10085728372
       }
     },
@@ -28298,7 +28363,14 @@
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-10-16T01:36:11+00:00",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-12T01:49:47+00:00",
         "meta_osm_node_id": 11265688484
       }
     },
@@ -29193,8 +29265,10 @@
         "covered": "no",
         "description": "Sculptural bicycle stands in the shape of a plant",
         "fee": "no",
+        "operator": "City of Toronto",
         "quantity": "3",
-        "meta_feature_last_updated": "2023-12-21T16:52:27+00:00",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2024-01-10T22:36:34+00:00",
         "meta_osm_node_id": 11439020336
       }
     },
@@ -29216,8 +29290,10 @@
         "covered": "no",
         "description": "Sculptural bicycle stands in the shape of a plant",
         "fee": "no",
+        "operator": "City of Toronto",
         "quantity": "2",
-        "meta_feature_last_updated": "2023-12-21T16:52:27+00:00",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2024-01-10T22:36:34+00:00",
         "meta_osm_node_id": 11439020337
       }
     },
@@ -29239,8 +29315,10 @@
         "covered": "no",
         "description": "Sculptural bicycle stands in the shape of a plant",
         "fee": "no",
+        "operator": "City of Toronto",
         "quantity": "3",
-        "meta_feature_last_updated": "2023-12-21T16:52:27+00:00",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2024-01-10T22:36:34+00:00",
         "meta_osm_node_id": 11439020338
       }
     },
@@ -29262,8 +29340,10 @@
         "covered": "no",
         "description": "Sculptural bicycle stands in the shape of a plant",
         "fee": "no",
+        "operator": "City of Toronto",
         "quantity": "4",
-        "meta_feature_last_updated": "2023-12-21T16:52:27+00:00",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2024-01-10T22:36:34+00:00",
         "meta_osm_node_id": 11439020339
       }
     },
@@ -29285,8 +29365,10 @@
         "covered": "no",
         "description": "Sculptural bicycle stands in the shape of a plant",
         "fee": "no",
+        "operator": "City of Toronto",
         "quantity": "2",
-        "meta_feature_last_updated": "2023-12-21T16:52:27+00:00",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2024-01-10T22:36:34+00:00",
         "meta_osm_node_id": 11439020340
       }
     },
@@ -29308,8 +29390,10 @@
         "covered": "no",
         "description": "Sculptural bicycle stands in the shape of a plant",
         "fee": "no",
+        "operator": "City of Toronto",
         "quantity": "5",
-        "meta_feature_last_updated": "2023-12-21T16:52:27+00:00",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2024-01-10T22:36:34+00:00",
         "meta_osm_node_id": 11439020341
       }
     },
@@ -29331,8 +29415,10 @@
         "covered": "no",
         "description": "Sculptural bicycle stands in the shape of a plant",
         "fee": "no",
+        "operator": "City of Toronto",
         "quantity": "3",
-        "meta_feature_last_updated": "2023-12-21T16:52:27+00:00",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2024-01-10T22:36:34+00:00",
         "meta_osm_node_id": 11439020342
       }
     },
@@ -29354,7 +29440,9 @@
         "covered": "no",
         "description": "Sculptural bicycle stand in the shape of a plant",
         "fee": "no",
-        "meta_feature_last_updated": "2023-12-21T16:52:27+00:00",
+        "operator": "City of Toronto",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2024-01-10T22:36:34+00:00",
         "meta_osm_node_id": 11439020343
       }
     },
@@ -30898,6 +30986,599 @@
         "operator:type": "public",
         "meta_feature_last_updated": "2024-01-06T22:33:39+00:00",
         "meta_osm_node_id": 11495625507
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11504842305,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.391899,
+          43.666527
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "description": "wave rack",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "Victoria University",
+        "quantity": "2",
+        "meta_feature_last_updated": "2024-01-10T03:05:45+00:00",
+        "meta_osm_node_id": 11504842305
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11504842306,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.391767,
+          43.666572
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "8",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "Victoria University",
+        "quantity": "4",
+        "meta_feature_last_updated": "2024-01-10T03:05:45+00:00",
+        "meta_osm_node_id": 11504842306
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11506910611,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.247002,
+          43.755562
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "5",
+        "cargo_bike": "yes",
+        "colour": "black",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2prJkzq",
+        "indoor": "no",
+        "lit": "yes",
+        "operator": "Scarborough Health Network",
+        "meta_feature_last_updated": "2024-01-10T22:31:34+00:00",
+        "meta_osm_node_id": 11506910611
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11506994064,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.262725,
+          43.733278
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "bike_ride": "yes",
+        "capacity": "24",
+        "cargo_bike": "no",
+        "covered": "yes",
+        "fee": "no",
+        "image": "https://flic.kr/p/2prKszc",
+        "indoor": "no",
+        "lit": "yes",
+        "operator": "GO Transit",
+        "quantity": "4",
+        "meta_feature_last_updated": "2024-01-11T00:13:19+00:00",
+        "meta_osm_node_id": 11506994064
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11506994065,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.26529,
+          43.732381
+        ]
+      },
+      "properties": {
+        "access": "no",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "bike_ride": "yes",
+        "capacity": "22",
+        "covered": "yes",
+        "description": "bicycle stabds outside west entrnace for kennedy station of Eglinton LRT",
+        "fee": "no",
+        "image": "https://flic.kr/p/2prKo3b",
+        "indoor": "no",
+        "operator": "Metrolinx",
+        "quantity": "11",
+        "meta_feature_last_updated": "2024-01-11T00:13:19+00:00",
+        "meta_osm_node_id": 11506994065
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11506994066,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.261943,
+          43.733358
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "bike_ride": "yes",
+        "capacity": "6",
+        "capacity:cargo_bike": "3",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2prLUPB",
+        "operator": "Metrolinx",
+        "quantity": "3",
+        "meta_feature_last_updated": "2024-01-11T00:13:19+00:00",
+        "meta_osm_node_id": 11506994066
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11506994067,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.264399,
+          43.732762
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "bike_ride": "yes",
+        "capacity": "8",
+        "covered": "no",
+        "description": "under construction",
+        "fee": "no",
+        "image": "https://flic.kr/p/2prKrb5",
+        "operator": "Metrolinx",
+        "quantity": "4",
+        "meta_feature_last_updated": "2024-01-11T00:13:19+00:00",
+        "meta_osm_node_id": 11506994067
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11506994068,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.262574,
+          43.732918
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "bike_ride": "yes",
+        "capacity": "3",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "not bolted to the ground",
+        "fee": "no",
+        "image": "https://flic.kr/p/2prJP5L",
+        "operator": "Toronto Transit Comission",
+        "meta_feature_last_updated": "2024-01-11T00:13:19+00:00",
+        "meta_osm_node_id": 11506994068
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11507008469,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.267615,
+          43.732069
+        ]
+      },
+      "properties": {
+        "access": "permissive",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "5",
+        "cargo_bike": "no",
+        "covered": "yes",
+        "description": "chained to pillar. wheel slots are quite narrow.",
+        "fee": "no",
+        "image": "https://flic.kr/p/2prJLTm",
+        "meta_feature_last_updated": "2024-01-11T00:13:19+00:00",
+        "meta_osm_node_id": 11507008469
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11509668586,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.261432,
+          43.732572
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "image": "https://flic.kr/p/2prUAoZ",
+        "indoor": "no",
+        "lit": "no",
+        "operator": "City of Toronto",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2024-01-11T22:51:42+00:00",
+        "meta_osm_node_id": 11509668586
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11509784634,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.406891,
+          43.704867
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-12T01:49:47+00:00",
+        "meta_osm_node_id": 11509784634
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11509784635,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.41242,
+          43.70369
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-12T01:49:47+00:00",
+        "meta_osm_node_id": 11509784635
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11509784636,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.410355,
+          43.704141
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-12T01:49:47+00:00",
+        "meta_osm_node_id": 11509784636
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11509784637,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.409994,
+          43.704212
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "4",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "quantity": "2",
+        "meta_feature_last_updated": "2024-01-12T01:49:47+00:00",
+        "meta_osm_node_id": 11509784637
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11509784638,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.406646,
+          43.704909
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "6",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "lit": "yes",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2024-01-12T01:49:47+00:00",
+        "meta_osm_node_id": 11509784638
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11509784639,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.413593,
+          43.703431
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-12T01:49:47+00:00",
+        "meta_osm_node_id": 11509784639
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11509784640,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.413071,
+          43.703503
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "lit": "no",
+        "meta_feature_last_updated": "2024-01-12T01:49:47+00:00",
+        "meta_osm_node_id": 11509784640
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11509784641,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.407066,
+          43.704834
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "quantity": "1",
+        "meta_feature_last_updated": "2024-01-12T01:49:47+00:00",
+        "meta_osm_node_id": 11509784641
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11509784642,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.41275,
+          43.703622
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-12T01:49:47+00:00",
+        "meta_osm_node_id": 11509784642
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11509784643,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.412912,
+          43.703583
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-01-12T01:49:47+00:00",
+        "meta_osm_node_id": 11509784643
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11509784644,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.410558,
+          43.704085
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "4",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "lit": "no",
+        "operator": "The Eglinton Way BIA",
+        "operator:type": "public",
+        "quantity": "2",
+        "meta_feature_last_updated": "2024-01-12T01:49:47+00:00",
+        "meta_osm_node_id": 11509784644
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11512731263,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.380041,
+          43.67218
+        ]
+      },
+      "properties": {
+        "access": "permissive",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "5",
+        "cargo_bike": "no",
+        "colour": "black",
+        "covered": "yes",
+        "fee": "no",
+        "indoor": "no",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
+        "meta_osm_node_id": 11512731263
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11512731264,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.382077,
+          43.67017
+        ]
+      },
+      "properties": {
+        "access": "permissive",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "21",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2ps2pNV",
+        "indoor": "no",
+        "lit": "no",
+        "quantity": "3",
+        "meta_feature_last_updated": "2024-01-13T02:45:10+00:00",
+        "meta_osm_node_id": 11512731264
       }
     },
     {
