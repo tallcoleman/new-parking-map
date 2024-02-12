@@ -18716,7 +18716,10 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2021-03-23T02:28:07+00:00",
+        "bicycle_parking": "stands",
+        "capacity": "12",
+        "covered": "yes",
+        "meta_feature_last_updated": "2024-02-10T12:11:13+00:00",
         "meta_osm_node_id": 8552034943
       }
     },
@@ -31883,6 +31886,22 @@
         "ref:open.toronto.ca": "no",
         "meta_feature_last_updated": "2024-02-03T20:22:37+00:00",
         "meta_osm_node_id": 11582561635
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11611454825,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.605852,
+          43.728937
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2024-02-11T19:55:58+00:00",
+        "meta_osm_node_id": 11611454825
       }
     },
     {
