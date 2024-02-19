@@ -6078,8 +6078,19 @@
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2016-06-25T15:27:56+00:00",
+        "bicycle_parking": "rack",
+        "bike_ride": "yes",
+        "capacity": "16",
+        "cargo_bike": "yes",
+        "covered": "yes",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pyVmVH",
+        "operator": "GO Transit",
+        "operator:type": "public",
+        "quantity": "2",
+        "meta_feature_last_updated": "2024-02-18T20:45:02+00:00",
         "meta_osm_node_id": 4264597526
       }
     },
@@ -13533,7 +13544,8 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2023-08-18T23:14:30+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-02-17T17:01:11+00:00",
         "meta_osm_node_id": 6417026100
       }
     },
@@ -19567,13 +19579,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.199113,
-          43.754557
+          -79.199124,
+          43.754578
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2021-09-04T18:36:34+00:00",
+        "bicycle_parking": "rack",
+        "bike_ride": "yes",
+        "capacity": "16",
+        "cargo_bike": "yes",
+        "covered": "yes",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pyQm74",
+        "lit": "yes",
+        "operator": "GO Transit",
+        "operator:type": "public",
+        "quantity": "2",
+        "meta_feature_last_updated": "2024-02-18T20:45:02+00:00",
         "meta_osm_node_id": 9062947149
       }
     },
@@ -26034,7 +26058,9 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-04-20T18:43:33+00:00",
+        "capacity": "2",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-02-13T18:30:44+00:00",
         "meta_osm_node_id": 10827770477
       }
     },
@@ -26051,7 +26077,9 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-04-20T18:43:33+00:00",
+        "capacity": "2",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-02-13T18:30:55+00:00",
         "meta_osm_node_id": 10827770478
       }
     },
@@ -31698,7 +31726,9 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-01-27T19:32:12+00:00",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "meta_feature_last_updated": "2024-02-17T22:52:19+00:00",
         "meta_osm_node_id": 11557710816
       }
     },
@@ -31902,6 +31932,296 @@
         "amenity": "bicycle_parking",
         "meta_feature_last_updated": "2024-02-11T19:55:58+00:00",
         "meta_osm_node_id": 11611454825
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11629166052,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.347761,
+          43.647455
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "3",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-02-16T04:01:41+00:00",
+        "meta_osm_node_id": 11629166052
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11629166060,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.349227,
+          43.646805
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "capacity": "3",
+        "meta_feature_last_updated": "2024-02-16T04:01:41+00:00",
+        "meta_osm_node_id": 11629166060
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11634267934,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.451581,
+          43.653277
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2024-02-17T12:38:19+00:00",
+        "meta_osm_node_id": 11634267934
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11635934821,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.418009,
+          43.634472
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "10",
+        "covered": "no",
+        "indoor": "no",
+        "lit": "no",
+        "meta_feature_last_updated": "2024-02-17T22:52:19+00:00",
+        "meta_osm_node_id": 11635934821
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11635934822,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.418178,
+          43.635554
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "12",
+        "meta_feature_last_updated": "2024-02-17T22:52:19+00:00",
+        "meta_osm_node_id": 11635934822
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11638911441,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.197316,
+          43.755399
+        ]
+      },
+      "properties": {
+        "access": "customers",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "bike_ride": "yes",
+        "capacity": "22",
+        "capacity:cargo_bike": "2",
+        "cargo_bike": "yes",
+        "covered": "yes",
+        "fee": "yes",
+        "image": "https://flic.kr/p/2pyWQni",
+        "indoor": "yes",
+        "lit": "yes",
+        "operator": "GO Transit",
+        "operator:type": "public",
+        "website": "https://www.gotransit.com/en/free-parking-at-go-stations/reserved-bicycle-parking",
+        "meta_feature_last_updated": "2024-02-18T20:45:02+00:00",
+        "meta_osm_node_id": 11638911441
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11638911442,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.197253,
+          43.754952
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "bike_ride": "yes",
+        "capacity": "32",
+        "cargo_bike": "yes",
+        "covered": "yes",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pyVU5U",
+        "lit": "yes",
+        "operator": "GO Transit",
+        "operator:type": "public",
+        "quantity": "4",
+        "meta_feature_last_updated": "2024-02-18T20:45:02+00:00",
+        "meta_osm_node_id": 11638911442
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11638911443,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.254902,
+          43.716657
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "bike_ride": "yes",
+        "capacity": "16",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pyXoDC",
+        "lit": "yes",
+        "operator": "GO Transit",
+        "operator:type": "public",
+        "quantity": "2",
+        "meta_feature_last_updated": "2024-02-18T20:45:02+00:00",
+        "meta_osm_node_id": 11638911443
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11638911444,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.197388,
+          43.755295
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "bike_ride": "yes",
+        "capacity": "32",
+        "cargo_bike": "yes",
+        "covered": "yes",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pyUE9x",
+        "lit": "yes",
+        "operator": "GO Transit",
+        "operator:type": "public",
+        "quantity": "4",
+        "meta_feature_last_updated": "2024-02-18T20:45:02+00:00",
+        "meta_osm_node_id": 11638911444
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11638911446,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.254443,
+          43.717259
+        ]
+      },
+      "properties": {
+        "access": "customers",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "bike_ride": "yes",
+        "capacity": "22",
+        "capacity:cargo_bike": "2",
+        "cargo_bike": "yes",
+        "covered": "yes",
+        "fee": "yes",
+        "image": "https://flic.kr/p/2pyVmBg",
+        "indoor": "yes",
+        "lit": "yes",
+        "operator": "GO Transit",
+        "operator:type": "public",
+        "website": "https://www.gotransit.com/en/free-parking-at-go-stations/reserved-bicycle-parking",
+        "meta_feature_last_updated": "2024-02-18T20:45:02+00:00",
+        "meta_osm_node_id": 11638911446
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11638911447,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.197289,
+          43.755326
+        ]
+      },
+      "properties": {
+        "access": "customers",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "lockers",
+        "bike_ride": "yes",
+        "capacity": "12",
+        "covered": "yes",
+        "fee": "yes",
+        "image": "https://flic.kr/p/2pyWke2",
+        "indoor": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca": "no",
+        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
+        "meta_feature_last_updated": "2024-02-18T20:45:02+00:00",
+        "meta_osm_node_id": 11638911447
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11638911448,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.25448,
+          43.717389
+        ]
+      },
+      "properties": {
+        "access": "customers",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "lockers",
+        "bike_ride": "yes",
+        "capacity": "6",
+        "covered": "yes",
+        "fee": "yes",
+        "image": "https://flic.kr/p/2pyXwW9",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca": "no",
+        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
+        "meta_feature_last_updated": "2024-02-18T20:45:02+00:00",
+        "meta_osm_node_id": 11638911448
       }
     },
     {
