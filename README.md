@@ -48,11 +48,13 @@ Handling of overlapping entries between City data and OpenStreetMap. Features ar
 
 OpenStreetMap:
 * Retain: OpenStreetMap features that have a ref tag linking the feature to a City dataset (e.g. `ref:open.toronto.ca:street-furniture-bicycle-parking:id`)
+* Retain: OpenStreetMap features that have any value for "ref:open.toronto.ca" (intended to allow for "ref:open.toronto.ca"="no" for City of Toronto features not included in any City dataset).
 * Exclude: Any other feature with operator like "City of Toronto".
 
 City of Toronto:
 * Exclude: features where the ID matches a retained feature from OpenStreetMap
+* Exclude: features included in `Data Pipeline/city_modifications/open_toronto_ca_exclusions.json` (intended to allow for City of Toronto features which have been removed, but have not yet been updated in the City dataset).
 
 Clustering of city ring and posts (i.e. `"bicycle_parking"="bollard"`) to reduce clutter - ring and post features within 5m of each other are combined into a single point.
 
-De-duplication of bicycle racks across multiple City datasets - in many cases, racks from different City datasets within 30m of each other are duplicates. Since there may be cases where they are not duplicates, the processing combines the features into a single point that retains the properties of all of them.
+De-duplication of bicycle racks across multiple City datasets - in many cases, racks from different City datasets within 30m of each other are duplicates. Since there may be cases where they are not duplicates, the processing combines the features into a single point that retains the properties of all of them. In order to prevent racks from being combined, they should be surveyed to verify their number, capacity, and locations, and added to OpenStreetMap.
