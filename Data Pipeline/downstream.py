@@ -128,7 +128,7 @@ def group_proximate_racks(racks, radius=30.0):
     'source': lambda _: "city-multi",
     'amenity': "first", # unique in dataset
     'bicycle_parking': "first", # unique in subset
-    'capacity': flist, # debug
+    'capacity': "min", # most conservative number
     'operator': "first", # unique in subset
     'covered': flist, # debug
     'access': "first", # unique in subset

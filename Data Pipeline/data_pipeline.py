@@ -8,6 +8,7 @@
 # -------
 
 from datetime import datetime, timezone
+from itertools import chain
 import json
 from zoneinfo import ZoneInfo
 
@@ -206,7 +207,7 @@ def run_pipeline():
   # -------------------------------
   print("Applying downstream processing: City Data Selection...")
 
-  # get osm with ref tag
+  # get osm with ref tags
   open_toronto_ca_test = osm_combined.filter(like="ref:open.toronto.ca", axis=1).notna().any(axis=1)
   city_verified_osm = osm_combined[open_toronto_ca_test]
 
@@ -222,13 +223,32 @@ def run_pipeline():
     id_lists.setdefault(ref_type, [])
     id_lists[ref_type].extend(id_list)
 
-  # drop city data points if they have matching tags
+  # drop city data points if they have matching tags from osm data
   for dataset_name, dataset in city_data.items():
     city_data[dataset_name] = dataset[~dataset.isin(id_lists).any(axis=1)]
 
-  # drop all osm with operator="City of Toronto" (case/space-insensitive) unless they have ref tag
+  # drop all osm with operator="City of Toronto" (case/space-insensitive) unless they have ref tag.
+  # this also retains osm points with ANY value for "ref:open.toronto.ca", including "ref.open.toronto.ca"="no"
   operator_not_city_test = osm_combined['operator'].str.contains(r"city\s*?of\s*?toronto", case=False, regex=True) != True
   osm_filtered = pd.concat([city_verified_osm, osm_combined[operator_not_city_test]])
+
+  # drop city data points in the manual exclusion file
+  city_exclusions_path = Path("Data Pipeline/city_modifications/open_toronto_ca_exclusions.json")
+  with city_exclusions_path.open("r") as f:
+    city_exclusions = json.load(f)
+  
+  city_exclusions_ids = list(chain.from_iterable([x['ids'] for x in city_exclusions]))
+
+  city_exclusions_dict = {}
+  for id in city_exclusions_ids:
+    [[k, v]] = id.items()
+    city_exclusions_dict.setdefault(k, [])
+    city_exclusions_dict[k].append(v)
+
+  for dataset_name, dataset in city_data.items():
+    city_data[dataset_name] = dataset[
+      ~dataset.isin(city_exclusions_dict).any(axis=1)
+      ]
 
   
   # Downstream: Ring and Post Clustering
@@ -268,6 +288,9 @@ def run_pipeline():
   city_full = pd.concat([city_racks_clustered, city_racks[city_racks['tmu'] == True], city_not_racks, city_data['bicycle-parking-bike-stations-indoor']])
   city_full = city_full.drop('tmu', axis=1)
 
+  # make combined set from all sources
+  all_sources = pd.concat([city_full, osm_filtered])
+
 
   # Save display files
   # ------------------
@@ -283,6 +306,10 @@ def run_pipeline():
   with open(dfp_archive / "openstreetmap.geojson", "w") as f:
     f.write(osm_filtered.to_json(na='drop', drop_id=True, indent=2))
 
+  with open(dfp / "all_sources.geojson", "w") as f:
+    f.write(all_sources.to_json(na='drop', drop_id=True, indent=2))
+  with open(dfp_archive / "all_sources.geojson", "w") as f:
+    f.write(all_sources.to_json(na='drop', drop_id=True, indent=2))
  
 # Script Execution
 # ----------------
