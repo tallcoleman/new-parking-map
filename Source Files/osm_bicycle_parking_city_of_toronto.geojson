@@ -6560,8 +6560,7 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
-        "source": "Field survey",
-        "meta_feature_last_updated": "2016-09-05T12:57:32+00:00",
+        "meta_feature_last_updated": "2024-03-30T01:22:48+00:00",
         "meta_osm_node_id": 4360793657
       }
     },
@@ -6579,8 +6578,7 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "12",
-        "source": "Field survey",
-        "meta_feature_last_updated": "2019-12-17T17:39:05+00:00",
+        "meta_feature_last_updated": "2024-03-30T01:22:48+00:00",
         "meta_osm_node_id": 4360796176
       }
     },
@@ -6635,8 +6633,7 @@
         "bicycle_parking": "bollard",
         "capacity": "12",
         "covered": "no",
-        "note": "Field Survey",
-        "meta_feature_last_updated": "2019-12-17T17:38:33+00:00",
+        "meta_feature_last_updated": "2024-03-30T01:22:48+00:00",
         "meta_osm_node_id": 4363432622
       }
     },
@@ -6655,8 +6652,7 @@
         "bicycle_parking": "bollard",
         "capacity": "12",
         "covered": "no",
-        "note": "Field Survey",
-        "meta_feature_last_updated": "2019-12-17T17:39:09+00:00",
+        "meta_feature_last_updated": "2024-03-30T01:22:48+00:00",
         "meta_osm_node_id": 4363432625
       }
     },
@@ -6692,8 +6688,7 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "12",
-        "source": "Field survey",
-        "meta_feature_last_updated": "2019-12-17T17:38:11+00:00",
+        "meta_feature_last_updated": "2024-03-30T01:22:48+00:00",
         "meta_osm_node_id": 4370452345
       }
     },
@@ -6712,8 +6707,7 @@
         "bicycle_parking": "bollard",
         "capacity": "12",
         "covered": "no",
-        "source": "Field survey",
-        "meta_feature_last_updated": "2019-12-17T17:38:34+00:00",
+        "meta_feature_last_updated": "2024-03-30T01:22:48+00:00",
         "meta_osm_node_id": 4370452365
       }
     },
@@ -6730,8 +6724,7 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
-        "note": "Field Survey",
-        "meta_feature_last_updated": "2016-08-27T23:31:41+00:00",
+        "meta_feature_last_updated": "2024-03-30T01:22:48+00:00",
         "meta_osm_node_id": 4370452373
       }
     },
@@ -6748,8 +6741,7 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
-        "source": "Field survey",
-        "meta_feature_last_updated": "2016-09-05T12:57:36+00:00",
+        "meta_feature_last_updated": "2024-03-30T01:22:48+00:00",
         "meta_osm_node_id": 4370452374
       }
     },
@@ -6766,8 +6758,7 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
-        "source": "Field survey",
-        "meta_feature_last_updated": "2016-09-05T12:57:36+00:00",
+        "meta_feature_last_updated": "2024-03-30T01:22:48+00:00",
         "meta_osm_node_id": 4370452384
       }
     },
@@ -33256,6 +33247,728 @@
         "operator:type": "business",
         "meta_feature_last_updated": "2024-03-23T18:40:26+00:00",
         "meta_osm_node_id": 11756206228
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11762425096,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.205596,
+          43.780706
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "7",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "description": "not bolted to the ground",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pFtK5B",
+        "operator": "Scarborough Health Network",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-03-25T23:57:21+00:00",
+        "meta_osm_node_id": 11762425096
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11762425097,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.204931,
+          43.779518
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "6",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pFstNQ",
+        "operator": "Scarborough Health Network",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-03-25T23:57:21+00:00",
+        "meta_osm_node_id": 11762425097
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11762425098,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.204628,
+          43.77959
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "6",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pFst12",
+        "operator": "Scarborough Health Network",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-03-25T23:57:21+00:00",
+        "meta_osm_node_id": 11762425098
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11762425099,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.205905,
+          43.780616
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "6",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "description": "right foot is damaged and no longer bolted to ground but left foot is still secure",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pFt9Ak",
+        "operator": "Scarborough Health Network",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-03-25T23:57:21+00:00",
+        "meta_osm_node_id": 11762425099
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114597,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.226235,
+          43.761473
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "4",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pG112K",
+        "operator": "TD Bank",
+        "operator:type": "business",
+        "quantity": "2",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114597
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114598,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.22559,
+          43.761892
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "5",
+        "cargo_bike": "no",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pG1qSH",
+        "operator": "Cedar Heights Plaza",
+        "operator:type": "business",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114598
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114599,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.228691,
+          43.759912
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "4",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Fit 4 Less",
+        "operator:type": "business",
+        "quantity": "4",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114599
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114600,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.229011,
+          43.758281
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "1",
+        "cargo_bike": "no",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Cedarbrae Mall",
+        "operator:type": "business",
+        "quantity": "1",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114600
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114601,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.225685,
+          43.761865
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "4",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pFY9NJ",
+        "operator": "Cedar Heights Plaza",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114601
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114602,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.230824,
+          43.757489
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "6",
+        "cargo_bike": "yes",
+        "covered": "yes",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pFZz2Q",
+        "operator": "No Frills",
+        "operator:type": "business",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114602
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114603,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.227256,
+          43.758269
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "3",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Cedarbrae Mall",
+        "operator:type": "business",
+        "quantity": "3",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114603
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114604,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.229967,
+          43.759516
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "8",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "quantity": "4",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114604
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114605,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.227196,
+          43.755502
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pFXGUj",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114605
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114606,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.229769,
+          43.758087
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "4",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Cedarbrae Mall",
+        "operator:type": "business",
+        "quantity": "4",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114606
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114607,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.224511,
+          43.760191
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "4",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pFZW1o",
+        "operator": "Cedar Heights Plaza",
+        "operator:type": "business",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114607
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114608,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.224976,
+          43.760943
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "3",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "description": "wave rack",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pFZTTs",
+        "operator": "Cedar Heights Plaza",
+        "operator:type": "business",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114608
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114609,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.225822,
+          43.755542
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "32",
+        "cargo_bike": "no",
+        "covered": "yes",
+        "fee": "no",
+        "operator": "Toronto District School Board",
+        "operator:type": "public",
+        "quantity": "4",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114609
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114610,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.224809,
+          43.760113
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pFZgox",
+        "operator": "Cedar Heights Plaza",
+        "operator:type": "business",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114610
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114611,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.224217,
+          43.75772
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "10",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pFY3ad",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "quantity": "5",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114611
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114612,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.228448,
+          43.758386
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "1",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Cedarbrae Mall",
+        "operator:type": "business",
+        "quantity": "1",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114612
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114613,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.229346,
+          43.758215
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "1",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Cedarbrae Mall",
+        "operator:type": "business",
+        "quantity": "1",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114613
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114614,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.225302,
+          43.756367
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "16",
+        "cargo_bike": "yes",
+        "covered": "yes",
+        "fee": "no",
+        "operator": "Toronto District School Board",
+        "operator:type": "public",
+        "quantity": "2",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114614
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114615,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.22866,
+          43.758353
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "1",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Cedarbrae Mall",
+        "operator:type": "business",
+        "quantity": "1",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114615
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114616,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.230078,
+          43.757693
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "3",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Cedarbrae Mall",
+        "operator:type": "business",
+        "quantity": "2",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114616
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11770114618,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.230248,
+          43.760355
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "4",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "quantity": "2",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2024-03-28T23:15:19+00:00",
+        "meta_osm_node_id": 11770114618
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11772476138,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.525572,
+          43.651842
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2024-03-29T22:18:56+00:00",
+        "meta_osm_node_id": 11772476138
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11774450030,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.384865,
+          43.662865
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "7",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "not bolted to ground",
+        "fee": "no",
+        "operator": "YMCA",
+        "operator:type": "community",
+        "meta_feature_last_updated": "2024-03-30T23:55:36+00:00",
+        "meta_osm_node_id": 11774450030
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11774450031,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.384769,
+          43.662964
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "36",
+        "cargo_bike": "no",
+        "covered": "no",
+        "fee": "no",
+        "operator": "YMCA",
+        "operator:type": "community",
+        "quantity": "18",
+        "meta_feature_last_updated": "2024-03-30T23:55:36+00:00",
+        "meta_osm_node_id": 11774450031
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11774450032,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.384946,
+          43.662933
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "24",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "YMCA",
+        "operator:type": "community",
+        "quantity": "12",
+        "meta_feature_last_updated": "2024-03-30T23:55:36+00:00",
+        "meta_osm_node_id": 11774450032
       }
     },
     {
