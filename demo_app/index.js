@@ -1,0 +1,103 @@
+import "./thirdparty/maplibre-gl.js";
+
+const displayData = "https://raw.githubusercontent.com/tallcoleman/new-parking-map/main/Display%20Files/all_sources.geojson";
+
+const map = new maplibregl.Map({
+  container: 'map',
+  style: 'https://api.maptiler.com/maps/streets/style.json?key=MlRGiaPF42qIx2cAP9Hn',
+  center: [-79.416, 43.714],
+  zoom: 10.5
+});
+
+function generatePropertyTable(properties) {
+  let content = [];
+  content.push(`<h2>${properties['bicycle_parking'] ?? "Unknown Type"}</h2>`);
+  content.push(`<p>${properties['meta_source']}</p>`);
+  content.push(`
+    <table>
+      <thead>
+        <tr>
+          <th>key</th>
+          <th>val</th>
+        </tr>
+      </thead>
+      <tbody>
+  `);
+  for (const [key, value] of Object.entries(properties)) {
+    content.push(`
+      <tr>
+        <td>${key}</td>
+        <td>${value}</td>
+      </tr>
+    `);
+  }
+  content.push(`
+    </tbody>
+    </table>
+  `);
+  return content.join("");
+}
+
+map.on('load', () => {
+  map.addControl(new maplibregl.NavigationControl(), 'top-left');
+  map.addControl(new maplibregl.GeolocateControl());
+
+  map.addSource('bicycle-parking', {
+      'type': 'geojson',
+      'data': displayData,
+  });
+  // Add a layer showing the parking
+  map.addLayer({
+      'id': 'bicycle-parking',
+      'type': 'circle',
+      'source': 'bicycle-parking',
+      'paint': {
+        'circle-color': [
+            'match',
+            ['get', 'meta_source'],
+            "Source data from OpenStreetMap (See: https://www.openstreetmap.org/copyright)", "blue",
+            "black"
+        ],
+        'circle-radius': [
+            'match',
+            ['get', 'bicycle_parking'],
+            "bollard", 3,
+            "post_hoop", 3,
+            "stands", 3,
+            "hoops", 3,
+            5
+        ]
+      }
+  });
+
+  // When a click event occurs on a feature in the bicycle-parking layer, open a popup at the
+  // location of the feature, with description HTML from its properties.
+  map.on('click', 'bicycle-parking', (e) => {
+    console.log(e.features[0].properties);
+      const coordinates = e.features[0].geometry.coordinates.slice();
+      const description = generatePropertyTable(e.features[0].properties);
+
+      // Ensure that if the map is zoomed out such that multiple
+      // copies of the feature are visible, the popup appears
+      // over the copy being pointed to.
+      while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+          coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+      }
+
+      new maplibregl.Popup()
+          .setLngLat(coordinates)
+          .setHTML(description)
+          .setMaxWidth("400px")
+          .addTo(map);
+  });
+
+  // Change the cursor to a pointer when the mouse is over the bicycle-parking layer.
+  map.on('mouseenter', 'bicycle-parking', () => {
+      map.getCanvas().style.cursor = 'pointer';
+  });
+
+  // Change it back to a pointer when it leaves.
+  map.on('mouseleave', 'bicycle-parking', () => {
+      map.getCanvas().style.cursor = '';
+  });
+});
