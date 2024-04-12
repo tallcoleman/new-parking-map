@@ -15,28 +15,15 @@ function generatePropertyTable(properties) {
   let content = [];
   content.push(`<h2>${properties['bicycle_parking'] ?? "Unknown Type"}</h2>`);
   content.push(`<p>${properties['meta_source']}</p>`);
-  content.push(`
-    <table>
-      <thead>
-        <tr>
-          <th>key</th>
-          <th>val</th>
-        </tr>
-      </thead>
-      <tbody>
-  `);
+  content.push(`<dl>`);
   for (const [key, value] of Object.entries(properties)) {
     content.push(`
-      <tr>
-        <td>${key}</td>
-        <td>${value}</td>
-      </tr>
+      <dt>${key}</dt>
+      <dd>${value}</dd>
     `);
   }
-  content.push(`
-    </tbody>
-    </table>
-  `);
+  content.push(`</dl>`);
+
   return content.join("");
 }
 
@@ -199,7 +186,7 @@ map.on('load', () => {
       new maplibregl.Popup()
           .setLngLat(coordinates)
           .setHTML(description)
-          .setMaxWidth("400px")
+          .setMaxWidth("300px")
           .addTo(map);
   });
 
