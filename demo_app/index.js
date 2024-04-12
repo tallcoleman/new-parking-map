@@ -2,6 +2,7 @@ import "./thirdparty/maplibre-gl.js";
 import "./thirdparty/maplibre-gl-geocoder.min.js"
 
 const displayData = "https://raw.githubusercontent.com/tallcoleman/new-parking-map/main/Display%20Files/all_sources.geojson";
+const bikeLaneURL = "data/cycling-network.geojson";
 
 const map = new maplibregl.Map({
   container: 'map',
@@ -106,6 +107,57 @@ map.on('load', () => {
       'type': 'geojson',
       'data': displayData,
   });
+  map.addSource('bicycle-lanes', {
+    'type': 'geojson',
+    'data': bikeLaneURL,
+  });
+
+  // Add a layer showing bike lanes
+  map.addLayer({
+    'id': 'bicycle-lanes',
+    'type': 'line',
+    'source': 'bicycle-lanes',
+    'layout': {
+      'line-cap': 'round',
+    },
+    'paint': {
+      'line-width': 2,
+      'line-color': [
+        "match",
+        ["get", "INFRA_HIGHORDER"],
+        [
+          "Cycle Track",
+          "Cycle Track - Contraflow",
+          "Bi-Directional Cycle Track"
+        ],
+        "hsl(137, 68%, 23%)",
+        [
+          "Multi-Use Trail - Boulevard",
+          "Multi-Use Trail - Entrance",
+          "Multi-Use Trail - Existing Connector",
+          "Multi-Use Trail - Connector",
+          "Multi-Use Trail",
+          "Park Road"
+        ],
+        "#8c5535",
+        [
+          "Bike Lane - Buffered",
+          "Bike Lane",
+          "Bike Lane - Contraflow"
+        ],
+        "hsl(137, 68%, 36%)",
+        [
+          "Sharrows - Wayfinding",
+          "Sharrows - Arterial - Connector",
+          "Signed Route (No Pavement Markings)",
+          "Sharrows"
+        ],
+        "hsl(137, 56%, 62%)",
+        "#2c3b42"
+      ]
+    },
+  })  
+
   // Add a layer showing the parking
   map.addLayer({
       'id': 'bicycle-parking',
