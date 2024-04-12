@@ -7,11 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet' href='thirdparty/maplibre-gl.css' />
     <link rel='stylesheet' href='thirdparty/maplibre-gl-geocoder.css' />
+    <link rel='stylesheet' href='index.css' />
     <script src="index.js" type="module"></script>
-    <style>
-        body { margin: 0; padding: 0; }
-        html, body, #map { height: 100%; }
-    </style>
 </head>
 <body>
   <style>
@@ -28,6 +25,27 @@
           }
       }
   </style>
+  <header>
+    <details>
+      <summary><h1>BikeSpace Bicycle Parking Map Demo (Click for Instructions)</h1></summary>
+      <h2>Try it out!</h2>
+      <p>Click a point on the map to show the data available.</p>
+      <h2>About the Data</h2>
+      <p>Please see <a href="https://github.com/tallcoleman/new-parking-map">Github Repo</a>. Uses the OpenStreetMap tagging scheme. </p>
+      <p>Important values include:</p>
+      <ul>
+        <li><pre>bicycle_parking</pre>: <a href="https://wiki.openstreetmap.org/wiki/Key:bicycle_parking">type of bicycle parking</a>, e.g. <pre>bollard</pre> for ring and post, <pre>rack</pre> for rack, etc.</li>
+        <li><pre>capacity</pre>: number of bikes that can be locked to the parking feature</li>
+        <li><pre>cargo_bike</pre>: whether there is enough space (and the right kind of locking object) to lock up a cargo bike</li>
+      </ul>
+      <h2>Legend</h2>
+      <ul>
+        <li>Blue dots are from OpenStreetmap</li>
+        <li>Black dots are from City of Toronto Data</li>
+        <li>Stands/Bollards are smaller dots</li>
+      </ul>
+    </details>
+  </header>
   <div id="map"></div>
 </body>
 </html>

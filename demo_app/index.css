@@ -1,0 +1,23 @@
+body { 
+  margin: 0; 
+  padding: 0; 
+  height: 100%; 
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+
+html, body, #map { height: 100%; }
+
+summary h1 {
+  font-size: 1.2rem;
+  display: inline;
+  text-wrap: wrap;
+}
+
+header {
+  min-height: 2rem;
+}
+
+header pre {
+  display: inline;
+}
