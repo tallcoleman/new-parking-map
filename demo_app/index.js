@@ -1,4 +1,5 @@
 import "./thirdparty/maplibre-gl.js";
+import "./thirdparty/maplibre-gl-geocoder.min.js"
 
 const displayData = "https://raw.githubusercontent.com/tallcoleman/new-parking-map/main/Display%20Files/all_sources.geojson";
 
@@ -38,9 +39,68 @@ function generatePropertyTable(properties) {
   return content.join("");
 }
 
+class BBox {
+  constructor(xmin, xmax, ymin, ymax) {
+    this.xmin = xmin;
+    this.xmax = xmax;
+    this.ymin = ymin;
+    this.ymax = ymax;
+  }
+  getURLParams() {
+    return `${this.xmin},${this.ymin},${this.xmax},${this.ymax}`;
+  }
+}
+const torontoBBox = new BBox(-79.6392832, -79.1132193, 43.5796082, 43.8554425);
+
+const geocoderApi = {
+  forwardGeocode: async (config) => {
+      const features = [];
+      try {
+          const request =
+      `https://nominatim.openstreetmap.org/search?q=${
+          config.query
+      }&format=geojson&polygon_geojson=1&addressdetails=1&countrycodes=CA&viewbox=${torontoBBox.getURLParams()}&bounded=1`;
+          const response = await fetch(request);
+          const geojson = await response.json();
+          for (const feature of geojson.features) {
+              const center = [
+                  feature.bbox[0] +
+              (feature.bbox[2] - feature.bbox[0]) / 2,
+                  feature.bbox[1] +
+              (feature.bbox[3] - feature.bbox[1]) / 2
+              ];
+              const point = {
+                  type: 'Feature',
+                  geometry: {
+                      type: 'Point',
+                      coordinates: center
+                  },
+                  place_name: feature.properties.display_name,
+                  properties: feature.properties,
+                  text: feature.properties.display_name,
+                  place_type: ['place'],
+                  center
+              };
+              features.push(point);
+          }
+      } catch (e) {
+          console.error(`Failed to forwardGeocode with error: ${e}`);
+      }
+
+      return {
+          features
+      };
+  }
+};
+
 map.on('load', () => {
   map.addControl(new maplibregl.NavigationControl(), 'top-left');
-  map.addControl(new maplibregl.GeolocateControl());
+  map.addControl(new maplibregl.GeolocateControl(), 'top-left');
+  map.addControl(
+    new MaplibreGeocoder(geocoderApi, {
+        maplibregl
+    })
+  );
 
   map.addSource('bicycle-parking', {
       'type': 'geojson',
