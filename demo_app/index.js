@@ -100,15 +100,27 @@ map.on('load', () => {
   });
 
   // Add a layer showing bike lanes
+  // line-dasharray doesn't support data-driven styling, so the dashed and non-dashed lines have to be added as separate layers
   map.addLayer({
     'id': 'bicycle-lanes',
     'type': 'line',
     'source': 'bicycle-lanes',
+    'filter': [
+      "match",
+      ["get", "INFRA_HIGHORDER"],
+      [
+        "Sharrows - Wayfinding",
+        "Sharrows - Arterial - Connector",
+        "Signed Route (No Pavement Markings)",
+        "Sharrows"
+      ], false, 
+      true,
+    ],
     'layout': {
       'line-cap': 'round',
     },
     'paint': {
-      'line-width': 2,
+      'line-width': 3,
       'line-color': [
         "match",
         ["get", "INFRA_HIGHORDER"],
@@ -133,6 +145,34 @@ map.on('load', () => {
           "Bike Lane - Contraflow"
         ],
         "hsl(137, 68%, 36%)",
+        "#2c3b42"
+      ]
+    },
+  })
+  map.addLayer({
+    'id': 'bicycle-routes',
+    'type': 'line',
+    'source': 'bicycle-lanes',
+    'filter': [
+      "match",
+      ["get", "INFRA_HIGHORDER"],
+      [
+        "Sharrows - Wayfinding",
+        "Sharrows - Arterial - Connector",
+        "Signed Route (No Pavement Markings)",
+        "Sharrows"
+      ], true, 
+      false,
+    ],
+    'layout': {
+      'line-cap': 'round',
+    },
+    'paint': {
+      'line-width': 3,
+      'line-dasharray': [1, 2],
+      'line-color': [
+        "match",
+        ["get", "INFRA_HIGHORDER"],
         [
           "Sharrows - Wayfinding",
           "Sharrows - Arterial - Connector",
@@ -147,9 +187,15 @@ map.on('load', () => {
 
   // Add a layer showing the parking
   map.addLayer({
-      'id': 'bicycle-parking',
+      'id': 'bicycle-parking-nodes',
       'type': 'circle',
       'source': 'bicycle-parking',
+      'filter': [
+        "match",
+        ['geometry-type'], 
+        ['Point'], true,
+        false,
+      ],
       'paint': {
         'circle-color': [
             'match',
@@ -168,10 +214,31 @@ map.on('load', () => {
         ]
       }
   });
+  map.addLayer({
+    'id': 'bicycle-parking-ways',
+    'type': 'fill',
+    'source': 'bicycle-parking',
+    'filter': [
+      "match",
+      ['geometry-type'], 
+      ['LineString'], true,
+      false,
+    ],
+    'paint': {
+      'fill-color': [
+          'match',
+          ['get', 'meta_source'],
+          "Source data from OpenStreetMap (See: https://www.openstreetmap.org/copyright)", "blue",
+          "black"
+      ],
+      'fill-opacity': 0.5,
+    }
+});
+
 
   // When a click event occurs on a feature in the bicycle-parking layer, open a popup at the
   // location of the feature, with description HTML from its properties.
-  map.on('click', 'bicycle-parking', (e) => {
+  map.on('click', 'bicycle-parking-nodes', (e) => {
     console.log(e.features[0].properties);
       const coordinates = e.features[0].geometry.coordinates.slice();
       const description = generatePropertyTable(e.features[0].properties);
@@ -191,12 +258,12 @@ map.on('load', () => {
   });
 
   // Change the cursor to a pointer when the mouse is over the bicycle-parking layer.
-  map.on('mouseenter', 'bicycle-parking', () => {
+  map.on('mouseenter', 'bicycle-parking-nodes', () => {
       map.getCanvas().style.cursor = 'pointer';
   });
 
   // Change it back to a pointer when it leaves.
-  map.on('mouseleave', 'bicycle-parking', () => {
+  map.on('mouseleave', 'bicycle-parking-nodes', () => {
       map.getCanvas().style.cursor = '';
   });
 });
