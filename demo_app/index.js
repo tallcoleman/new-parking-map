@@ -2,9 +2,6 @@ import "./thirdparty/maplibre-gl.js";
 import "./thirdparty/maplibre-gl-geocoder.min.js";
 import { PopUpHandler } from "./assets/js/popuphandler.js";
 
-const displayData = "https://raw.githubusercontent.com/tallcoleman/new-parking-map/main/Display%20Files/all_sources.geojson";
-const bikeLaneURL = "data/cycling-network.geojson";
-
 const map = new maplibregl.Map({
   container: 'map',
   style: 'https://api.maptiler.com/maps/streets/style.json?key=MlRGiaPF42qIx2cAP9Hn',
@@ -12,6 +9,7 @@ const map = new maplibregl.Map({
   zoom: 10.5
 });
 
+// set up bounding box of Toronto used to narrow down geolocation
 class BBox {
   constructor(xmin, xmax, ymin, ymax) {
     this.xmin = xmin;
@@ -75,6 +73,11 @@ map.on('load', () => {
     })
   );
 
+  // add in data sources
+  const displayData = "https://raw.githubusercontent.com/tallcoleman/new-parking-map/main/Display%20Files/all_sources.geojson";
+  const bikeLaneURL = "data/cycling-network.geojson";
+  const bikeTheftURL = "data/bicycle-thefts.geojson";
+
   map.addSource('bicycle-parking', {
       'type': 'geojson',
       'data': displayData,
@@ -84,6 +87,10 @@ map.on('load', () => {
     'type': 'geojson',
     'data': bikeLaneURL,
   });
+  map.addSource('bicycle-thefts', {
+    'type': 'geojson',
+    'data': bikeTheftURL,
+  });  
 
   // Add a layer showing bike lanes
   // line-dasharray doesn't support data-driven styling, so the dashed and non-dashed lines have to be added as separate layers
@@ -233,6 +240,7 @@ map.on('load', () => {
     }
   });
 
+
   const ParkingPopUp = new PopUpHandler(
     map, 
     ['bicycle-parking-nodes', 'bicycle-parking-ways'],
@@ -242,4 +250,50 @@ map.on('load', () => {
   )
 
   map.on('click', (e) => {ParkingPopUp.fromPoint(e.point)});
+
+  document.getElementById("button-biketheft").addEventListener("click", () => {
+    // Add bike theft heatmap
+    map.addLayer({
+      'id': 'bicycle-thefts',
+      'type': 'heatmap',
+      'source': 'bicycle-thefts',
+      'filter': [
+        'match',
+        ['get', 'PREMISES_TYPE'],
+        [
+          "Outside",
+          "Transit",
+        ], true, 
+        false,
+      ],
+      'paint': {
+        'heatmap-radius': {
+          'base': 2,
+          'stops': [
+            [
+              10,
+              2
+            ],
+            [
+              19,
+              1028
+            ]
+          ]
+        },
+        'heatmap-color': [
+          "interpolate",
+          ["linear"],
+          ["heatmap-density"],
+          0,"rgba(0, 0, 255, 0)",
+          0.3,"royalblue",
+          0.6,"cyan",
+          0.9,"lime",
+          0.999,"yellow",
+          1,"red"
+        ],
+        'heatmap-opacity': 0.5,
+      }
+    }, "bicycle-lanes");
+  });
+
 });
