@@ -6,6 +6,18 @@ body {
   height: 100%; 
   display: grid;
   grid-template-rows: min-content 1fr;
+
+  & #feature-details {
+    display: none;
+  }
+
+  &.layout-popup {
+    grid-template-rows: min-content 1fr 1fr;
+
+    & #feature-details {
+      display: block; /* unhide */
+    }
+  }
 }
 
 html, body, #map { height: 100%; }
@@ -18,8 +30,55 @@ summary h1 {
 
 header {
   min-height: 2rem;
+  padding: 0.5rem;
 }
 
 header pre {
   display: inline;
+}
+
+#feature-details {
+  overflow: scroll;
+
+  details {
+    border: 1px solid black;
+    border-radius: 0.4rem;
+    padding: 0.2rem;
+    margin: 0.2rem;
+  }
+
+  & h2 {
+    font-size: 1.2rem;
+  }
+
+  & summary {
+    font-weight: bold;
+  }
+
+  & dt {
+    font-weight: bold;
+    padding-top: 0.5rem;
+  }
+  & dd {
+    margin-inline-start: 0;
+  }
+}
+
+.puh-header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border: 1px solid black;
+  background-color: white;
+
+  & h2 {
+    margin: 0;
+  }
+}
+
+.puh-content {
+  padding: 0.5rem;
 }
