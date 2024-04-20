@@ -95,16 +95,21 @@ export class PopUpHandler {
 
   zoomAndFlyTo(feature, zoomLevel = 15) {
     this.map.resize();
+    zoomLevel = Math.max(zoomLevel, this.map.getZoom());
     let coordinates;
     if (feature.geometry.type === "LineString") {
       coordinates = feature.geometry.coordinates[0];
     } else {
       coordinates = feature.geometry.coordinates;
     }
-    this.map.flyTo({
-      center: coordinates,
-      zoom: zoomLevel,
-    });
+    const isOutOfBounds = !this.map.getBounds().contains(coordinates);
+    const isZoomedOut = this.map.getZoom() < 15;
+    if (isOutOfBounds || isZoomedOut) {
+      this.map.flyTo({
+        center: coordinates,
+        zoom: zoomLevel,
+      });
+    }
   }
 
   updatePopUpContent(features) {
