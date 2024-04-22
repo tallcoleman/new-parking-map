@@ -19489,14 +19489,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.527693,
-          43.642355
+          -79.527751,
+          43.64236
         ]
       },
       "properties": {
         "access": "private",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2021-08-03T01:29:18+00:00",
+        "meta_feature_last_updated": "2024-04-16T11:54:37+00:00",
         "meta_osm_node_id": 8975837747
       }
     },
@@ -19777,9 +19777,15 @@
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
+        "capacity": "20",
+        "cargo_bike": "yes",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2021-09-28T06:29:19+00:00",
+        "image": "https://flic.kr/p/2pLowgE",
+        "operator": "Rosedale Moore Park Association",
+        "operator:type": "community",
+        "quantity": "3",
+        "meta_feature_last_updated": "2024-04-20T19:49:03+00:00",
         "meta_osm_node_id": 9128682027
       }
     },
@@ -25717,7 +25723,10 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2023-03-26T17:22:29+00:00",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-04-18T21:13:39+00:00",
         "meta_osm_node_id": 10764112439
       }
     },
@@ -25733,7 +25742,10 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2023-03-26T17:22:29+00:00",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-04-18T21:12:22+00:00",
         "meta_osm_node_id": 10764112442
       }
     },
@@ -25749,7 +25761,10 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2023-03-26T17:29:13+00:00",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-04-18T20:48:13+00:00",
         "meta_osm_node_id": 10764115313
       }
     },
@@ -25765,7 +25780,10 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2023-03-26T17:29:13+00:00",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-04-18T20:48:05+00:00",
         "meta_osm_node_id": 10764115314
       }
     },
@@ -34756,6 +34774,52 @@
         "capacity": "3",
         "meta_feature_last_updated": "2024-04-14T04:46:17+00:00",
         "meta_osm_node_id": 11815865143
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11829710646,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.356888,
+          43.673779
+        ]
+      },
+      "properties": {
+        "access": "private",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-04-19T04:36:46+00:00",
+        "meta_osm_node_id": 11829710646
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11833670552,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.379925,
+          43.678835
+        ]
+      },
+      "properties": {
+        "access": "customers",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "6",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pLmGJV",
+        "operator": "Rosedale Moore Park Association",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-04-20T19:49:03+00:00",
+        "meta_osm_node_id": 11833670552
       }
     },
     {
