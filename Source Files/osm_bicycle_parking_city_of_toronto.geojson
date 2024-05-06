@@ -2368,22 +2368,6 @@
     },
     {
       "type": "Feature",
-      "id": 1131172146,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.397247,
-          43.666026
-        ]
-      },
-      "properties": {
-        "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2011-02-01T17:06:08+00:00",
-        "meta_osm_node_id": 1131172146
-      }
-    },
-    {
-      "type": "Feature",
       "id": 1132929659,
       "geometry": {
         "type": "Point",
@@ -34768,8 +34752,9 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "capacity": "3",
-        "meta_feature_last_updated": "2024-04-14T04:46:17+00:00",
+        "bicycle_parking": "stands",
+        "capacity": "6",
+        "meta_feature_last_updated": "2024-05-06T02:32:11+00:00",
         "meta_osm_node_id": 11815865143
       }
     },
@@ -35089,6 +35074,88 @@
         "quantity": "8",
         "meta_feature_last_updated": "2024-04-28T18:55:10+00:00",
         "meta_osm_node_id": 11862784275
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11866543222,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.391546,
+          43.650773
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "6",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-04-29T14:44:38+00:00",
+        "meta_osm_node_id": 11866543222
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11870237404,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.423576,
+          43.641258
+        ]
+      },
+      "properties": {
+        "access": "visitors",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "36",
+        "covered": "yes",
+        "meta_feature_last_updated": "2024-05-01T00:35:29+00:00",
+        "meta_osm_node_id": 11870237404
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11878896269,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.549334,
+          43.629006
+        ]
+      },
+      "properties": {
+        "access": "private",
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2024-05-04T13:29:43+00:00",
+        "meta_osm_node_id": 11878896269
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11881798955,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.395162,
+          43.695994
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "20",
+        "capacity:cargo_bike": "6",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "MYC Condos",
+        "operator:type": "business",
+        "quantity": "10",
+        "meta_feature_last_updated": "2024-05-05T17:35:50+00:00",
+        "meta_osm_node_id": 11881798955
       }
     },
     {
@@ -36794,10 +36861,17 @@
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
         "capacity": "14",
-        "meta_feature_last_updated": "2021-11-21T14:10:44+00:00",
+        "covered": "no",
+        "description": "On-street corral",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "203",
+        "meta_feature_last_updated": "2024-05-01T11:14:03+00:00",
         "meta_osm_node_id": 1004953772
       }
     },
