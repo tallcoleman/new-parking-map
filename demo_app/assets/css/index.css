@@ -1,4 +1,5 @@
 @import url("maplibre-custom.css");
+@import url("zoom-indicator.css");
 
 body { 
   margin: 0; 

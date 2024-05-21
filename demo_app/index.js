@@ -1,6 +1,9 @@
 import "./thirdparty/maplibre-gl.js";
 import "./thirdparty/maplibre-gl-geocoder.min.js";
 import { PopUpHandler } from "./assets/js/popuphandler.js";
+import { parkingStyleOptions as pso } from "./assets/js/parking_style_options.js";
+
+const PARKING_LAYER = "byQuality";
 
 const map = new maplibregl.Map({
   container: 'map',
@@ -79,9 +82,9 @@ map.on('load', () => {
   const bikeTheftURL = "data/bicycle-thefts.geojson";
 
   map.addSource('bicycle-parking', {
-      'type': 'geojson',
-      'data': displayData,
-      'generateId': true,
+    'type': 'geojson',
+    'data': displayData,
+    'generateId': true,
   });
   map.addSource('bicycle-lanes', {
     'type': 'geojson',
@@ -181,7 +184,7 @@ map.on('load', () => {
   // Add a layer showing the parking
   map.addLayer({
       'id': 'bicycle-parking-nodes',
-      'type': 'circle',
+      'type': pso[PARKING_LAYER].nodes.type,
       'source': 'bicycle-parking',
       'filter': [
         "match",
@@ -189,34 +192,11 @@ map.on('load', () => {
         ['Point'], true,
         false,
       ],
-      'paint': {
-        'circle-color': [
-            'match',
-            ['get', 'meta_source'],
-            "Source data from OpenStreetMap (See: https://www.openstreetmap.org/copyright)", "blue",
-            "black"
-        ],
-        'circle-stroke-width': [
-          'case',
-          ['boolean', ['feature-state', 'selected'], false], 
-          2, 
-          0,
-        ],
-        'circle-stroke-color': "red", // only shows if stroke width > 0
-        'circle-radius': [
-            'match',
-            ['get', 'bicycle_parking'],
-            "bollard", 3,
-            "post_hoop", 3,
-            "stands", 3,
-            "hoops", 3,
-            5
-        ]
-      }
+      'paint': pso[PARKING_LAYER].nodes.paint,
   });
   map.addLayer({
     'id': 'bicycle-parking-ways',
-    'type': 'fill',
+    'type': pso[PARKING_LAYER].ways.type,
     'source': 'bicycle-parking',
     'filter': [
       "match",
@@ -224,20 +204,7 @@ map.on('load', () => {
       ['LineString'], true,
       false,
     ],
-    'paint': {
-      'fill-color': [
-        'case',
-        ['boolean', ['feature-state', 'selected'], false], 
-        "red",
-        [
-          'match',
-          ['get', 'meta_source'],
-          "Source data from OpenStreetMap (See: https://www.openstreetmap.org/copyright)", "blue",
-          "black"
-        ],
-      ],
-      'fill-opacity': 0.5,
-    }
+    'paint': pso[PARKING_LAYER].ways.paint,
   });
 
 
@@ -297,3 +264,8 @@ map.on('load', () => {
   });
 
 });
+
+// zoom indicator for debug
+map.on('zoomend', () => {
+  document.getElementById('zoom-indicator').textContent = "Zoom: " + Math.round(map.getZoom() * 10) / 10;
+})
