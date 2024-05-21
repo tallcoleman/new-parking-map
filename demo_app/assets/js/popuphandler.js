@@ -1,5 +1,9 @@
 import { bicycleParkingDescriptions as bpd } from "./bicycle_parking descriptions.js";
 
+const POPUP_MEDIA_QUERY = "(width > 700px)";
+const POPUP_DESKTOP_PAD = {right: 375};
+const popupMobilePad = (mapHeight) => {bottom: Math.round(mapHeight / 2)};
+
 export class PopUpHandler {
   #selectedFeatures = null;
   /**
@@ -95,21 +99,28 @@ export class PopUpHandler {
 
   zoomAndFlyTo(feature, zoomLevel = 15) {
     this.map.resize();
+
+    const mapHeight = document.getElementById('map').offsetHeight;
+    const flyToPadding = window.matchMedia(POPUP_MEDIA_QUERY).matches 
+      ? POPUP_DESKTOP_PAD
+      : popupMobilePad(mapHeight);
     zoomLevel = Math.max(zoomLevel, this.map.getZoom());
+
     let coordinates;
     if (feature.geometry.type === "LineString") {
       coordinates = feature.geometry.coordinates[0];
     } else {
       coordinates = feature.geometry.coordinates;
     }
-    const isOutOfBounds = !this.map.getBounds().contains(coordinates);
-    const isZoomedOut = this.map.getZoom() < 15;
-    if (isOutOfBounds || isZoomedOut) {
-      this.map.flyTo({
-        center: coordinates,
-        zoom: zoomLevel,
-      });
-    }
+
+    // old condition was isOutOfBounds || isZoomedOut for flyto
+    // const isOutOfBounds = !this.map.getBounds().contains(coordinates);
+    // const isZoomedOut = this.map.getZoom() < 15;
+    this.map.flyTo({
+      center: coordinates,
+      zoom: zoomLevel,
+      padding: flyToPadding,
+    });
   }
 
   updatePopUpContent(features) {
