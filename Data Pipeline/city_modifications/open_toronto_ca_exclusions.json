@@ -19,5 +19,11 @@
     "ids": [{"ref:open.toronto.ca:bicycle-parking-racks:objectid": "34"}],
     "reason": "missing",
     "notes": "unable to find in described location"
+  },
+  {
+    "survey_date": "2024-04-28",
+    "ids": [{"ref:open.toronto.ca:bicycle-parking-racks:objectid": "192"}],
+    "reason": "missing",
+    "notes": "unable to find in described location"
   }
 ]
