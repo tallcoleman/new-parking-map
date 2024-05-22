@@ -2,7 +2,7 @@ import { bicycleParkingDescriptions as bpd } from "./bicycle_parking description
 
 const POPUP_MEDIA_QUERY = "(width > 700px)";
 const POPUP_DESKTOP_PAD = {right: 375};
-const popupMobilePad = (mapHeight) => {bottom: Math.round(mapHeight / 2)};
+const popupMobilePad = (mapHeight) => ({bottom: Math.round(mapHeight / 2)});
 
 export class PopUpHandler {
   #selectedFeatures = null;
