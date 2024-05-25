@@ -88,10 +88,20 @@ export const parkingStyleOptions = {
         ],
         'circle-stroke-color': "red", // only shows if stroke width > 0
         'circle-radius': [
-          'case',
-          ['>', ['to-number', ['get', 'capacity'], 0], 4], 5,
-          3
-        ]
+          'interpolate', ['linear'], ['zoom'],
+          // if capacity > 4, then 5px at zoom 10, else 3px
+          10, [
+            'case',
+            ['>', ['to-number', ['get', 'capacity'], 0], 4],
+            5, 3,
+          ],
+          // if capacity > 4 then 16px at zoom 22, else 10px
+          22, [
+            'case',
+            ['>', ['to-number', ['get', 'capacity'], 0], 4],
+            16, 10,
+          ],
+        ],
       }
     },
     ways: {
