@@ -25,5 +25,38 @@
     "ids": [{"ref:open.toronto.ca:bicycle-parking-racks:objectid": "192"}],
     "reason": "missing",
     "notes": "unable to find in described location"
-  }
+  },
+  {
+    "survey_date": "2024-05-22",
+    "ids": [
+      {"ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "107"},
+      {"ref:open.toronto.ca:bicycle-parking-racks:objectid": "18"}
+    ],
+    "reason": "removed",
+    "notes": "Replaced by BIA bike stands"
+  },
+  {
+    "survey_date": "2024-05-22",
+    "ids": [{"ref:open.toronto.ca:bicycle-parking-racks:objectid": "83"}],
+    "reason": "removed",
+    "notes": "Replaced by BIA bike stands"
+  },
+  {
+    "survey_date": "2024-05-22",
+    "ids": [
+      {"ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "110"},
+      {"ref:open.toronto.ca:bicycle-parking-racks:objectid": "84"}
+    ],
+    "reason": "removed",
+    "notes": "Replaced by BIA seating/tree installation"
+  },
+  {
+    "survey_date": "2024-05-22",
+    "ids": [
+      {"ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "114"},
+      {"ref:open.toronto.ca:bicycle-parking-racks:objectid": "19"}
+    ],
+    "reason": "removed",
+    "notes": "Replaced by BIA bike stands and seating installation"
+  },
 ]
