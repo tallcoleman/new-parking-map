@@ -1,0 +1,15 @@
+.maplibregl-popup {
+  /* max-width set in js */
+  max-height: 300px;
+  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  overflow: scroll;
+  text-wrap: wrap;
+
+  & dt {
+    font-weight: bold;
+    padding-top: 0.5rem;
+  }
+  & dd {
+    margin-inline-start: 0;
+  }
+}
