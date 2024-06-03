@@ -2,25 +2,25 @@
   "bicycle-parking-high-capacity-outdoor": {
     "last_updated": "2024-04-09T03:04:38.234154+00:00",
     "num_normalized_features": 142,
-    "last_checked": "2024-06-01T16:13:23.065801+00:00",
-    "days_since_source_update": 53
+    "last_checked": "2024-06-03T09:01:29.748316+00:00",
+    "days_since_source_update": 55
   },
   "bicycle-parking-racks": {
     "last_updated": "2024-04-01T04:03:46.640620+00:00",
     "num_normalized_features": 158,
-    "last_checked": "2024-06-01T16:13:23.608444+00:00",
-    "days_since_source_update": 61
+    "last_checked": "2024-06-03T09:01:30.797109+00:00",
+    "days_since_source_update": 63
   },
   "bicycle-parking-bike-stations-indoor": {
     "last_updated": "2023-05-03T17:05:52.259719+00:00",
     "num_normalized_features": 5,
-    "last_checked": "2024-06-01T16:13:24.034029+00:00",
-    "days_since_source_update": 394
+    "last_checked": "2024-06-03T09:01:31.396946+00:00",
+    "days_since_source_update": 396
   },
   "street-furniture-bicycle-parking": {
     "last_updated": "2024-06-01T03:05:24.870487+00:00",
     "num_normalized_features": 17091,
-    "last_checked": "2024-06-01T16:13:28.557422+00:00",
-    "days_since_source_update": 0
+    "last_checked": "2024-06-03T09:01:36.451002+00:00",
+    "days_since_source_update": 2
   }
 }
