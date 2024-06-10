@@ -14988,7 +14988,8 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
-        "meta_feature_last_updated": "2019-09-11T01:21:11+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-06-04T17:44:46+00:00",
         "meta_osm_node_id": 6786838509
       }
     },
@@ -16282,11 +16283,11 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
+        "bicycle_parking": "safe_loops",
         "capacity": "5",
         "covered": "no",
         "operator": "City of Toronto",
-        "meta_feature_last_updated": "2024-05-26T23:14:20+00:00",
+        "meta_feature_last_updated": "2024-06-08T23:18:58+00:00",
         "meta_osm_node_id": 7575289075
       }
     },
@@ -18922,13 +18923,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.394413,
-          43.698873
+          -79.394512,
+          43.698843
         ]
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2021-06-16T12:44:59+00:00",
+        "colour": "yellow",
+        "meta_feature_last_updated": "2024-06-06T23:39:15+00:00",
         "meta_osm_node_id": 8838752934
       }
     },
@@ -27926,8 +27928,15 @@
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2023-09-13T23:22:49+00:00",
+        "bicycle_parking": "wall_loops",
+        "capacity": "7",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pVFCR9",
+        "meta_feature_last_updated": "2024-06-06T00:33:17+00:00",
         "meta_osm_node_id": 11189329521
       }
     },
@@ -28054,8 +28063,16 @@
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2023-09-16T00:15:06+00:00",
+        "bicycle_parking": "wall_loops",
+        "capacity": "12",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pVFDYV",
+        "quantity": "2",
+        "meta_feature_last_updated": "2024-06-06T00:33:17+00:00",
         "meta_osm_node_id": 11195009095
       }
     },
@@ -36225,6 +36242,174 @@
         "ref:open.toronto.ca": "no",
         "meta_feature_last_updated": "2024-05-27T01:43:06+00:00",
         "meta_osm_node_id": 11936023181
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11954762680,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.463503,
+          43.64592
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "16",
+        "meta_feature_last_updated": "2024-06-04T00:04:52+00:00",
+        "meta_osm_node_id": 11954762680
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11959337845,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.302275,
+          43.781161
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "56",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "32",
+        "meta_feature_last_updated": "2024-06-06T00:33:17+00:00",
+        "meta_osm_node_id": 11959337845
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11959337846,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.302169,
+          43.780364
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "10",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2pVFrEb",
+        "operator": "Holy Spirit Roman Catholic Church",
+        "operator:type": "religious",
+        "meta_feature_last_updated": "2024-06-06T00:33:46+00:00",
+        "meta_osm_node_id": 11959337846
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11960108511,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.197123,
+          43.754975
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2024-06-06T11:10:16+00:00",
+        "meta_osm_node_id": 11960108511
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11961712743,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.436138,
+          43.699018
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2024-06-07T00:11:27+00:00",
+        "meta_osm_node_id": 11961712743
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11961712745,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.436133,
+          43.698992
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2024-06-07T00:11:27+00:00",
+        "meta_osm_node_id": 11961712745
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11964607345,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.391507,
+          43.618704
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2024-06-08T16:28:15+00:00",
+        "meta_osm_node_id": 11964607345
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11964628125,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.389262,
+          43.627842
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2024-06-08T16:12:29+00:00",
+        "meta_osm_node_id": 11964628125
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11965355755,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.451511,
+          43.684026
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "4",
+        "meta_feature_last_updated": "2024-06-08T22:46:48+00:00",
+        "meta_osm_node_id": 11965355755
       }
     },
     {
