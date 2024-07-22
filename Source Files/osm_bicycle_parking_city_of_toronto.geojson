@@ -894,25 +894,6 @@
     },
     {
       "type": "Feature",
-      "id": 773000499,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.396402,
-          43.663215
-        ]
-      },
-      "properties": {
-        "amenity": "bicycle_parking",
-        "capacity": "large",
-        "description": "21 east 13 west ring post silver",
-        "fixme": "Capacity should be a number",
-        "meta_feature_last_updated": "2024-07-11T21:39:04+00:00",
-        "meta_osm_node_id": 773000499
-      }
-    },
-    {
-      "type": "Feature",
       "id": 773000507,
       "geometry": {
         "type": "Point",
@@ -970,11 +951,21 @@
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "18",
+        "capacity:cargo_bike": "3",
+        "cargo_bike": "yes",
         "check_date": "2023-11-09",
         "covered": "no",
         "description": "9 ring post silver",
-        "meta_feature_last_updated": "2023-11-09T20:35:12+00:00",
+        "fee": "no",
+        "lit": "yes",
+        "operator": "University of Toronto",
+        "operator:type": "public",
+        "quantity": "9",
+        "meta_feature_last_updated": "2024-07-17T01:27:47+00:00",
         "meta_osm_node_id": 773000511
       }
     },
@@ -1034,16 +1025,18 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.394382,
-          43.65946
+          -79.394375,
+          43.659458
         ]
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
-        "capacity": "2",
+        "bicycle_parking": "bollard",
+        "capacity": "10",
         "covered": "no",
-        "meta_feature_last_updated": "2024-01-03T22:46:09+00:00",
+        "operator": "University of Toronto",
+        "quantity": "5",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 773398444
       }
     },
@@ -1059,9 +1052,12 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
+        "bicycle_parking": "bollard",
+        "capacity": "10",
         "covered": "no",
-        "meta_feature_last_updated": "2021-11-06T20:57:35+00:00",
+        "operator": "University of Toronto",
+        "quantity": "5",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 773398445
       }
     },
@@ -1071,16 +1067,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.394386,
-          43.659393
+          -79.394351,
+          43.659407
         ]
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
-        "capacity": "2",
+        "bicycle_parking": "bollard",
+        "capacity": "6",
+        "capacity:cargo_bike": "4",
+        "cargo_bike": "yes",
         "covered": "no",
-        "meta_feature_last_updated": "2021-11-06T20:58:14+00:00",
+        "operator": "University of Toronto",
+        "quantity": "4",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 773495368
       }
     },
@@ -1096,10 +1096,12 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
-        "capacity": "2",
+        "bicycle_parking": "bollard",
+        "capacity": "6",
         "covered": "no",
-        "meta_feature_last_updated": "2021-11-06T20:57:46+00:00",
+        "operator": "University of Toronto",
+        "quantity": "4",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 773495371
       }
     },
@@ -1550,10 +1552,12 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
         "capacity": "1",
         "covered": "no",
         "note": "ring and post grey",
-        "meta_feature_last_updated": "2021-11-10T22:49:23+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 783640258
       }
     },
@@ -1633,14 +1637,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.392739,
-          43.660891
+          -79.392674,
+          43.66106
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "12",
+        "capacity:cargo_bike": "6",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
         "note": "ring and post",
-        "meta_feature_last_updated": "2013-10-03T00:39:57+00:00",
+        "operator": "University of Toronto",
+        "operator:type": "public",
+        "quantity": "6",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 810328269
       }
     },
@@ -1713,8 +1727,18 @@
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2013-10-03T00:44:05+00:00",
+        "bicycle_parking": "bollard",
+        "capacity": "54",
+        "capacity:cargo_bike": "19",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "University of Toronto",
+        "operator:type": "public",
+        "quantity": "27",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 867482571
       }
     },
@@ -2572,12 +2596,18 @@
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
+        "capacity": "20",
+        "capacity:cargo_bike": "10",
+        "cargo_bike": "yes",
         "covered": "no",
-        "description": "Ring post silver",
         "fee": "no",
-        "meta_feature_last_updated": "2021-07-30T01:12:32+00:00",
+        "operator": "University of Toronto",
+        "operator:type": "public",
+        "quantity": "10",
+        "meta_feature_last_updated": "2024-07-19T21:35:55+00:00",
         "meta_osm_node_id": 1138250120
       }
     },
@@ -2954,7 +2984,8 @@
         "bicycle_parking": "stands",
         "covered": "no",
         "description": "Ring post along street silver",
-        "meta_feature_last_updated": "2023-11-09T18:04:26+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 1155231641
       }
     },
@@ -3771,8 +3802,18 @@
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2013-10-03T00:52:04+00:00",
+        "bicycle_parking": "bollard",
+        "capacity": "16",
+        "capacity:cargo_bike": "8",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "University of Toronto",
+        "operator:type": "public",
+        "quantity": "8",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 2480722095
       }
     },
@@ -4268,8 +4309,18 @@
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2014-04-25T16:53:26+00:00",
+        "bicycle_parking": "rack",
+        "capacity": "12",
+        "capacity:cargo_bike": "3",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Ronald McDonald House Charities",
+        "operator:type": "community",
+        "quantity": "3",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 2816070476
       }
     },
@@ -6022,7 +6073,8 @@
         "capacity": "8",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2023-09-11T21:08:09+00:00",
+        "image": "https://flic.kr/p/2q58NTd",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 4158640807
       }
     },
@@ -6437,7 +6489,8 @@
       "properties": {
         "amenity": "bicycle_parking",
         "colour": "black",
-        "meta_feature_last_updated": "2016-07-30T23:08:02+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-07-17T02:12:33+00:00",
         "meta_osm_node_id": 4328467957
       }
     },
@@ -15209,25 +15262,6 @@
     },
     {
       "type": "Feature",
-      "id": 6848160242,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.400688,
-          43.65796
-        ]
-      },
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "covered": "no",
-        "description": "Bicycle parking in street parking",
-        "meta_feature_last_updated": "2021-10-05T14:12:50+00:00",
-        "meta_osm_node_id": 6848160242
-      }
-    },
-    {
-      "type": "Feature",
       "id": 6848160258,
       "geometry": {
         "type": "Point",
@@ -15241,7 +15275,8 @@
         "bicycle_parking": "bollard",
         "capacity": "2",
         "covered": "no",
-        "meta_feature_last_updated": "2021-11-06T21:03:01+00:00",
+        "operator": "University of Toronto",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 6848160258
       }
     },
@@ -15260,7 +15295,8 @@
         "bicycle_parking": "bollard",
         "capacity": "2",
         "covered": "no",
-        "meta_feature_last_updated": "2021-11-06T21:01:59+00:00",
+        "operator": "University of Toronto",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 6848160261
       }
     },
@@ -15278,7 +15314,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2019-10-03T16:30:53+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 6848160274
       }
     },
@@ -15296,7 +15333,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "10",
-        "meta_feature_last_updated": "2019-10-03T16:30:53+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 6848160275
       }
     },
@@ -18204,10 +18242,18 @@
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
+        "bicycle_parking": "bollard",
+        "capacity": "16",
+        "capacity:cargo_bike": "8",
+        "cargo_bike": "yes",
         "covered": "no",
-        "meta_feature_last_updated": "2021-10-05T14:13:33+00:00",
+        "fee": "no",
+        "operator": "University of Toronto",
+        "operator:type": "public",
+        "quantity": "8",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 7578242558
       }
     },
@@ -19378,7 +19424,8 @@
         "capacity": "4",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2021-07-29T23:26:09+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 8961271278
       }
     },
@@ -19443,17 +19490,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.400144,
-          43.659691
+          -79.400131,
+          43.659693
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
+        "capacity": "32",
+        "capacity:cargo_bike": "16",
+        "cargo_bike": "yes",
         "covered": "no",
-        "description": "Ring post silver",
         "fee": "no",
-        "meta_feature_last_updated": "2021-07-30T01:12:32+00:00",
+        "operator": "University of Toronto",
+        "operator:type": "public",
+        "quantity": "16",
+        "meta_feature_last_updated": "2024-07-19T21:35:55+00:00",
         "meta_osm_node_id": 8961478254
       }
     },
@@ -19463,16 +19516,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.400231,
-          43.659538
+          -79.400234,
+          43.659484
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "covered": "yes",
-        "description": "Ring post silver",
-        "meta_feature_last_updated": "2021-07-30T01:12:32+00:00",
+        "capacity": "12",
+        "cargo_bike": "no",
+        "covered": "no",
+        "fee": "no",
+        "operator": "University of Toronto",
+        "operator:type": "public",
+        "quantity": "6",
+        "meta_feature_last_updated": "2024-07-19T21:35:55+00:00",
         "meta_osm_node_id": 8961478255
       }
     },
@@ -38083,6 +38142,463 @@
     },
     {
       "type": "Feature",
+      "id": 12058223766,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.39693,
+          43.663179
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "10",
+        "capacity:cargo_bike": "5",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "University of Toronto",
+        "operator:type": "public",
+        "quantity": "5",
+        "meta_feature_last_updated": "2024-07-17T01:27:47+00:00",
+        "meta_osm_node_id": 12058223766
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12060157119,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.519231,
+          43.69784
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "meta_feature_last_updated": "2024-07-17T21:39:52+00:00",
+        "meta_osm_node_id": 12060157119
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12060157120,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.519215,
+          43.697827
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "meta_feature_last_updated": "2024-07-17T21:39:52+00:00",
+        "meta_osm_node_id": 12060157120
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12060157121,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.518599,
+          43.697738
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "meta_feature_last_updated": "2024-07-17T21:39:52+00:00",
+        "meta_osm_node_id": 12060157121
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12060157122,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.518582,
+          43.69774
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "meta_feature_last_updated": "2024-07-17T21:39:52+00:00",
+        "meta_osm_node_id": 12060157122
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12060157123,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.518587,
+          43.69773
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "meta_feature_last_updated": "2024-07-17T21:39:52+00:00",
+        "meta_osm_node_id": 12060157123
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12061807945,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.401636,
+          43.6631
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2024-07-18T18:59:13+00:00",
+        "meta_osm_node_id": 12061807945
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12061807946,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.402022,
+          43.663319
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2024-07-18T18:59:13+00:00",
+        "meta_osm_node_id": 12061807946
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12062320408,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.412818,
+          43.68881
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-07-19T02:02:02+00:00",
+        "meta_osm_node_id": 12062320408
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12062320409,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.412824,
+          43.688846
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City Of Toronto",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-07-19T02:02:02+00:00",
+        "meta_osm_node_id": 12062320409
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12063899435,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.400223,
+          43.659567
+        ]
+      },
+      "properties": {
+        "access": "private",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "lockers",
+        "capacity": "17",
+        "cargo_bike": "no",
+        "covered": "yes",
+        "image": "https://flic.kr/p/2q56RnD",
+        "operator": "University of Toronto",
+        "operator:type": "public",
+        "quantity": "17",
+        "meta_feature_last_updated": "2024-07-19T21:35:55+00:00",
+        "meta_osm_node_id": 12063899435
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12063899436,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.400314,
+          43.659618
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "10",
+        "capacity:cargo_bike": "5",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "University of Toronto",
+        "operator:type": "public",
+        "quantity": "5",
+        "meta_feature_last_updated": "2024-07-19T21:35:55+00:00",
+        "meta_osm_node_id": 12063899436
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12063899437,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.401055,
+          43.659486
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "18",
+        "capacity:cargo_bike": "9",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "University of Toronto",
+        "operator:type": "public",
+        "quantity": "9",
+        "meta_feature_last_updated": "2024-07-19T21:35:55+00:00",
+        "meta_osm_node_id": 12063899437
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12063899438,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.40028,
+          43.659538
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "14",
+        "capacity:cargo_bike": "7",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "University of Toronto",
+        "operator:type": "public",
+        "quantity": "7",
+        "meta_feature_last_updated": "2024-07-19T21:35:55+00:00",
+        "meta_osm_node_id": 12063899438
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12063899440,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.401101,
+          43.65952
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "14",
+        "capacity:cargo_bike": "7",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "University of Toronto",
+        "operator:type": "public",
+        "quantity": "7",
+        "meta_feature_last_updated": "2024-07-19T21:35:55+00:00",
+        "meta_osm_node_id": 12063899440
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12063899441,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.401014,
+          43.659376
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "14",
+        "capacity:cargo_bike": "7",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "University of Toronto",
+        "operator:type": "public",
+        "quantity": "7",
+        "meta_feature_last_updated": "2024-07-19T21:35:55+00:00",
+        "meta_osm_node_id": 12063899441
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12063899442,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.400303,
+          43.659673
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "8",
+        "capacity:cargo_bike": "4",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "University of Toronto",
+        "operator:type": "public",
+        "quantity": "4",
+        "meta_feature_last_updated": "2024-07-19T21:35:55+00:00",
+        "meta_osm_node_id": 12063899442
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12063932540,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.392057,
+          43.659767
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "16",
+        "capacity:cargo_bike": "8",
+        "cargo_bike": "yes",
+        "covered": "yes",
+        "fee": "no",
+        "image": "https://flic.kr/p/2q598oe",
+        "operator": "University of Toronto",
+        "operator:type": "public",
+        "quantity": "8",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
+        "meta_osm_node_id": 12063932540
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12067400720,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.421375,
+          43.68712
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-07-22T04:03:39+00:00",
+        "meta_osm_node_id": 12067400720
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12067400721,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.421372,
+          43.687114
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-07-22T04:03:39+00:00",
+        "meta_osm_node_id": 12067400721
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12067400722,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.421369,
+          43.687108
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-07-22T04:03:39+00:00",
+        "meta_osm_node_id": 12067400722
+      }
+    },
+    {
+      "type": "Feature",
       "id": 135331961,
       "geometry": {
         "type": "LineString",
@@ -38900,7 +39416,8 @@
         "bicycle_parking": "stands",
         "capacity": "2",
         "covered": "no",
-        "meta_feature_last_updated": "2024-02-23T01:52:11+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 680712921
       }
     },
@@ -38925,7 +39442,8 @@
         "bicycle_parking": "stands",
         "capacity": "1",
         "covered": "no",
-        "meta_feature_last_updated": "2024-02-23T01:52:12+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 680712922
       }
     },
@@ -38950,7 +39468,8 @@
         "bicycle_parking": "stands",
         "capacity": "12",
         "covered": "no",
-        "meta_feature_last_updated": "2024-02-23T01:52:09+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 680712923
       }
     },
@@ -38975,7 +39494,8 @@
         "bicycle_parking": "stands",
         "capacity": "2",
         "covered": "no",
-        "meta_feature_last_updated": "2021-11-06T21:03:19+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 680719466
       }
     },
@@ -39000,7 +39520,8 @@
         "bicycle_parking": "stands",
         "capacity": "2",
         "covered": "no",
-        "meta_feature_last_updated": "2021-11-06T21:04:04+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 680719467
       }
     },
@@ -39024,7 +39545,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
         "covered": "no",
-        "meta_feature_last_updated": "2021-10-12T19:14:08+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 680719468
       }
     },
@@ -39049,7 +39571,8 @@
         "bicycle_parking": "stands",
         "capacity": "2",
         "covered": "no",
-        "meta_feature_last_updated": "2021-11-06T20:59:29+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 680719923
       }
     },
@@ -39072,8 +39595,10 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
+        "capacity": "6",
         "covered": "no",
-        "meta_feature_last_updated": "2021-11-06T21:00:10+00:00",
+        "operator": "Cit",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 680719924
       }
     },
@@ -39096,8 +39621,10 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
+        "capacity": "10",
         "covered": "no",
-        "meta_feature_last_updated": "2021-11-06T21:00:16+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 680719925
       }
     },
@@ -40008,6 +40535,53 @@
         "amenity": "bicycle_parking",
         "meta_feature_last_updated": "2023-06-10T00:35:35+00:00",
         "meta_osm_node_id": 1180788018
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1302731679,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.185472,
+            43.784039
+          ],
+          [
+            -79.185416,
+            43.784012
+          ],
+          [
+            -79.18549,
+            43.783929
+          ],
+          [
+            -79.185548,
+            43.783956
+          ],
+          [
+            -79.185472,
+            43.784039
+          ]
+        ]
+      },
+      "properties": {
+        "access": "private",
+        "amenity": "bicycle_parking",
+        "area": "yes",
+        "bicycle_parking": "shed",
+        "building": "shed",
+        "capacity": "48",
+        "capacity:cargo_bike": "16",
+        "cargo_bike": "yes",
+        "covered": "yes",
+        "description": "Used for UTSC community bike rental program",
+        "image": "https://flic.kr/p/2q5a2kK",
+        "operator": "University of Toronto",
+        "operator:type": "public",
+        "website": "https://www.utsc.utoronto.ca/sustainability/biking-community-bike-share-program",
+        "meta_feature_last_updated": "2024-07-21T01:10:17+00:00",
+        "meta_osm_node_id": 1302731679
       }
     }
   ]
