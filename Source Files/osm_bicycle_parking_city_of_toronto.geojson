@@ -376,7 +376,11 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2009-05-25T17:25:48+00:00",
+        "bicycle_parking": "stands",
+        "capacity": "6",
+        "check_date": "2024-07-30",
+        "covered": "yes",
+        "meta_feature_last_updated": "2024-07-30T23:28:27+00:00",
         "meta_osm_node_id": 410984392
       }
     },
@@ -1626,8 +1630,10 @@
       "properties": {
         "access": "private",
         "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
         "note": "Private bicycle parking for SickKids employees only, enclosed by chain link fence",
-        "meta_feature_last_updated": "2010-07-10T18:12:57+00:00",
+        "operator": "Hospital for Sick Children",
+        "meta_feature_last_updated": "2024-08-04T19:31:55+00:00",
         "meta_osm_node_id": 810328262
       }
     },
@@ -18749,9 +18755,9 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "bicycle_parking": "floor",
+        "bicycle_parking": "bollard",
         "covered": "no",
-        "meta_feature_last_updated": "2024-07-27T22:18:39+00:00",
+        "meta_feature_last_updated": "2024-07-29T13:34:39+00:00",
         "meta_osm_node_id": 8339691467
       }
     },
@@ -39424,6 +39430,226 @@
         "quantity": "6",
         "meta_feature_last_updated": "2024-07-27T13:58:43+00:00",
         "meta_osm_node_id": 12076941181
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12084171028,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.472093,
+          43.698166
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "6",
+        "meta_feature_last_updated": "2024-07-31T01:20:33+00:00",
+        "meta_osm_node_id": 12084171028
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12087448956,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.417504,
+          43.681521
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "8",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-08-01T15:30:53+00:00",
+        "meta_osm_node_id": 12087448956
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12087459128,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.417574,
+          43.682064
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-08-01T15:29:37+00:00",
+        "meta_osm_node_id": 12087459128
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12088024892,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.387604,
+          43.686776
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "8",
+        "meta_feature_last_updated": "2024-08-01T22:49:03+00:00",
+        "meta_osm_node_id": 12088024892
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12090984842,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.394772,
+          43.689153
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "24",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "93",
+        "meta_feature_last_updated": "2024-08-03T20:57:45+00:00",
+        "meta_osm_node_id": 12090984842
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12090984843,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.393806,
+          43.688075
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "4",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "2",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "134",
+        "meta_feature_last_updated": "2024-08-03T20:57:45+00:00",
+        "meta_osm_node_id": 12090984843
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12091006877,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.509872,
+          43.624018
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2024-08-03T21:17:40+00:00",
+        "meta_osm_node_id": 12091006877
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12092375198,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.389091,
+          43.657945
+        ]
+      },
+      "properties": {
+        "access": "private",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "126",
+        "description": "UHN employee bike room, entrance is on NE corner of University and Gerrard, requires going down half set of stairs which have a bike ramp",
+        "indoor": "yes",
+        "level": "-1",
+        "operator": "University Health Network",
+        "operator:type": "public",
+        "private": "employees",
+        "meta_feature_last_updated": "2024-08-04T19:31:55+00:00",
+        "meta_osm_node_id": 12092375198
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12092375199,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.386525,
+          43.658073
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "5",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "angled stacker rack",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "221",
+        "meta_feature_last_updated": "2024-08-04T19:31:55+00:00",
+        "meta_osm_node_id": 12092375199
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12092375200,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.386797,
+          43.659435
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "6",
+        "cargo_bike": "no",
+        "covered": "yes",
+        "description": "wave rack",
+        "fee": "no",
+        "operator": "University Health Network",
+        "operator:type": "public",
+        "quantity": "2",
+        "meta_feature_last_updated": "2024-08-04T19:31:55+00:00",
+        "meta_osm_node_id": 12092375200
       }
     },
     {
