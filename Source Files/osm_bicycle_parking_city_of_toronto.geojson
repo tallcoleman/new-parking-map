@@ -17211,8 +17211,9 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
+        "covered": "no",
         "operator": "Bloor Annex BIA",
-        "meta_feature_last_updated": "2023-12-31T22:13:36+00:00",
+        "meta_feature_last_updated": "2024-08-18T00:34:10+00:00",
         "meta_osm_node_id": 7575882452
       }
     },
@@ -17270,8 +17271,9 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
+        "covered": "no",
         "operator": "Bloor Annex BIA",
-        "meta_feature_last_updated": "2023-12-31T22:13:36+00:00",
+        "meta_feature_last_updated": "2024-08-18T00:34:07+00:00",
         "meta_osm_node_id": 7575882456
       }
     },
@@ -17349,8 +17351,9 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
+        "covered": "no",
         "operator": "Bloor Annex BIA",
-        "meta_feature_last_updated": "2023-12-31T22:13:36+00:00",
+        "meta_feature_last_updated": "2024-08-18T00:34:19+00:00",
         "meta_osm_node_id": 7575882462
       }
     },
@@ -17368,8 +17371,9 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
+        "covered": "no",
         "operator": "Bloor Annex BIA",
-        "meta_feature_last_updated": "2023-12-31T22:13:36+00:00",
+        "meta_feature_last_updated": "2024-08-18T00:34:17+00:00",
         "meta_osm_node_id": 7575882463
       }
     },
@@ -17467,8 +17471,9 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
+        "covered": "no",
         "operator": "Bloor Annex BIA",
-        "meta_feature_last_updated": "2023-12-31T22:13:36+00:00",
+        "meta_feature_last_updated": "2024-08-18T00:34:12+00:00",
         "meta_osm_node_id": 7575882468
       }
     },
@@ -17606,8 +17611,9 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
+        "covered": "no",
         "operator": "Bloor Annex BIA",
-        "meta_feature_last_updated": "2023-12-31T22:13:36+00:00",
+        "meta_feature_last_updated": "2024-08-18T00:34:14+00:00",
         "meta_osm_node_id": 7575882479
       }
     },
@@ -40090,6 +40096,45 @@
         "amenity": "bicycle_parking",
         "meta_feature_last_updated": "2024-08-11T12:20:11+00:00",
         "meta_osm_node_id": 12104194317
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12107105789,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.558485,
+          43.610461
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2024-08-13T00:34:46+00:00",
+        "meta_osm_node_id": 12107105789
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12111224457,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.544277,
+          43.60557
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "4",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "meta_feature_last_updated": "2024-08-14T19:47:35+00:00",
+        "meta_osm_node_id": 12111224457
       }
     },
     {
