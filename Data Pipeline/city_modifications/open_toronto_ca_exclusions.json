@@ -93,5 +93,13 @@
     ],
     "reason": "missing",
     "notes": "Unable to find in described location"
-}
+  },
+  {
+    "survey_date": "2024-08-19",
+    "ids": [
+      {"ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-26528"}
+    ],
+    "reason": "removed",
+    "notes": "Removed and replaced by 4-capacity stacker rack"
+  }
 ]
