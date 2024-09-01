@@ -1,51 +1,51 @@
 [
   {
     "survey_date": "2023-12-06",
-    "ids": [{"ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-23730"}],
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-23730" }],
     "reason": "missing"
   },
   {
     "survey_date": "2023-12-06",
-    "ids": [{"ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-46472"}],
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-46472" }],
     "reason": "missing"
   },
   {
     "survey_date": "2023-12-06",
-    "ids": [{"ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-36568"}],
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-36568" }],
     "reason": "missing"
   },
   {
     "survey_date": "2024-03-17",
-    "ids": [{"ref:open.toronto.ca:bicycle-parking-racks:objectid": "34"}],
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "34" }],
     "reason": "missing",
     "notes": "Unable to find in described location"
   },
   {
     "survey_date": "2024-04-28",
-    "ids": [{"ref:open.toronto.ca:bicycle-parking-racks:objectid": "192"}],
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "192" }],
     "reason": "missing",
     "notes": "Unable to find in described location"
   },
   {
     "survey_date": "2024-05-22",
     "ids": [
-      {"ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "107"},
-      {"ref:open.toronto.ca:bicycle-parking-racks:objectid": "18"}
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "107" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "18" }
     ],
     "reason": "removed",
     "notes": "Replaced by BIA bike stands"
   },
   {
     "survey_date": "2024-05-22",
-    "ids": [{"ref:open.toronto.ca:bicycle-parking-racks:objectid": "83"}],
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "83" }],
     "reason": "removed",
     "notes": "Replaced by BIA bike stands"
   },
   {
     "survey_date": "2024-05-22",
     "ids": [
-      {"ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "110"},
-      {"ref:open.toronto.ca:bicycle-parking-racks:objectid": "84"}
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "110" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "84" }
     ],
     "reason": "removed",
     "notes": "Replaced by BIA seating/tree installation"
@@ -53,8 +53,8 @@
   {
     "survey_date": "2024-05-22",
     "ids": [
-      {"ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "114"},
-      {"ref:open.toronto.ca:bicycle-parking-racks:objectid": "19"}
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "114" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "19" }
     ],
     "reason": "removed",
     "notes": "Replaced by BIA bike stands and seating installation"
@@ -62,8 +62,8 @@
   {
     "survey_date": "2023-12-23",
     "ids": [
-      {"ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "22"},
-      {"ref:open.toronto.ca:bicycle-parking-racks:objectid": "2"}
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "22" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "2" }
     ],
     "reason": "missing",
     "notes": "Unable to find in described location"
@@ -71,8 +71,8 @@
   {
     "survey_date": "2024-03-23",
     "ids": [
-      {"ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "102"},
-      {"ref:open.toronto.ca:bicycle-parking-racks:objectid": "78"}
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "102" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "78" }
     ],
     "reason": "removed",
     "notes": "Replaced by two-tier racks, now ref:open.toronto.ca:street-furniture-bicycle-parking:id=BP-23835"
@@ -80,42 +80,52 @@
   {
     "survey_date": "2023-12-30",
     "ids": [
-      {"ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "11"},
-      {"ref:open.toronto.ca:bicycle-parking-racks:objectid": "27"}
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "11" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "27" }
     ],
     "reason": "missing",
     "notes": "Appears to have been removed for construction"
   },
   {
     "survey_date": "2024-05-26",
-    "ids": [
-      {"ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-46514"}
-    ],
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-46514" }],
     "reason": "missing",
     "notes": "Unable to find in described location"
   },
   {
     "survey_date": "2024-08-19",
-    "ids": [
-      {"ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-26528"}
-    ],
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-26528" }],
     "reason": "removed",
     "notes": "Removed and replaced by 4-capacity stacker rack"
   },
   {
     "survey_date": "2024-08-22",
-    "ids": [
-      {"ref:open.toronto.ca:bicycle-parking-racks:objectid": "220"}
-    ],
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "220" }],
     "reason": "removed",
     "notes": "Likely removed during construction"
   },
   {
     "survey_date": "2024-08-22",
-    "ids": [
-      {"ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-32144"}
-    ],
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-32144" }],
     "reason": "removed",
     "notes": ""
+  },
+  {
+    "survey_date": "2024-09-01",
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "107" }],
+    "reason": "removed",
+    "notes": "Could not locate, likely removed during construction"
+  },
+  {
+    "survey_date": "2024-09-01",
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "236" }],
+    "reason": "removed",
+    "notes": "Could not locate, likely removed during construction"
+  },
+  {
+    "survey_date": "2024-09-01",
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "188" }],
+    "reason": "removed",
+    "notes": "Could not locate, likely removed during construction"
   }
 ]
