@@ -80,10 +80,18 @@ def _convert_parking_type(input_val):
     'Bike Rack': "rack", 
     'Angled Bike Rack': "rack", 
     'Bike Corral': "rack", 
-    'Bike Shelter': "shed"
+    'Bike Shelter': "rack"
   }.get(input_val, None) # return null if a new type is added
   return value
 
+def _is_covered(input_val):
+  value = {
+    'Bike Rack': "no", 
+    'Angled Bike Rack': "no", 
+    'Bike Corral': "no", 
+    'Bike Shelter': "yes"
+  }.get(input_val, None) # return null if a new type is added
+  return value
 
 def transform_properties(input_props: InputProps, global_props: dict):
   return (
@@ -92,7 +100,7 @@ def transform_properties(input_props: InputProps, global_props: dict):
       "bicycle_parking": _convert_parking_type(input_props['PARKING_TYPE']),
       "capacity": input_props['BICYCLE_CAPACITY'],
       "operator": "City of Toronto",
-      "covered": None, # unknown from this data set
+      "covered": _is_covered(input_props['PARKING_TYPE']),
       "access": "yes",
       "fee": "no",
       "start_date": input_props['YEAR_INSTALLED'],
