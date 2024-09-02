@@ -127,5 +127,11 @@
     "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "188" }],
     "reason": "removed",
     "notes": "Could not locate, likely removed during construction"
+  },
+  {
+    "survey_date": "2024-08-19",
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-14945" }],
+    "reason": "missing",
+    "notes": "Could not locate"
   }
 ]
