@@ -14,7 +14,7 @@ Main script is `Data Pipeline/data_pipeline.py`
 
 Run with:
 ```
-$ python "Data Pipeline/data_pipeline.py"
+$ uv run --python 3.11 Data\ Pipeline/data_pipeline.py  
 ```
 
 ### About
