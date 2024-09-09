@@ -24,6 +24,8 @@ import conversions
 from wrappers import BikeData, BikeDataToronto, BikeDataOSM
 from downstream import group_proximate_rings, group_proximate_racks
 
+geopandas.options.io_engine = "pyogrio"
+
 
 def ref_cols_to_str(gdf: geopandas.GeoDataFrame) -> geopandas.GeoDataFrame:
     """Convert dtype for ref columns to string"""
