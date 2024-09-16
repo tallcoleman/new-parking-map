@@ -20,6 +20,8 @@ from pathlib import Path
 from shapely import Polygon
 import overpass
 
+from pandas.api.types import is_datetime64_any_dtype
+
 import conversions
 from wrappers import BikeData, BikeDataToronto, BikeDataOSM
 from downstream import group_proximate_rings, group_proximate_racks
@@ -34,6 +36,15 @@ def ref_cols_to_str(gdf: geopandas.GeoDataFrame) -> geopandas.GeoDataFrame:
         gdf[name] = values.astype("str")
     return gdf
 
+
+def dt_cols_to_str(gdf: geopandas.GeoDataFrame) -> geopandas.GeoDataFrame:
+    """Convert dtype for datetime columns to string"""
+    json_not_supported_cols = gdf.columns[
+        [is_datetime64_any_dtype(gdf[c]) for c in gdf.columns]
+    ].union(gdf.columns[gdf.dtypes == "object"])
+    if len(json_not_supported_cols) > 0:
+        gdf = gdf.astype({c: "string" for c in json_not_supported_cols})
+    return gdf
 
     # SCRIPT EXECUTION
     # ----------------
@@ -325,19 +336,25 @@ def run_pipeline():
     print("Saving display files...")
 
     with open(dfp / "open_toronto_ca.geojson", "w") as f:
-        f.write(city_full.to_json(na='drop', drop_id=True, indent=2))
+        f.write(dt_cols_to_str(city_full).to_json(
+            na='drop', drop_id=True, indent=2))
     with open(dfp_archive / "open_toronto_ca.geojson", "w") as f:
-        f.write(city_full.to_json(na='drop', drop_id=True, indent=2))
+        f.write(dt_cols_to_str(city_full).to_json(
+            na='drop', drop_id=True, indent=2))
 
     with open(dfp / "openstreetmap.geojson", "w") as f:
-        f.write(osm_filtered.to_json(na='drop', drop_id=True, indent=2))
+        f.write(dt_cols_to_str(osm_filtered).to_json(
+            na='drop', drop_id=True, indent=2))
     with open(dfp_archive / "openstreetmap.geojson", "w") as f:
-        f.write(osm_filtered.to_json(na='drop', drop_id=True, indent=2))
+        f.write(dt_cols_to_str(osm_filtered).to_json(
+            na='drop', drop_id=True, indent=2))
 
     with open(dfp / "all_sources.geojson", "w") as f:
-        f.write(all_sources.to_json(na='drop', drop_id=True, indent=2))
+        f.write(dt_cols_to_str(all_sources).to_json(
+            na='drop', drop_id=True, indent=2))
     with open(dfp_archive / "all_sources.geojson", "w") as f:
-        f.write(all_sources.to_json(na='drop', drop_id=True, indent=2))
+        f.write(dt_cols_to_str(all_sources).to_json(
+            na='drop', drop_id=True, indent=2))
 
 # Script Execution
 # ----------------
