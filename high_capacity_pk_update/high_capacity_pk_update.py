@@ -39,7 +39,8 @@ def find_pk_change():
         second_gdf_sdupe = get_spatial_duplicates(second_gdf)
         first_agg = agg_spatial_duplicates(first_gdf[["geometry", "ID"]])
         second_agg = agg_spatial_duplicates(second_gdf[["geometry", "ID"]])
-        sjoined = first_agg.sjoin(second_agg, how="left")
+        sjoined = first_agg.sjoin(
+            second_agg, how="left").drop(columns="index_right")
         no_match = sjoined[sjoined["ID_right"].isna()]
         id_change = sjoined[sjoined["ID_left"] != sjoined["ID_right"]]
 
