@@ -33,8 +33,9 @@ def find_pk_change():
     for first, second in folder_pairs:
         first_file = first / (DATASET_NAME + ".geojson")
         second_file = second / (DATASET_NAME + ".geojson")
-        first_gdf = gpd.read_file(first_file)
-        second_gdf = gpd.read_file(second_file)
+        # .explode() converts multipoint into single point
+        first_gdf = gpd.read_file(first_file).explode()
+        second_gdf = gpd.read_file(second_file).explode()
         first_gdf_sdupe = get_spatial_duplicates(first_gdf)
         second_gdf_sdupe = get_spatial_duplicates(second_gdf)
         first_agg = agg_spatial_duplicates(first_gdf[["geometry", "ID"]])
