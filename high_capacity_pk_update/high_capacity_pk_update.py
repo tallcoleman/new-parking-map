@@ -8,6 +8,7 @@ import geopandas as gpd
 ARCHIVE_PATH = Path("Source Files")
 DATASET_NAME = "bicycle-parking-high-capacity-outdoor"
 OUTPUT_PATH = Path("high_capacity_pk_update") / "output"
+MATCH_DISTANCE = 75  # in metres
 
 
 def get_spatial_duplicates(gdf: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
@@ -38,10 +39,20 @@ def find_pk_change():
         second_gdf = gpd.read_file(second_file).explode()
         first_gdf_sdupe = get_spatial_duplicates(first_gdf)
         second_gdf_sdupe = get_spatial_duplicates(second_gdf)
-        first_agg = agg_spatial_duplicates(first_gdf[["geometry", "ID"]])
-        second_agg = agg_spatial_duplicates(second_gdf[["geometry", "ID"]])
-        sjoined = first_agg.sjoin(
-            second_agg, how="left").drop(columns="index_right")
+        first_agg = (
+            agg_spatial_duplicates(first_gdf[["geometry", "ID"]])
+            .to_crs("EPSG:32617")
+        )
+        second_agg = (
+            agg_spatial_duplicates(second_gdf[["geometry", "ID"]])
+            .to_crs("EPSG:32617")
+        )
+        sjoined = (
+            first_agg.sjoin_nearest(
+                second_agg, how="left", max_distance=MATCH_DISTANCE, distance_col="match_distance"
+            ).drop(columns="index_right")
+            .to_crs("EPSG:4326")
+        )
         no_match = sjoined[sjoined["ID_right"].isna()]
         id_change = sjoined[sjoined["ID_left"] != sjoined["ID_right"]]
 
