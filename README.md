@@ -58,3 +58,16 @@ City of Toronto:
 Clustering of city ring and posts (i.e. `"bicycle_parking"="bollard"`) to reduce clutter - ring and post features within 5m of each other are combined into a single point.
 
 De-duplication of bicycle racks across multiple City datasets - in many cases, racks from different City datasets within 30m of each other are duplicates. Since there may be cases where they are not duplicates, the processing combines the features into a single point that retains the properties of all of them. In order to prevent racks from being combined, they should be surveyed to verify their number, capacity, and locations, and added to OpenStreetMap.
+
+## Overpass query to get existing data
+
+```
+[out:xml][timeout:25];
+// fetch area “City of Toronto” to search in
+area(id:3600324211)->.searchArea;
+// gather results
+nwr["ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id"](area.searchArea);
+(._;>;); // get nodes for ways
+// print results
+out meta;
+```
