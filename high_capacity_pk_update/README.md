@@ -20,9 +20,10 @@ The script will generate a folder in `high_capacity_pk_update/output`. Each sub-
 ## Intended usage
 
 - Generate the output files
-- If there is a folder with an "id_change" file, use that file in JOSM along with the Overpass Query below and the conflation plugin to update the values for `ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id`
+- If there is a folder with an "id_change" file, use that file in JOSM along with the Overpass Query below and the conflation plugin to update the values for `ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id` in OpenStreetMap
 - Check for cases of mapped values that are not spatially unique in the `bicycle-parking-high-capacity-outdoor` dataset
 - Check for cases of values in the `bicycle-parking-high-capacity-outdoor` that were not matched from one week to another
+- Also update ids for bicycle-parking-high-capacity-outdoor in the exclusions file in addition to OpenStreetMap uses
 
 ## Overpass query to get existing data
 
