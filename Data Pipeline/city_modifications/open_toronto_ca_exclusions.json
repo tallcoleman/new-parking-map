@@ -29,7 +29,7 @@
   {
     "survey_date": "2024-05-22",
     "ids": [
-      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "107" },
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "128" },
       { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "18" }
     ],
     "reason": "removed",
@@ -44,7 +44,7 @@
   {
     "survey_date": "2024-05-22",
     "ids": [
-      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "110" },
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "133" },
       { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "84" }
     ],
     "reason": "removed",
@@ -53,7 +53,7 @@
   {
     "survey_date": "2024-05-22",
     "ids": [
-      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "114" },
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "138" },
       { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "19" }
     ],
     "reason": "removed",
@@ -62,7 +62,7 @@
   {
     "survey_date": "2023-12-23",
     "ids": [
-      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "22" },
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "26" },
       { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "2" }
     ],
     "reason": "missing",
@@ -71,7 +71,7 @@
   {
     "survey_date": "2024-03-23",
     "ids": [
-      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "102" },
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "123" },
       { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "78" }
     ],
     "reason": "removed",
@@ -137,7 +137,7 @@
   {
     "survey_date": "2024-09-15",
     "ids": [
-      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "48" },
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "61" },
       { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "56" }
     ],
     "reason": "removed",
@@ -145,7 +145,7 @@
   },
   {
     "survey_date": "2024-09-15",
-    "ids": [{ "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "13" }],
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "15" }],
     "reason": "missing",
     "notes": "Unable to find in described location"
   }
