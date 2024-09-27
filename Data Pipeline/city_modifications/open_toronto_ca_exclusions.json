@@ -148,5 +148,23 @@
     "ids": [{ "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "15" }],
     "reason": "missing",
     "notes": "Unable to find in described location"
+  },
+  {
+    "survey_date": "2024-09-27",
+    "ids": [{"ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-35070"}],
+    "reason": "removed",
+    "notes": "May have been removed during nearby construction for 387 Bloor St W; can see former post base ground down to pavement."
+  },
+  {
+    "survey_date": "2024-09-27",
+    "ids": [{"ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-35051"}],
+    "reason": "removed",
+    "notes": "Removed during construction for 387 Bloor St W and not replaced"
+  },
+  {
+    "survey_date": "2024-09-27",
+    "ids": [{"ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-35105"}],
+    "reason": "removed",
+    "notes": "Removed during construction for 387 Bloor St W and not replaced"
   }
 ]
