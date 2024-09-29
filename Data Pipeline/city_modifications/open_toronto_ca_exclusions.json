@@ -206,5 +206,65 @@
     "ids": [{ "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "1" }],
     "reason": "missing",
     "notes": "Could not find in described location (on Bloor St, NE corner of Bloor & Albany). Only located racks on Albany and Lippincott."
+  },
+  {
+    "survey_date": "2024-09-29",
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-03667" }],
+    "reason": "missing",
+    "notes": "Could not locate, checked both the front and back of the indicated building."
+  },
+  {
+    "survey_date": "2024-09-29",
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "21" }],
+    "reason": "missing",
+    "notes": "Could not locate"
+  },
+  {
+    "survey_date": "2024-09-29",
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "132" }],
+    "reason": "missing",
+    "notes": "Could not locate"
+  },
+  {
+    "survey_date": "2024-09-29",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "8" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "14" }
+    ],
+    "reason": "removed",
+    "notes": "Appears to have been removed circa 2016 per streetview"
+  },
+  {
+    "survey_date": "2024-09-29",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "9" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "110" }
+    ],
+    "reason": "missing",
+    "notes": "Could not locate on survey; also could not locate via streetview history. May be a data entry error?"
+  },
+  {
+    "survey_date": "2024-09-29",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "52" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "177" }
+    ],
+    "reason": "removed",
+    "notes": "1/2: One of these is still there, and one removed circa 2019 but attributes from both points are joined at the original data source. Removing both and only conflating with the street furniture data set."
+  },
+  {
+    "survey_date": "2024-09-29",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "53" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "102" }
+    ],
+    "reason": "removed",
+    "notes": "2/2: One of these is still there, and one removed circa 2019, but attributes from both points are joined at the original data source. Removing both and only conflating with the street furniture data set."
+  },
+  {
+    "survey_date": "2024-09-29",
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-30214" }],
+    "reason": "removed",
+    "notes": "Removed circa 2019 per google streetview."
   }
 ]
