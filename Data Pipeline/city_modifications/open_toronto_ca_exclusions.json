@@ -151,20 +151,60 @@
   },
   {
     "survey_date": "2024-09-27",
-    "ids": [{"ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-35070"}],
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-35070" }],
     "reason": "removed",
     "notes": "May have been removed during nearby construction for 387 Bloor St W; can see former post base ground down to pavement."
   },
   {
     "survey_date": "2024-09-27",
-    "ids": [{"ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-35051"}],
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-35051" }],
     "reason": "removed",
     "notes": "Removed during construction for 387 Bloor St W and not replaced"
   },
   {
     "survey_date": "2024-09-27",
-    "ids": [{"ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-35105"}],
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-35105" }],
     "reason": "removed",
     "notes": "Removed during construction for 387 Bloor St W and not replaced"
+  },
+  {
+    "survey_date": "2023-12-21",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "68" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "6" }
+    ],
+    "reason": "removed",
+    "notes": "Not found, likely removed during recent construction on Bloor St"
+  },
+  {
+    "survey_date": "2023-12-21",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "75" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "85" }
+    ],
+    "reason": "missing",
+    "notes": "Could not locate"
+  },
+  {
+    "survey_date": "2023-12-21",
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "227" }],
+    "reason": "missing",
+    "notes": "Could not locate"
+  },
+  {
+    "survey_date": "2023-12-31",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "97" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "9" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-34153" }
+    ],
+    "reason": "removed",
+    "notes": "Likely removed for CafeTO and replaced with two racks in bike lane buffer on S side of Bloor."
+  },
+  {
+    "survey_date": "2023-12-31",
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "1" }],
+    "reason": "missing",
+    "notes": "Could not find in described location (on Bloor St, NE corner of Bloor & Albany). Only located racks on Albany and Lippincott."
   }
 ]
