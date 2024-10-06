@@ -46,6 +46,7 @@ def dt_cols_to_str(gdf: geopandas.GeoDataFrame) -> geopandas.GeoDataFrame:
         gdf = gdf.astype({c: "string" for c in json_not_supported_cols})
     return gdf
 
+
     # SCRIPT EXECUTION
     # ----------------
 print("Loading sources and statuses...")
@@ -285,6 +286,9 @@ def run_pipeline():
         city_data[dataset_name] = dataset[
             ~dataset.isin(city_exclusions_dict).any(axis=1)
         ]
+    city_unclustered = city_data.copy()
+    city_unclustered_combined = pd.concat(
+        [dataset for name, dataset in city_unclustered.items()])
 
     # Downstream: Ring and Post Clustering
     # ------------------------------------
@@ -340,6 +344,13 @@ def run_pipeline():
             na='drop', drop_id=True, indent=2))
     with open(dfp_archive / "open_toronto_ca.geojson", "w") as f:
         f.write(dt_cols_to_str(city_full).to_json(
+            na='drop', drop_id=True, indent=2))
+
+    with open(dfp / "open_toronto_ca_unclustered.geojson", "w") as f:
+        f.write(dt_cols_to_str(city_unclustered_combined).to_json(
+            na='drop', drop_id=True, indent=2))
+    with open(dfp_archive / "open_toronto_ca_unclustered.geojson", "w") as f:
+        f.write(dt_cols_to_str(city_unclustered_combined).to_json(
             na='drop', drop_id=True, indent=2))
 
     with open(dfp / "openstreetmap.geojson", "w") as f:

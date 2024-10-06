@@ -13,8 +13,10 @@ Folder content is as follows:
 Main script is `Data Pipeline/data_pipeline.py`
 
 Run with:
-```
-$ uv run --python 3.11 Data\ Pipeline/data_pipeline.py  
+```bash
+$ . .venv/bin/activate
+$ pip install -r requirements.txt # if needed
+$ python "Data Pipeline/data_pipeline.py"
 ```
 
 ### About
