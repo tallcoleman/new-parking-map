@@ -287,5 +287,14 @@
     "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "230" }],
     "reason": "missing",
     "notes": "Could not locate in person or on google streetview"
+  },
+  {
+    "survey_date": "2024-04-07",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "34" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "117" }
+    ],
+    "reason": "missing",
+    "notes": "Could not locate"
   }
 ]
