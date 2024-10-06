@@ -75,7 +75,7 @@ map.on("load", () => {
 
   // add in data sources
   const displayData =
-    "https://raw.githubusercontent.com/tallcoleman/new-parking-map/main/Display%20Files/all_sources.geojson";
+    "https://raw.githubusercontent.com/tallcoleman/new-parking-map/main/Display%20Files/open_toronto_ca_unclustered.geojson";
   const bikeLaneURL = "data/cycling-network.geojson";
   const bikeTheftURL = "data/bicycle-thefts.geojson";
 
