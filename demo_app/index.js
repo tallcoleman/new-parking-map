@@ -174,28 +174,34 @@ map.on("load", () => {
   });
 
   // Add a layer showing the parking
+  const filterRacksOnly = [
+    "all",
+    ["match", ["geometry-type"], ["Point"], true, false],
+    // ["in", "open.toronto.ca", ["get", "meta_source"]],
+    [
+      "any",
+      [
+        "match",
+        ["get", "meta_source"],
+        "https://open.toronto.ca/dataset/street-furniture-bicycle-parking/",
+        false,
+        true,
+      ],
+      ["!", ["has", "bicycle_parking"]],
+      ["match", ["get", "bicycle_parking"], "rack", true, false],
+    ],
+  ];
+  const filterAllTypes = [
+    "all",
+    ["match", ["geometry-type"], ["Point"], true, false],
+    // ["in", "open.toronto.ca", ["get", "meta_source"]],
+  ];
   map.addLayer({
     id: "bicycle-parking-nodes",
     type: pso[PARKING_LAYER].nodes.type,
     source: "bicycle-parking",
     // TODO has "source" attribute (ciy only), is rack...
-    filter: [
-      "all",
-      ["match", ["geometry-type"], ["Point"], true, false],
-      ["in", "open.toronto.ca", ["get", "meta_source"]],
-      [
-        "any",
-        [
-          "match",
-          ["get", "meta_source"],
-          "https://open.toronto.ca/dataset/street-furniture-bicycle-parking/",
-          false,
-          true,
-        ],
-        ["!", ["has", "bicycle_parking"]],
-        ["match", ["get", "bicycle_parking"], "rack", true, false],
-      ],
-    ],
+    filter: filterRacksOnly,
     paint: pso[PARKING_LAYER].nodes.paint,
   });
   map.addLayer({
@@ -262,6 +268,16 @@ map.on("load", () => {
       },
       "bicycle-lanes"
     );
+  });
+
+  let bollardsShown = false;
+  document.getElementById("button-show-bollards").addEventListener("click", () => {
+    bollardsShown = !bollardsShown;
+    if (bollardsShown) {
+      map.setFilter("bicycle-parking-nodes", filterAllTypes);
+    } else {
+      map.setFilter("bicycle-parking-nodes", filterRacksOnly);
+    }
   });
 });
 
