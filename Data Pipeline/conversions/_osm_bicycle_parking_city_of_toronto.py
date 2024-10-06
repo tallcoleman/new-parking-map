@@ -15,17 +15,19 @@ _dataset_name = "osm_bicycle_parking_city_of_toronto"
 # FILTERS
 # -------
 
+
 # no filter applied
 def filter_properties(gdf):
-  """Takes a geodataframe of features and returns a filtered geodataframe"""
-  return gdf
-  
+    """Takes a geodataframe of features and returns a filtered geodataframe"""
+    return gdf
+
 
 # TRANSFORMS
 # ----------
 
+
 def transform_properties(gdf, global_props: dict):
-  pass
+    pass
 
 
 # https://www.openstreetmap.org/node/{id}
