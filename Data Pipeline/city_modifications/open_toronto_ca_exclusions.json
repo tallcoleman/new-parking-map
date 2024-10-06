@@ -281,5 +281,11 @@
     ],
     "reason": "removed",
     "notes": "Appears to have been removed circa or after 2021 per google streetview"
+  },
+  {
+    "survey_date": "2024-01-02",
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "230" }],
+    "reason": "missing",
+    "notes": "Could not locate in person or on google streetview"
   }
 ]
