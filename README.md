@@ -60,3 +60,15 @@ City of Toronto:
 Clustering of city ring and posts (i.e. `"bicycle_parking"="bollard"`) to reduce clutter - ring and post features within 5m of each other are combined into a single point.
 
 De-duplication of bicycle racks across multiple City datasets - in many cases, racks from different City datasets within 30m of each other are duplicates. Since there may be cases where they are not duplicates, the processing combines the features into a single point that retains the properties of all of them. In order to prevent racks from being combined, they should be surveyed to verify their number, capacity, and locations, and added to OpenStreetMap.
+
+## City Exclusions - Instructions
+
+1. Copy template from `Data Pipeline/city_modifications/exclusion_template.json`
+2. Add to `Data Pipeline/city_modifications/open_toronto_ca_exclusions.json`
+3. Add IDs, reason, and notes. If there is more than one ID with the same key, do not use the semicolon separator, add a separate line for each instance of the key-value pair.
+
+Reasons:
+
+- `removed`: Not found via survey, but past evidence (e.g. Google Streetview) confirms it was in the described location, and there is a probable cause for removal (e.g. construction, CafeTO installation).
+- `missing`: Not found via survey.
+- `area_survey`: Used for cases where address-geolocated points are insufficiently distinguishable in order to map data to found features 1:1. Should survey comprehensively, add all found features to OpenStreetMap, and then add the relevant data points to the exclusion list with this reason tag.
