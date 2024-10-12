@@ -109,3 +109,9 @@ header pre {
 .puh-content {
   padding: 0.5rem;
 }
+
+.button-collection {
+  & button {
+    min-height: 32px;
+  }
+}
