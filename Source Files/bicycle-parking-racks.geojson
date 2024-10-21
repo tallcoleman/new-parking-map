@@ -1,5 +1,6 @@
 {
   "type": "FeatureCollection",
+  "name": "Bicycle Parking Racks Data - 4326",
   "crs": {
     "type": "name",
     "properties": {
