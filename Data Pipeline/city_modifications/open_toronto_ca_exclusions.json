@@ -307,5 +307,14 @@
     ],
     "reason": "area_survey",
     "notes": "Surveyed around City Hall and added matching racks to OpenStreetMap. Capacity of mapped racks likely exceeds that of city data points noted above."
+  },
+  {
+    "survey_date": "2024-10-20",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "44" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "137" }
+    ],
+    "reason": "missing",
+    "notes": "Was not able to locate racks matching descriptions either in person or via StreetView. Most likely candidate is https://www.openstreetmap.org/node/12280421215 but still has some discrepancies compared to datasets."
   }
 ]
