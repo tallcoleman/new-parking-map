@@ -316,5 +316,29 @@
     ],
     "reason": "missing",
     "notes": "Was not able to locate racks matching descriptions either in person or via StreetView. Most likely candidate is https://www.openstreetmap.org/node/12280421215 but still has some discrepancies compared to datasets."
+  },
+  {
+    "survey_date": "2024-10-27",
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-44016" }],
+    "reason": "removed",
+    "notes": "There was a corral here circa 2015-2017 per StreetView but otherwise no rack here in the last 7-8 years."
+  },
+  {
+    "survey_date": "2024-10-27",
+    "ids": [
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-34369" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-34330" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-34345" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-34367" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-34371" }
+    ],
+    "reason": "removed",
+    "notes": "Per survey, pole stubs are visible in the cement."
+  },
+  {
+    "survey_date": "2024-10-27",
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-11940" }],
+    "reason": "removed",
+    "notes": "Per survey, asphalt patch over hole visible in cobblestones."
   }
 ]
