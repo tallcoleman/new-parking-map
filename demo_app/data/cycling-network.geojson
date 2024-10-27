@@ -1,5 +1,6 @@
 {
 "type": "FeatureCollection",
+"name": "cycling-network",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "_id": 1, "OBJECTID": 1, "SEGMENT_ID": 1, "INSTALLED": 2001, "UPGRADED": 2021, "PRE_AMALGAMATION": " ", "STREET_NAME": "Kilbarry Rd", "FROM_STREET": "Highbourne Rd", "TO_STREET": "Oriole Pkwy", "ROADCLASS": " ", "CNPCLASS": " ", "SURFACE": " ", "OWNER": " ", "DIR_LOWORDER": " ", "INFRA_LOWORDER": "Sharrows - Wayfinding", "SEPA_LOWORDER": " ", "SEPB_LOWORDER": " ", "ORIG_LOWORDER_INFRA": " ", "DIR_HIGHORDER": " ", "INFRA_HIGHORDER": "Sharrows - Wayfinding", "SEPA_HIGHORDER": " ", "SEPB_HIGHORDER": " ", "ORIG_HIGHORDER": " ", "BYLAWED": " ", "EDITOR": " ", "LAST_EDIT_DATE": "2024-06-11T16:40:31", "UPGRADE_DESCRIPTION": " ", "CONVERTED": "2007" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -79.403506913629698, 43.695259524494098 ], [ -79.403094474997701, 43.6953493145039 ], [ -79.402403558462098, 43.695494538572497 ] ] ] } },
