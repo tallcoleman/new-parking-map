@@ -340,5 +340,11 @@
     "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-11940" }],
     "reason": "removed",
     "notes": "Per survey, asphalt patch over hole visible in cobblestones."
+  },
+  {
+    "survey_date": "2024-10-31",
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "62" }],
+    "reason": "removed",
+    "notes": "Appears to have been removed between 2021 and 2023 (likely due to construction) per Google Streetview."
   }
 ]
