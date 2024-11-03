@@ -376,5 +376,21 @@
     "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-12699" }],
     "reason": "removed",
     "notes": "Visible on Google Streetview as of Sep 2022, so must have been removed at some point after."
+  },
+  {
+    "survey_date": "2024-11-03",
+    "ids": [
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-13243" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-14508" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-15184" }
+    ],
+    "reason": "removed",
+    "notes": "Removed between Sep 2019 and Oct 2020, per Google streetview, likely due to construction."
+  },
+  {
+    "survey_date": "2024-11-03",
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-05105" }],
+    "reason": "removed",
+    "notes": "Per survey, pole stub visible in the cement."
   }
 ]
