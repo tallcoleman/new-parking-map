@@ -346,5 +346,35 @@
     "ids": [{ "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "62" }],
     "reason": "removed",
     "notes": "Appears to have been removed between 2021 and 2023 (likely due to construction) per Google Streetview."
+  },
+  {
+    "survey_date": "2024-11-02",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "25" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "217" }
+    ],
+    "reason": "removed",
+    "notes": "Appears to have been removed between May 2019 and Oct 2020 per Google Streetview."
+  },
+  {
+    "survey_date": "2024-11-02",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "32" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "54" }
+    ],
+    "reason": "removed",
+    "notes": "Appears to have been removed between Feb and Nov 2021 per Google Streetview."
+  },
+  {
+    "survey_date": "2024-11-02",
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-21478" }],
+    "reason": "removed",
+    "notes": "Removed for construction; per Streetview was removed between Sep 2019 and Jan 2021."
+  },
+  {
+    "survey_date": "2024-11-02",
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-12699" }],
+    "reason": "removed",
+    "notes": "Visible on Google Streetview as of Sep 2022, so must have been removed at some point after."
   }
 ]
