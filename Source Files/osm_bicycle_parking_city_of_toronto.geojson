@@ -24807,7 +24807,8 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2022-12-29T18:33:40+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-11-04T15:20:36+00:00",
         "meta_osm_node_id": 10293831324
       }
     },
@@ -26380,7 +26381,9 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-04-20T18:43:33+00:00",
+        "capacity": "2",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-11-06T14:45:06+00:00",
         "meta_osm_node_id": 10827770476
       }
     },
@@ -26435,7 +26438,9 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-04-20T18:43:33+00:00",
+        "capacity": "2",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-11-06T14:45:19+00:00",
         "meta_osm_node_id": 10827770479
       }
     },
@@ -26452,7 +26457,9 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-04-20T18:43:33+00:00",
+        "capacity": "2",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-11-06T14:45:18+00:00",
         "meta_osm_node_id": 10827770480
       }
     },
@@ -26469,7 +26476,9 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-04-20T18:43:33+00:00",
+        "capacity": "2",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-11-06T14:45:18+00:00",
         "meta_osm_node_id": 10827770481
       }
     },
@@ -26486,7 +26495,9 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-04-20T18:43:33+00:00",
+        "capacity": "2",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-11-06T14:45:17+00:00",
         "meta_osm_node_id": 10827770482
       }
     },
@@ -26503,7 +26514,9 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-04-20T18:43:33+00:00",
+        "capacity": "2",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-11-06T14:45:15+00:00",
         "meta_osm_node_id": 10827770483
       }
     },
@@ -26520,7 +26533,9 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2023-04-20T18:43:33+00:00",
+        "capacity": "2",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-11-06T14:45:15+00:00",
         "meta_osm_node_id": 10827770484
       }
     },
@@ -43025,7 +43040,8 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-10-26T17:15:48+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-11-04T15:20:22+00:00",
         "meta_osm_node_id": 12290468043
       }
     },
@@ -43827,6 +43843,42 @@
         "quantity": "8",
         "meta_feature_last_updated": "2024-11-03T20:17:25+00:00",
         "meta_osm_node_id": 12310300673
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12315798360,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.33649,
+          43.774706
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "22",
+        "meta_feature_last_updated": "2024-11-05T18:27:51+00:00",
+        "meta_osm_node_id": 12315798360
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12315798361,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.336721,
+          43.77468
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "28",
+        "meta_feature_last_updated": "2024-11-05T18:27:51+00:00",
+        "meta_osm_node_id": 12315798361
       }
     },
     {

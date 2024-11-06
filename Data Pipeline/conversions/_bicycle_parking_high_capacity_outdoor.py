@@ -19,7 +19,7 @@ InputProps = TypedDict(
         "ADDRESS_POINT_ID": int,
         "ADDRESS_NUMBER": str,
         "LINEAR_NAME_FULL": str,
-        "ADDRESS_FULL": str,
+        "ADDRESS_FULL": Required[str],
         "POSTAL_CODE": str,
         "MUNICIPALITY": Required[
             Literal[
@@ -93,9 +93,7 @@ def _convert_parking_type(input_val):
         "Angled Bike Rack": "rack",
         "Bike Corral": "rack",
         "Bike Shelter": "rack",
-    }.get(
-        input_val, None
-    )  # return null if a new type is added
+    }.get(input_val, None)  # return null if a new type is added
     return value
 
 
@@ -105,9 +103,7 @@ def _is_covered(input_val):
         "Angled Bike Rack": "no",
         "Bike Corral": "no",
         "Bike Shelter": "yes",
-    }.get(
-        input_val, None
-    )  # return null if a new type is added
+    }.get(input_val, None)  # return null if a new type is added
     return value
 
 
@@ -127,6 +123,11 @@ def transform_properties(input_props: InputProps, global_props: dict):
                 x.strip()
                 for x in [
                     (
+                        "Address: " + input_props["ADDRESS_FULL"]
+                        if input_props["ADDRESS_FULL"].strip()
+                        else ""
+                    ),
+                    (
                         "Placement Street: " + input_props["FLANKING"]
                         if input_props["FLANKING"].strip()
                         else ""
@@ -145,7 +146,6 @@ def transform_properties(input_props: InputProps, global_props: dict):
                 if x.strip()
             ),
             f"ref:open.toronto.ca:{_dataset_name}:id": input_props["ID"],
-            f"ref:open.toronto.ca:{_dataset_name}:objectid": input_props["OBJECTID"],
             "meta_borough": input_props["MUNICIPALITY"].title(),
             "meta_ward_name": None,  # placeholder
             "meta_ward_number": None,  # placeholder

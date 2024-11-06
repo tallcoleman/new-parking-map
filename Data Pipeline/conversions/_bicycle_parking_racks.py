@@ -18,7 +18,7 @@ InputProps = TypedDict(
         "ADDRESS_POINT_ID": int,
         "ADDRESS_NUMBER": str,
         "LINEAR_NAME_FULL": str,
-        "ADDRESS_FULL": str,
+        "ADDRESS_FULL": Required[str],
         "POSTAL_CODE": str,
         "MUNICIPALITY": Required[
             Literal[
@@ -114,6 +114,11 @@ def transform_properties(input_props: InputProps, global_props: dict):
             "description": "\n\n".join(
                 x.strip()
                 for x in [
+                    (
+                        "Address: " + input_props["ADDRESS_FULL"]
+                        if input_props["ADDRESS_FULL"].strip()
+                        else ""
+                    ),
                     (
                         "Notes: " + input_props["NOTES"]
                         if input_props["NOTES"].strip()

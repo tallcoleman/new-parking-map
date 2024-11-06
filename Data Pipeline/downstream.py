@@ -147,7 +147,6 @@ def group_proximate_racks(racks, radius=30.0):
         "length": flist,  # debug
         "description": combine_descriptions,  # debug
         "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": flist,
-        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:objectid": flist,
         "ref:open.toronto.ca:bicycle-parking-racks:objectid": flist,
         "ref:open.toronto.ca:street-furniture-bicycle-parking:id": flist,
         "meta_borough": "first",  # unique per point
