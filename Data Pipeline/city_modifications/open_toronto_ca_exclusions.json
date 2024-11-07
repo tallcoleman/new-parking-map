@@ -392,5 +392,14 @@
     "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-05105" }],
     "reason": "removed",
     "notes": "Per survey, pole stub visible in the cement."
+  },
+  {
+    "survey_date": "2024-11-06",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "81" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "17" }
+    ],
+    "reason": "removed",
+    "notes": "Per Streetview, appears to have been a capacity 8 stacker rack before; has now been replaced with a capacity 4 stacker rack in a similar location after construction to put in a protected bike lane."
   }
 ]
