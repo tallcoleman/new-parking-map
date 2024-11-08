@@ -253,7 +253,9 @@
       };
 
       const displayData =
-        "https://raw.githubusercontent.com/tallcoleman/new-parking-map/main/Display%20Files/all_sources.geojson";
+        "https://raw.githubusercontent.com/tallcoleman/new-parking-map/main/Display%20Files/open_toronto_ca_unclustered.geojson";
+      const osmData =
+        "https://raw.githubusercontent.com/tallcoleman/new-parking-map/main/Display%20Files/openstreetmap.geojson";
 
       map.on("load", () => {
         map.addSource("bicycle-parking", {
@@ -261,10 +263,22 @@
           data: displayData,
           generateId: true,
         });
+        map.addSource("osm-parking", {
+          type: "geojson",
+          data: osmData,
+          generateId: true,
+        });
         map.addLayer({
           id: "bicycle-parking-nodes",
           type: pso[PARKING_LAYER].nodes.type,
           source: "bicycle-parking",
+          filter: ["match", ["geometry-type"], ["Point"], true, false],
+          paint: pso[PARKING_LAYER].nodes.paint,
+        });
+        map.addLayer({
+          id: "bicycle-parking-osm",
+          type: pso[PARKING_LAYER].nodes.type,
+          source: "osm-parking",
           filter: ["match", ["geometry-type"], ["Point"], true, false],
           paint: pso[PARKING_LAYER].nodes.paint,
         });
