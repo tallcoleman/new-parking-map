@@ -4,6 +4,7 @@ from conversions import (
     _bicycle_parking_bike_stations_indoor,
     _street_furniture_bicycle_parking,
     _osm_bicycle_parking_city_of_toronto,
+    _toronto_lockers,
 )
 from enum import Enum, auto
 
@@ -24,6 +25,8 @@ def _get_map(_MapType, dataset_name):
         return _street_furniture_bicycle_parking
     elif dataset_name == "osm_bicycle_parking_city_of_toronto":
         return _osm_bicycle_parking_city_of_toronto
+    elif dataset_name == "toronto_lockers":
+        return _toronto_lockers
 
 
 def get_filter(dataset_name):

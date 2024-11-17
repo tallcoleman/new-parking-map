@@ -1,9 +1,11 @@
 from abc import ABC, abstractmethod
 from datetime import datetime, timezone
 
+from bs4 import BeautifulSoup
 import geojson
 import geopandas
 import overpass
+import pandas as pd
 import requests
 
 
@@ -222,5 +224,91 @@ class BikeDataOSM(BikeData):
             return transformed_features
         elif format == "geojson":
             return geojson.loads(transformed_features.to_json(na="drop", drop_id=True))
+        else:
+            raise ValueError('Format must be either "geodataframe" or "geojson"')
+
+
+class BikeLockersToronto(BikeData):
+    """Wrapper for working with bicycle locker data from https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/"""
+
+    def __init__(self, dataset_name: str, page_url: str):
+        self.dataset_name = dataset_name
+
+        # get webpage
+        response = requests.get(page_url)
+        if response.status_code != 200:
+            raise Exception(
+                f"Could not get page content for Toronto Bike Lockers. Page returned status {response.status_code}"
+            )
+        locker_page = response.text
+
+        # extract data table and date last updated
+        soup = BeautifulSoup(locker_page, "html.parser")
+
+        last_updated_str = soup.find("meta", attrs={"name": "datemodified"})["content"]
+        self._last_updated = datetime.fromisoformat(last_updated_str)
+
+        data_table = soup.find("table", class_="cotui-map")
+        locker_entries = []
+        for row in data_table.find("tbody").find_all("tr"):
+            locker_entries.append(
+                {
+                    "latitude": row["data-lat"],
+                    "longitude": row["data-lng"],
+                    "location": row.find_all("td")[0].get_text(strip=True),
+                    "description": row.find_all("td")[1]
+                    .find_all("p")[0]
+                    .get_text(strip=True),
+                    "quantity": row.find_all("td")[1]
+                    .find_all("p")[1]
+                    .get_text(strip=True),
+                }
+            )
+
+        # create gdf
+        lockers_df = pd.DataFrame(locker_entries).convert_dtypes()
+        self._lockers_gdf = geopandas.GeoDataFrame(
+            lockers_df.drop(columns=["longitude", "latitude"]),
+            geometry=geopandas.GeoSeries.from_xy(
+                x=lockers_df["longitude"],
+                y=lockers_df["latitude"],
+                crs="EPSG:4326",
+            ),
+        )
+
+    @property
+    def last_updated(self):
+        return self._last_updated
+
+    @property
+    def response_gdf(self):
+        return self._lockers_gdf
+
+    @property
+    def response_geojson(self):
+        return self._lockers_gdf.to_json(drop_id=True, indent=2)
+
+    def normalize(
+        self, filter_properties, transform_properties, *, format="geodataframe"
+    ):
+        """Docstring TODO"""
+
+        # apply filters
+        filtered_gdf = filter_properties(self.response_gdf)
+
+        # apply transforms
+        transformed_gdf = transform_properties(filtered_gdf)
+
+        # add global properties
+        meta_gdf = transformed_gdf.assign(
+            meta_source="Source data from the City of Toronto Bicycle Locker webpage)",
+            meta_source_last_updated=self.last_updated.isoformat(),
+        )
+
+        # return normalized data
+        if format == "geodataframe":
+            return meta_gdf
+        elif format == "geojson":
+            return geojson.loads(meta_gdf.to_json(drop_id=True))
         else:
             raise ValueError('Format must be either "geodataframe" or "geojson"')

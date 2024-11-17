@@ -1,4 +1,5 @@
 from sklearn.cluster import DBSCAN
+import geopandas as gpd
 import numpy as np
 import pandas as pd
 
@@ -177,3 +178,28 @@ def group_proximate_racks(racks, radius=30.0):
     out_racks = racks_UTM17N_recombined.to_crs(4326)
 
     return out_racks
+
+
+def drop_mapped_city_lockers(
+    lockers: gpd.GeoDataFrame, osm: gpd.GeoDataFrame, radius: int = 200
+) -> gpd.GeoDataFrame:
+    """Radius is quite large because the City locations are not very precise"""
+    osm_city_lockers = osm[
+        osm["operator"].str.contains(r"city\s*?of\s*?toronto", case=False, regex=True)
+        & (osm["bicycle_parking"] == "lockers")
+    ][["geometry"]]
+    osm_city_lockers_utm17n = osm_city_lockers.to_crs("EPSG:32617")
+    osm_city_lockers_utm17n = osm_city_lockers_utm17n.set_geometry(
+        osm_city_lockers_utm17n.centroid
+    )
+    lockers_utm17n = lockers.to_crs("EPSG:32617")
+    joined = lockers_utm17n.sjoin_nearest(
+        osm_city_lockers_utm17n,
+        how="left",
+        max_distance=radius,
+    )
+    lockers_unmapped_utm17n = joined[joined["index_right"].isna()].drop(
+        columns=["index_right"]
+    )
+    lockers_unmapped = lockers_unmapped_utm17n.to_crs("EPSG:4326")
+    return lockers_unmapped
