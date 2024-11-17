@@ -23,8 +23,12 @@ import overpass
 from pandas.api.types import is_datetime64_any_dtype
 
 import conversions
-from wrappers import BikeData, BikeDataToronto, BikeDataOSM
-from downstream import group_proximate_rings, group_proximate_racks
+from wrappers import BikeData, BikeDataToronto, BikeDataOSM, BikeLockersToronto
+from downstream import (
+    group_proximate_rings,
+    group_proximate_racks,
+    drop_mapped_city_lockers,
+)
 
 geopandas.options.io_engine = "pyogrio"
 
@@ -93,10 +97,12 @@ def run_pipeline():
     source_paths = {
         "city": Path("Data Pipeline/sources/open_toronto_ca_sources.json"),
         "osm": Path("Data Pipeline/sources/openstreetmap_sources.json"),
+        "lockers": Path("Data Pipeline/sources/toronto_lockers_sources.json"),
     }
     status_paths = {
         "city": Path("Data Pipeline/statuses/open_toronto_ca_statuses.json"),
         "osm": Path("Data Pipeline/statuses/openstreetmap_statuses.json"),
+        "lockers": Path("Data Pipeline/statuses/toronto_lockers_statuses.json"),
     }
     sources = load_paths(source_paths)
     statuses = load_paths(status_paths)
@@ -228,6 +234,32 @@ def run_pipeline():
 
     osm_combined = pd.concat(osm_data_list)
 
+    # City Lockers
+    print("Checking and updating City of Toronto bike lockers...")
+
+    # check status and update output file if needed
+    for dataset in sources["lockers"]["datasets"]:
+        blt = BikeLockersToronto(dataset["dataset_name"], dataset["url"])
+        dataset_status = statuses["lockers"].setdefault(blt.dataset_name, {})
+        # check source and save output files if there are new changes
+        updated_status = run_update(blt, dataset_status)
+        statuses["lockers"][blt.dataset_name] = (
+            statuses["lockers"][blt.dataset_name] | updated_status
+        )
+
+    # update status JSON
+    with status_paths["lockers"].open("w") as f:
+        json.dump(statuses["lockers"], f, indent=2)
+
+    # get output files, do further processing and combine
+    lockers_data_list = []
+    for dataset in sources["lockers"]["datasets"]:
+        gdf = geopandas.read_file(ofp / f"{dataset["dataset_name"]}-normalized.geojson")
+        gdf["meta_source_last_updated"] = gdf["meta_source_last_updated"].astype("str")
+        lockers_data_list.append(gdf)
+
+    lockers: geopandas.GeoDataFrame = pd.concat(lockers_data_list)
+
     # Downstream: City Data Selection
     # -------------------------------
     print("Applying downstream processing: City Data Selection...")
@@ -288,6 +320,9 @@ def run_pipeline():
         [dataset for name, dataset in city_unclustered.items()]
     )
 
+    # drop city lockers already in OpenStreetMap
+    lockers_unmapped = drop_mapped_city_lockers(lockers, osm_combined)
+
     # Downstream: Ring and Post Clustering
     # ------------------------------------
     print("Applying downstream processing: Ring and Post Clustering...")
@@ -341,7 +376,7 @@ def run_pipeline():
     city_full = city_full.drop("tmu", axis=1)
 
     # make combined set from all sources
-    all_sources = pd.concat([city_full, osm_filtered])
+    all_sources = pd.concat([city_full, osm_filtered, lockers_unmapped])
 
     # Save display files
     # ------------------
@@ -369,6 +404,15 @@ def run_pipeline():
         f.write(dt_cols_to_str(osm_filtered).to_json(na="drop", drop_id=True, indent=2))
     with open(dfp_archive / "openstreetmap.geojson", "w") as f:
         f.write(dt_cols_to_str(osm_filtered).to_json(na="drop", drop_id=True, indent=2))
+
+    with open(dfp / "toronto_lockers.geojson", "w") as f:
+        f.write(
+            dt_cols_to_str(lockers_unmapped).to_json(na="drop", drop_id=True, indent=2)
+        )
+    with open(dfp_archive / "toronto_lockers.geojson", "w") as f:
+        f.write(
+            dt_cols_to_str(lockers_unmapped).to_json(na="drop", drop_id=True, indent=2)
+        )
 
     with open(dfp / "all_sources.geojson", "w") as f:
         f.write(dt_cols_to_str(all_sources).to_json(na="drop", drop_id=True, indent=2))

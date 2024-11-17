@@ -1,0 +1,10 @@
+{
+  "url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
+  "datasets": [
+    {
+      "dataset_title": "City of Toronto Bicycle Lockers",
+      "dataset_name": "toronto_lockers",
+      "url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/"
+    }
+  ]
+}
