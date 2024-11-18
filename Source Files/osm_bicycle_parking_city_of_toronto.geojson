@@ -3425,8 +3425,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.543998,
-          43.591764
+          -79.544113,
+          43.591704
         ]
       },
       "properties": {
@@ -3435,7 +3435,7 @@
         "capacity": "6",
         "covered": "no",
         "note": "grey ring and post",
-        "meta_feature_last_updated": "2023-08-07T20:02:43+00:00",
+        "meta_feature_last_updated": "2024-11-11T18:34:07+00:00",
         "meta_osm_node_id": 1907415624
       }
     },
@@ -18599,9 +18599,13 @@
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
+        "capacity": "28",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2020-08-26T03:21:09+00:00",
+        "operator": "Evergreen",
+        "operator:type": "public",
+        "quantity": "4",
+        "meta_feature_last_updated": "2024-11-11T22:46:36+00:00",
         "meta_osm_node_id": 7844988874
       }
     },
@@ -25936,7 +25940,8 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2023-03-11T20:11:34+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-11-17T07:03:59+00:00",
         "meta_osm_node_id": 10728332128
       }
     },
@@ -29395,33 +29400,6 @@
     },
     {
       "type": "Feature",
-      "id": 11395323322,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.264636,
-          43.731832
-        ]
-      },
-      "properties": {
-        "access": "customers",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "lockers",
-        "capacity": "6",
-        "covered": "yes",
-        "fee": "yes",
-        "image": "https://flic.kr/p/2pjG6pL",
-        "indoor": "no",
-        "lit": "yes",
-        "operator": "City of Toronto",
-        "operator:type": "government",
-        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
-        "meta_feature_last_updated": "2023-12-05T03:30:33+00:00",
-        "meta_osm_node_id": 11395323322
-      }
-    },
-    {
-      "type": "Feature",
       "id": 11395766784,
       "geometry": {
         "type": "Point",
@@ -29438,27 +29416,6 @@
         "fee": "no",
         "meta_feature_last_updated": "2023-12-06T02:18:08+00:00",
         "meta_osm_node_id": 11395766784
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 11401552612,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.406483,
-          43.769692
-        ]
-      },
-      "properties": {
-        "access": "customers",
-        "amenity": "bicycle_parking",
-        "covered": "yes",
-        "fee": "no",
-        "operator": "TDSB",
-        "operator:type": "government",
-        "meta_feature_last_updated": "2023-12-07T19:18:09+00:00",
-        "meta_osm_node_id": 11401552612
       }
     },
     {
@@ -44601,39 +44558,671 @@
     },
     {
       "type": "Feature",
+      "id": 12331356602,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.407378,
+          43.769624
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "10",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-11-11T17:11:52+00:00",
+        "meta_osm_node_id": 12331356602
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12331356603,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.407306,
+          43.76964
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "10",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-11-11T17:11:52+00:00",
+        "meta_osm_node_id": 12331356603
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12331356604,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.407215,
+          43.769659
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "10",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-11-11T17:11:52+00:00",
+        "meta_osm_node_id": 12331356604
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12331356605,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.407124,
+          43.769678
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "10",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-11-11T17:11:52+00:00",
+        "meta_osm_node_id": 12331356605
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12331356606,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.407024,
+          43.7697
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "10",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-11-11T17:11:52+00:00",
+        "meta_osm_node_id": 12331356606
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12331356607,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.406932,
+          43.76972
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "10",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-11-11T17:11:52+00:00",
+        "meta_osm_node_id": 12331356607
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12331356608,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.407073,
+          43.769652
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "8",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-11-11T17:11:52+00:00",
+        "meta_osm_node_id": 12331356608
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12331356609,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.407037,
+          43.769658
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "8",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-11-11T17:11:52+00:00",
+        "meta_osm_node_id": 12331356609
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12331356610,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.406994,
+          43.769665
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "8",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-11-11T17:11:52+00:00",
+        "meta_osm_node_id": 12331356610
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12331356611,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.406611,
+          43.769675
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "10",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-11-11T17:11:52+00:00",
+        "meta_osm_node_id": 12331356611
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12331356612,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.406558,
+          43.769685
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "10",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-11-11T17:11:52+00:00",
+        "meta_osm_node_id": 12331356612
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12331356613,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.406506,
+          43.769698
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "8",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-11-11T17:11:52+00:00",
+        "meta_osm_node_id": 12331356613
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12331356614,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.406456,
+          43.769708
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "8",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-11-11T17:11:52+00:00",
+        "meta_osm_node_id": 12331356614
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12332983702,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.365128,
+          43.685125
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "Evergreen",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-11-11T22:46:36+00:00",
+        "meta_osm_node_id": 12332983702
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12332983703,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.366267,
+          43.683777
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "10",
+        "cargo_bike": "no",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Evergreen",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-11-11T22:46:36+00:00",
+        "meta_osm_node_id": 12332983703
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12332983704,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.366437,
+          43.684998
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "24",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "Evergreen",
+        "operator:type": "public",
+        "quantity": "6",
+        "meta_feature_last_updated": "2024-11-11T22:46:36+00:00",
+        "meta_osm_node_id": 12332983704
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12332983705,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.36647,
+          43.684296
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "16",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "Evergreen",
+        "operator:type": "public",
+        "quantity": "2",
+        "meta_feature_last_updated": "2024-11-11T22:46:36+00:00",
+        "meta_osm_node_id": 12332983705
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12332983706,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.366446,
+          43.683923
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "Evergreen",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-11-11T22:46:36+00:00",
+        "meta_osm_node_id": 12332983706
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12332983707,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.366266,
+          43.683794
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "Evergreen",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-11-11T22:46:36+00:00",
+        "meta_osm_node_id": 12332983707
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12332983708,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.364984,
+          43.684754
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "Evergreen",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-11-11T22:46:36+00:00",
+        "meta_osm_node_id": 12332983708
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12332983709,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.366265,
+          43.683756
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "Evergreen",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-11-11T22:46:36+00:00",
+        "meta_osm_node_id": 12332983709
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12332983710,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.36567,
+          43.684128
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "Evergreen",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-11-11T22:46:36+00:00",
+        "meta_osm_node_id": 12332983710
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12332983711,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.366298,
+          43.683851
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "Evergreen",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-11-11T22:46:36+00:00",
+        "meta_osm_node_id": 12332983711
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12332983712,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.36515,
+          43.68435
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "Evergreen",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2024-11-11T22:46:36+00:00",
+        "meta_osm_node_id": 12332983712
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12332983713,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.365781,
+          43.684371
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "16",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "Evergreen",
+        "operator:type": "public",
+        "quantity": "2",
+        "meta_feature_last_updated": "2024-11-11T22:46:36+00:00",
+        "meta_osm_node_id": 12332983713
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12347034332,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.409733,
+          43.646276
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "7",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-25510",
+        "meta_feature_last_updated": "2024-11-17T00:03:53+00:00",
+        "meta_osm_node_id": 12347034332
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12347034333,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.413265,
+          43.645212
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "7",
+        "covered": "no",
+        "description": "hanger rack",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "quantity": "2",
+        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-11168",
+        "meta_feature_last_updated": "2024-11-17T00:03:53+00:00",
+        "meta_osm_node_id": 12347034333
+      }
+    },
+    {
+      "type": "Feature",
       "id": 135331961,
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -79.264517,
-            43.731859
+            -79.264644,
+            43.731817
           ],
           [
-            -79.264471,
-            43.731875
+            -79.264672,
+            43.731848
           ],
           [
-            -79.26446,
-            43.731857
+            -79.26465,
+            43.731858
           ],
           [
-            -79.264505,
-            43.731842
+            -79.264622,
+            43.731828
           ],
           [
-            -79.264517,
-            43.731859
+            -79.264644,
+            43.731817
           ]
         ]
       },
       "properties": {
-        "access": "key",
+        "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
         "capacity": "6",
+        "covered": "yes",
+        "fee": "yes",
+        "image": "https://flic.kr/p/2pjG6pL",
+        "indoor": "no",
+        "lit": "yes",
         "operator": "City of Toronto",
-        "meta_feature_last_updated": "2021-06-17T05:40:49+00:00",
+        "operator:type": "government",
+        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
+        "meta_feature_last_updated": "2024-11-18T02:17:55+00:00",
         "meta_osm_node_id": 135331961
       }
     },
