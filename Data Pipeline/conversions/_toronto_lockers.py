@@ -16,7 +16,7 @@ _dataset_name = "toronto_lockers"
 response_schema_toronto_lockers = pa.DataFrameSchema(
     {
         "location": pa.Column(str, required=True),
-        "description": pa.Column(str, required=True),
+        "location_description": pa.Column(str, required=True),
         "quantity": pa.Column(str, required=True),
         "geometry": pa.Column("geometry"),
     }
@@ -39,7 +39,7 @@ def filter_properties(gdf: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
 def transform_properties(gdf: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
     original_cols = gdf.columns.drop("geometry")
 
-    CAPACITY_PATTERN = r"# of lockers (?P<capacity>\d+)"
+    CAPACITY_PATTERN = r"# of lockers:? (?P<capacity>\d+)"
 
     transformed_gdf = gdf.assign(
         **{
@@ -56,7 +56,7 @@ def transform_properties(gdf: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
             "operator:type": "government",
             "access": "customers",
             "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
-            "description": gdf["location"] + ": " + gdf["description"],
+            "description": gdf["location"] + ": " + gdf["location_description"],
         }
     ).drop(original_cols, axis=1)
 

@@ -256,7 +256,7 @@ class BikeLockersToronto(BikeData):
                     "latitude": row["data-lat"],
                     "longitude": row["data-lng"],
                     "location": row.find_all("td")[0].get_text(strip=True),
-                    "description": row.find_all("td")[1]
+                    "location_description": row.find_all("td")[1]
                     .find_all("p")[0]
                     .get_text(strip=True),
                     "quantity": row.find_all("td")[1]
@@ -286,7 +286,7 @@ class BikeLockersToronto(BikeData):
 
     @property
     def response_geojson(self):
-        return self._lockers_gdf.to_json(drop_id=True, indent=2)
+        return geojson.loads(self._lockers_gdf.to_json(drop_id=True))
 
     def normalize(
         self, filter_properties, transform_properties, *, format="geodataframe"
