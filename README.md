@@ -1,6 +1,51 @@
 # New Toronto Bicycle Parking Map
 
-Development for new BikeSpace Toronto parking map
+This script downloads, filters, and transforms data from two major sources: City of Toronto Open Data and OpenStreetMap. 
+
+The goal of the script is to provide a clean and uniform data set that can be used to create a map provided on [bikespace.ca](https://bikespace.ca/) that helps cyclists find bicycle parking in Toronto.
+
+Current proof of concept maps that use this data:
+
+### [Map Demo](https://demo-map-app.new-parking-map.pages.dev/)
+
+Link: https://demo-map-app.new-parking-map.pages.dev/
+
+- Displays bicycle parking from both City and OpenStreetMap sources with some simple de-duplication.
+- You can click on the features to see more details.
+- If you click on the heading at the top it will provide some more information and has a button to optionally show a bike theft heatmap. (source: https://open.toronto.ca/dataset/bicycle-thefts/)
+- The City of Toronto bike network is shown for context (source: https://open.toronto.ca/dataset/cycling-network/)
+- This is a proof of concept, we hope to make a better map available through bikespace.ca (see, e.g. https://github.com/bikespace/bikespace/issues/155)
+
+### [Quest Map](https://quest-map.new-parking-map.pages.dev/)
+
+Link: https://quest-map.new-parking-map.pages.dev/
+
+- Displays bicycle parking from the City that needs to be surveyed to fill in some gaps in the data.
+- There is also a toggle on this map to show individual ring and posts in case that's useful (e.g. for issue reporting)
+- [Bike Stations](https://open.toronto.ca/dataset/bicycle-parking-bike-stations-indoor/) data set is address geolocated and could be improved with more precise locations.
+- [Bicycle Parking - High Capacity (Outdoor)](https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/) and [Bicycle Parking Racks](https://open.toronto.ca/dataset/bicycle-parking-racks/) are also address geolocated and could be improved with more precise locations. These two datasets also overlap significantly (and need to be de-duplicated) and have many racks that are out of date, e.g. have been removed or relocated.
+- [Street Furniture - Bicycle Parking](https://open.toronto.ca/dataset/street-furniture-bicycle-parking/) is very high quality but is missing the capacity number for bike racks. It also has some racks that are duplicates of racks in the High Capacity or Racks datasets.
+
+How to fix:
+
+- Survey the location
+- To add/edit details, add or link to a bike parking node in OpenStreetMap.
+  - You can link the OpenStreetMap entry to any of the City datasets using the appropriate [ref tag](https://www.openstreetmap.org/user/tallcoleman).
+  - The correct ref tag value should be pre-generated for you if you click on the details in the quest map.
+  - The script uses the ref tags to de-duplicate entries for the "display" dataset.
+- To remove City bike parking that no longer exists, add an entry in `Data Pipeline/city_modifications/open_toronto_ca_exclusions.json`.
+  - There is a template in the `Data Pipeline/city_modifications` folder to help you.
+  - These entries will be removed from the "display" dataset.
+
+### [Current Map](https://demo-map-app.new-parking-map.pages.dev/CurrentMap/)
+
+Link: https://demo-map-app.new-parking-map.pages.dev/CurrentMap/
+
+- This shows the old data layer currently used for https://bikespace.ca/ParkingMap (in red) along with the current up-to-date data from the City open datasets (in black) and OpenStreetMap (in blue). 
+- There are some bicycle parking points in the old data layer that are not currently available in any City open data set or OpenStreetMap that should be added to OpenStreetMap.
+
+
+## Development
 
 Folder content is as follows:
 
@@ -8,7 +53,7 @@ Folder content is as follows:
 * Output Files: data after upstream filtering and transformation
 * Display Files: final data after downstream filtering and transformation
 
-## Data Processing Script - Toronto Bicycle Parking Locations
+### Data Processing Script - Toronto Bicycle Parking Locations
 
 Main script is `Data Pipeline/data_pipeline.py`
 
@@ -18,10 +63,6 @@ $ . .venv/bin/activate
 $ pip install -r requirements.txt # if needed
 $ python "Data Pipeline/data_pipeline.py"
 ```
-
-### About
-
-This script downloads, filters, and transforms data from two major sources: City of Toronto Open Data and OpenStreetMap. The goal of the script is to provide a clean and uniform data set that can be used to create a map that helps cyclists find bicycle parking in Toronto.
 
 ### Data Sources:
 
