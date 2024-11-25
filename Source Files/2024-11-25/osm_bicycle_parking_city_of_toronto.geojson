@@ -7377,6 +7377,28 @@
     },
     {
       "type": "Feature",
+      "id": 5092695958,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.330139,
+          43.682665
+        ]
+      },
+      "properties": {
+        "construction:amenity": "bicycle_parking",
+        "construction:bicycle_parking": "rack",
+        "covered": "no",
+        "note": "Temporarily removed for elevator construction",
+        "operator": "Toronto Transit Commision",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "3",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "51",
+        "meta_feature_last_updated": "2024-11-25T10:49:28+00:00",
+        "meta_osm_node_id": 5092695958
+      }
+    },
+    {
+      "type": "Feature",
       "id": 5092695959,
       "geometry": {
         "type": "Point",
@@ -7400,6 +7422,29 @@
         "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-35030;BP-35038",
         "meta_feature_last_updated": "2024-11-24T00:04:57+00:00",
         "meta_osm_node_id": 5092695959
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5092695960,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.330121,
+          43.682623
+        ]
+      },
+      "properties": {
+        "access": "permissive",
+        "construction:amenity": "bicycle_parking",
+        "construction:bicycle_parking": "rack",
+        "covered": "no",
+        "note": "Temporarily removed for elevator construction",
+        "operator": "Toronto Transit Commision",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "3",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "50",
+        "meta_feature_last_updated": "2024-11-25T10:49:28+00:00",
+        "meta_osm_node_id": 5092695960
       }
     },
     {
@@ -35020,6 +35065,25 @@
         "capacity": "2",
         "meta_feature_last_updated": "2024-04-12T16:15:26+00:00",
         "meta_osm_node_id": 11812158176
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11812158177,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.450736,
+          43.650868
+        ]
+      },
+      "properties": {
+        "note": "March 2024 this bollar is broken",
+        "was:amenity": "bicycle_parking",
+        "was:bicycle_parking": "bollard",
+        "was:capacity": "2",
+        "meta_feature_last_updated": "2024-04-12T16:15:26+00:00",
+        "meta_osm_node_id": 11812158177
       }
     },
     {
