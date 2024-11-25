@@ -3614,7 +3614,12 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2013-06-27T16:13:31+00:00",
+        "bicycle_parking": "stands",
+        "capacity": "10",
+        "check_date": "2024-11-22",
+        "check_date:capacity": "2024-11-22",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-11-22T20:20:55+00:00",
         "meta_osm_node_id": 2363197095
       }
     },
@@ -6500,7 +6505,8 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2016-07-23T01:51:10+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-11-18T21:01:05+00:00",
         "meta_osm_node_id": 4316541683
       }
     },
@@ -7371,58 +7377,29 @@
     },
     {
       "type": "Feature",
-      "id": 5092695958,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.330139,
-          43.682665
-        ]
-      },
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "covered": "no",
-        "operator": "Toronto Transit Commision",
-        "meta_feature_last_updated": "2017-09-09T19:45:33+00:00",
-        "meta_osm_node_id": 5092695958
-      }
-    },
-    {
-      "type": "Feature",
       "id": 5092695959,
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.330079,
-          43.682526
+          -79.330112,
+          43.682586
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "operator": "Toronto Transit Commision (TTC)",
-        "meta_feature_last_updated": "2017-09-09T19:45:34+00:00",
-        "meta_osm_node_id": 5092695959
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 5092695960,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.330121,
-          43.682623
-        ]
-      },
-      "properties": {
-        "access": "permissive",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
+        "bicycle_parking": "bollard",
+        "bike_ride": "yes",
+        "capacity": "6",
         "covered": "no",
-        "operator": "Toronto Transit Commision",
-        "meta_feature_last_updated": "2017-09-09T19:45:34+00:00",
-        "meta_osm_node_id": 5092695960
+        "fee": "no",
+        "note": "Not affected by elevator construction",
+        "operator": "Toronto Transit Commision (TTC)",
+        "operator:type": "government",
+        "quantity": "3",
+        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-35030;BP-35038",
+        "meta_feature_last_updated": "2024-11-24T00:04:57+00:00",
+        "meta_osm_node_id": 5092695959
       }
     },
     {
@@ -23816,7 +23793,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
         "colour": "grey",
-        "meta_feature_last_updated": "2022-08-07T11:53:21+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-11-21T02:38:05+00:00",
         "meta_osm_node_id": 9937200502
       }
     },
@@ -33285,8 +33263,13 @@
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-03-18T03:51:52+00:00",
+        "bicycle_parking": "lockers",
+        "capacity": "6",
+        "covered": "yes",
+        "fee": "yes",
+        "meta_feature_last_updated": "2024-11-22T14:30:53+00:00",
         "meta_osm_node_id": 11740141757
       }
     },
@@ -36647,8 +36630,12 @@
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-06-06T11:10:16+00:00",
+        "bicycle_parking": "lockers",
+        "covered": "yes",
+        "fee": "yes",
+        "meta_feature_last_updated": "2024-11-22T14:34:02+00:00",
         "meta_osm_node_id": 11960108511
       }
     },
@@ -41582,7 +41569,10 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-09-23T16:05:44+00:00",
+        "bicycle_parking": "stands",
+        "capacity": "5",
+        "covered": "no",
+        "meta_feature_last_updated": "2024-11-22T19:39:47+00:00",
         "meta_osm_node_id": 12194928151
       }
     },
@@ -45179,6 +45169,54 @@
         "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-11168",
         "meta_feature_last_updated": "2024-11-17T00:03:53+00:00",
         "meta_osm_node_id": 12347034333
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12360510636,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.577152,
+          43.641621
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "bike_ride": "no",
+        "capacity": "2",
+        "colour": "black",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "meta_feature_last_updated": "2024-11-21T01:36:38+00:00",
+        "meta_osm_node_id": 12360510636
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12368793861,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.332352,
+          43.681617
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "4",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2024-11-24T00:13:03+00:00",
+        "meta_osm_node_id": 12368793861
       }
     },
     {
