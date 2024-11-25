@@ -4,7 +4,7 @@
     {
       "dataset_title": "Bicycle Parking in the City of Toronto (324211)",
       "dataset_name": "osm_bicycle_parking_city_of_toronto",
-      "overpass_query": "area(id:3600324211)->.searchArea;\nnwr[\"amenity\"=\"bicycle_parking\"](area.searchArea);"
+      "overpass_query": "area(id:3600324211)->.searchArea;\nnwr[~\"amenity$\"~\"^bicycle_parking$\"](area.searchArea);"
     }
   ]
 }
