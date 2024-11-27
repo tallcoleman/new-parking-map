@@ -407,5 +407,11 @@
     "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-06839" }],
     "reason": "missing",
     "notes": "Wheelbender rack visible in older Google Streetview images; now gone."
+  },
+  {
+    "survey_date": "2024-11-26",
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-06902" }],
+    "reason": "removed",
+    "notes": "Appears to have been removed when the History music venue was constructed. Rack visible in Google street view history (now gone) is a wheelbender."
   }
 ]
