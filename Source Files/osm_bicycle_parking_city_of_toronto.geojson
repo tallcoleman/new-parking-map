@@ -45505,6 +45505,78 @@
     },
     {
       "type": "Feature",
+      "id": 12408194989,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.453032,
+          43.659006
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-12-09T21:47:08+00:00",
+        "meta_osm_node_id": 12408194989
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12421404275,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.381183,
+          43.659221
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "16",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "quantity": "2",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "51",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "41",
+        "meta_feature_last_updated": "2024-12-13T21:19:01+00:00",
+        "meta_osm_node_id": 12421404275
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12421404276,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.381177,
+          43.659191
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "28",
+        "covered": "no",
+        "description": "hanger rack",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "government",
+        "quantity": "4",
+        "meta_feature_last_updated": "2024-12-13T21:19:01+00:00",
+        "meta_osm_node_id": 12421404276
+      }
+    },
+    {
+      "type": "Feature",
       "id": 135331961,
       "geometry": {
         "type": "LineString",
