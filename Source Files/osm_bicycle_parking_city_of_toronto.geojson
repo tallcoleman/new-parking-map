@@ -2715,23 +2715,6 @@
     },
     {
       "type": "Feature",
-      "id": 1138410845,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.404905,
-          43.668729
-        ]
-      },
-      "properties": {
-        "amenity": "bicycle_parking",
-        "description": "Ring post",
-        "meta_feature_last_updated": "2011-02-06T02:22:42+00:00",
-        "meta_osm_node_id": 1138410845
-      }
-    },
-    {
-      "type": "Feature",
       "id": 1139550979,
       "geometry": {
         "type": "Point",
@@ -45573,6 +45556,42 @@
         "quantity": "4",
         "meta_feature_last_updated": "2024-12-13T21:19:01+00:00",
         "meta_osm_node_id": 12421404276
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12438054448,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.408337,
+          43.677267
+        ]
+      },
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2024-12-21T02:43:05+00:00",
+        "meta_osm_node_id": 12438054448
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12442177541,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.389387,
+          43.708702
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2024-12-22T19:42:31+00:00",
+        "meta_osm_node_id": 12442177541
       }
     },
     {
