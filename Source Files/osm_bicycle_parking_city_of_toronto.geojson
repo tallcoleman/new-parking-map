@@ -5269,13 +5269,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.290543,
-          43.690507
+          -79.290641,
+          43.690554
         ]
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2015-04-17T03:07:50+00:00",
+        "meta_feature_last_updated": "2024-12-27T03:15:54+00:00",
         "meta_osm_node_id": 3460784457
       }
     },
@@ -22981,6 +22981,7 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
         "capacity": "10",
+        "colour": "silver",
         "covered": "no",
         "description": "staple rack with 5 stands",
         "fee": "no",
@@ -22989,7 +22990,7 @@
         "operator": "City of Toronto",
         "operator:type": "government",
         "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-24827",
-        "meta_feature_last_updated": "2023-12-16T01:26:02+00:00",
+        "meta_feature_last_updated": "2024-12-27T19:29:20+00:00",
         "meta_osm_node_id": 9736007485
       }
     },
