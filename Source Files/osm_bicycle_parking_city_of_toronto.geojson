@@ -13521,7 +13521,10 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2019-03-26T22:48:09+00:00",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "meta_feature_last_updated": "2025-01-17T13:23:26+00:00",
         "meta_osm_node_id": 6363681155
       }
     },
@@ -41499,22 +41502,6 @@
     },
     {
       "type": "Feature",
-      "id": 12192777322,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.537727,
-          43.63714
-        ]
-      },
-      "properties": {
-        "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-09-22T14:10:22+00:00",
-        "meta_osm_node_id": 12192777322
-      }
-    },
-    {
-      "type": "Feature",
       "id": 12193314824,
       "geometry": {
         "type": "Point",
@@ -42676,7 +42663,7 @@
         ]
       },
       "properties": {
-        "access": "private",
+        "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
         "capacity": "26",
@@ -42686,11 +42673,10 @@
         "fee": "yes",
         "operator": "City of Toronto",
         "operator:type": "government",
-        "private": "customers",
         "quantity": "13",
         "ref:open.toronto.ca": "no",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
-        "meta_feature_last_updated": "2024-10-11T23:00:30+00:00",
+        "meta_feature_last_updated": "2025-01-14T18:45:12+00:00",
         "meta_osm_node_id": 12245059980
       }
     },
