@@ -66,11 +66,11 @@ def run_pipeline():
         "%Y-%m-%d"
     )
 
-    sfp = Path(f"Source Files/")
+    sfp = Path("Source Files/")
     sfp_archive = sfp / f"{today_toronto_isodate}/"
-    ofp = Path(f"Output Files/")
+    ofp = Path("Output Files/")
     ofp_archive = ofp / f"{today_toronto_isodate}/"
-    dfp = Path(f"Display Files/")
+    dfp = Path("Display Files/")
     dfp_archive = dfp / f"{today_toronto_isodate}/"
 
     for p in [sfp, sfp_archive, ofp, ofp_archive, dfp, dfp_archive]:
@@ -153,7 +153,7 @@ def run_pipeline():
         normalized_gdf = bike_data.normalize(filter_properties, transform_properties)
 
         # save normalized output
-        na_option = "drop" if (type(bike_data) == BikeDataOSM) else "null"
+        na_option = "drop" if isinstance(bike_data, BikeDataOSM) else "null"
         with open(ofp / f"{bike_data.dataset_name}-normalized.geojson", "w") as f:
             f.write(normalized_gdf.to_json(na=na_option, drop_id=True, indent=2))
         with open(
@@ -254,7 +254,7 @@ def run_pipeline():
     # get output files, do further processing and combine
     lockers_data_list = []
     for dataset in sources["lockers"]["datasets"]:
-        gdf = geopandas.read_file(ofp / f"{dataset["dataset_name"]}-normalized.geojson")
+        gdf = geopandas.read_file(ofp / f"{dataset['dataset_name']}-normalized.geojson")
         gdf["meta_source_last_updated"] = gdf["meta_source_last_updated"].astype("str")
         lockers_data_list.append(gdf)
 
@@ -289,7 +289,7 @@ def run_pipeline():
     # drop all osm with operator="City of Toronto" (case/space-insensitive) unless they have ref tag.
     # this also retains osm points with ANY value for "ref:open.toronto.ca", including "ref.open.toronto.ca"="no"
     operator_not_city_test = (
-        osm_combined["operator"].str.contains(
+        osm_combined["operator"].str.contains(  # noqa: E712
             r"city\s*?of\s*?toronto", case=False, regex=True
         )
         != True
@@ -364,11 +364,11 @@ def run_pipeline():
     )
 
     # run clustering (excluding TMU)
-    city_racks_clustered = group_proximate_racks(city_racks[city_racks["tmu"] == False])
+    city_racks_clustered = group_proximate_racks(city_racks[city_racks["tmu"] == False])  # noqa: E712
     city_full = pd.concat(
         [
             city_racks_clustered,
-            city_racks[city_racks["tmu"] == True],
+            city_racks[city_racks["tmu"] == True],  # noqa: E712
             city_not_racks,
             city_data["bicycle-parking-bike-stations-indoor"],
         ]
