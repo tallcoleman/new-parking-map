@@ -5824,35 +5824,26 @@
     },
     {
       "type": "Feature",
-      "id": 3638179505,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.192941,
-          43.786739
-        ]
-      },
-      "properties": {
-        "amenity": "bicycle_parking",
-        "colour": "grey",
-        "meta_feature_last_updated": "2015-07-07T03:09:58+00:00",
-        "meta_osm_node_id": 3638179505
-      }
-    },
-    {
-      "type": "Feature",
       "id": 3638179506,
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.192975,
-          43.786739
+          -79.192953,
+          43.786751
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "12",
         "colour": "grey",
-        "meta_feature_last_updated": "2015-07-07T03:09:58+00:00",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Centennial College",
+        "operator:type": "public",
+        "quantity": "2",
+        "meta_feature_last_updated": "2025-02-11T23:36:00+00:00",
         "meta_osm_node_id": 3638179506
       }
     },
@@ -6238,22 +6229,6 @@
         "quantity": "2",
         "meta_feature_last_updated": "2024-02-18T20:45:02+00:00",
         "meta_osm_node_id": 4264597526
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 4267030215,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.357336,
-          43.650845
-        ]
-      },
-      "properties": {
-        "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2016-06-26T20:47:42+00:00",
-        "meta_osm_node_id": 4267030215
       }
     },
     {
@@ -20343,7 +20318,8 @@
         "covered": "no",
         "fee": "no",
         "indoor": "no",
-        "meta_feature_last_updated": "2021-10-11T18:58:10+00:00",
+        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-26596;BP-26595;BP-26597;BP-26593",
+        "meta_feature_last_updated": "2025-02-15T14:45:30+00:00",
         "meta_osm_node_id": 9165674724
       }
     },
@@ -24317,16 +24293,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.193368,
-          43.790007
+          -79.193365,
+          43.790052
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
-        "capacity": "4",
+        "capacity": "10",
+        "capacity:cargo_bike": "5",
+        "cargo_bike": "yes",
         "covered": "no",
-        "meta_feature_last_updated": "2022-10-04T20:58:01+00:00",
+        "fee": "no",
+        "operator": "Toronto Pan Am Sports Centre",
+        "operator:type": "public",
+        "quantity": "5",
+        "meta_feature_last_updated": "2025-02-11T23:36:00+00:00",
         "meta_osm_node_id": 10075857915
       }
     },
@@ -28923,14 +28906,14 @@
         "bicycle_parking": "stands",
         "capacity": "10",
         "cargo_bike": "yes",
-        "covered": "yes",
+        "covered": "no",
         "description": "Five plant-shaped stands",
         "fee": "no",
         "operator": "City of Toronto",
         "operator:type": "government",
         "quantity": "5",
         "ref:open.toronto.ca": "no",
-        "meta_feature_last_updated": "2024-06-20T22:28:18+00:00",
+        "meta_feature_last_updated": "2025-02-10T13:51:22+00:00",
         "meta_osm_node_id": 11276275653
       }
     },
@@ -46265,6 +46248,150 @@
     },
     {
       "type": "Feature",
+      "id": 12580470643,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.209469,
+          43.788101
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2025-02-11T23:36:00+00:00",
+        "meta_osm_node_id": 12580470643
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12580470644,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.271809,
+          43.768023
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "1",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-02-11T23:36:00+00:00",
+        "meta_osm_node_id": 12580470644
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12580470645,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.251327,
+          43.773809
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "6",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "FreshCo",
+        "meta_feature_last_updated": "2025-02-11T23:36:00+00:00",
+        "meta_osm_node_id": 12580470645
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12580470646,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.193323,
+          43.789974
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "8",
+        "capacity:cargo_bike": "4",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Toronto Pan Am Sports Centre",
+        "operator:type": "public",
+        "quantity": "4",
+        "meta_feature_last_updated": "2025-02-11T23:36:00+00:00",
+        "meta_osm_node_id": 12580470646
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12580470647,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.271361,
+          43.76816
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "1",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-02-11T23:36:00+00:00",
+        "meta_osm_node_id": 12580470647
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12588878472,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.375865,
+          43.648217
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "14",
+        "covered": "no",
+        "description": "corral",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2025-02-15T02:35:33+00:00",
+        "meta_osm_node_id": 12588878472
+      }
+    },
+    {
+      "type": "Feature",
       "id": 135331961,
       "geometry": {
         "type": "LineString",
@@ -48083,11 +48210,18 @@
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
-        "capacity": "16",
+        "capacity": "32",
+        "capacity:cargo_bike": "16",
+        "cargo_bike": "yes",
         "covered": "no",
-        "meta_feature_last_updated": "2022-10-04T21:05:51+00:00",
+        "fee": "no",
+        "operator": "Toronto Pan Am Sports Centre",
+        "operator:type": "public",
+        "quantity": "16",
+        "meta_feature_last_updated": "2025-02-11T23:36:00+00:00",
         "meta_osm_node_id": 1100944972
       }
     },
