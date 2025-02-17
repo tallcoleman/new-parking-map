@@ -2783,7 +2783,8 @@
       "properties": {
         "amenity": "bicycle_parking",
         "description": "Ring post",
-        "meta_feature_last_updated": "2011-02-07T02:00:51+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-02-17T19:58:52+00:00",
         "meta_osm_node_id": 1140227583
       }
     },
@@ -4257,7 +4258,8 @@
         "capacity": "4",
         "colour": "gray",
         "note": "ring and post",
-        "meta_feature_last_updated": "2014-04-20T18:39:04+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-02-17T19:58:52+00:00",
         "meta_osm_node_id": 2804457745
       }
     },
@@ -4273,10 +4275,12 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
         "capacity": "1",
         "colour": "gray",
         "note": "ring and post",
-        "meta_feature_last_updated": "2014-04-20T18:43:11+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-02-17T19:58:52+00:00",
         "meta_osm_node_id": 2804471538
       }
     },
@@ -20312,14 +20316,17 @@
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "8",
         "covered": "no",
         "fee": "no",
         "indoor": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
         "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-26596;BP-26595;BP-26597;BP-26593",
-        "meta_feature_last_updated": "2025-02-15T14:45:30+00:00",
+        "meta_feature_last_updated": "2025-02-17T15:05:29+00:00",
         "meta_osm_node_id": 9165674724
       }
     },
@@ -20340,7 +20347,9 @@
         "covered": "no",
         "fee": "no",
         "name": "Rosedale Station Bike Parking",
-        "meta_feature_last_updated": "2021-10-11T18:58:10+00:00",
+        "operator": "Toronto Transit Commission",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2025-02-17T19:58:52+00:00",
         "meta_osm_node_id": 9165674727
       }
     },
@@ -20765,6 +20774,7 @@
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "18",
@@ -20775,9 +20785,11 @@
         "image": "https://flic.kr/p/2prUUnf",
         "indoor": "no",
         "lit": "yes",
+        "operator": "City of Toronto",
+        "operator:type": "government",
         "quantity": "9",
         "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-01882;BP-01883;BP-01884;BP-01885;BP-01886;BP-01887;BP-01888;BP-01889;BP-01890;BP-01891",
-        "meta_feature_last_updated": "2025-01-28T12:26:07+00:00",
+        "meta_feature_last_updated": "2025-02-17T15:05:29+00:00",
         "meta_osm_node_id": 9196100969
       }
     },
@@ -33029,8 +33041,10 @@
         "description": "wave rack",
         "fee": "no",
         "image": "https://flic.kr/p/2pDJvKX",
+        "operator": "City of Toronto",
+        "operator:type": "government",
         "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-04064",
-        "meta_feature_last_updated": "2024-03-17T22:01:33+00:00",
+        "meta_feature_last_updated": "2025-02-17T15:05:29+00:00",
         "meta_osm_node_id": 11737649269
       }
     },
@@ -42866,9 +42880,11 @@
         "cargo_bike": "no",
         "covered": "no",
         "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
         "quantity": "4",
         "ref:open.toronto.ca": "no",
-        "meta_feature_last_updated": "2024-10-23T02:50:55+00:00",
+        "meta_feature_last_updated": "2025-02-17T15:05:29+00:00",
         "meta_osm_node_id": 12280421215
       }
     },
@@ -46388,6 +46404,35 @@
         "ref:open.toronto.ca": "no",
         "meta_feature_last_updated": "2025-02-15T02:35:33+00:00",
         "meta_osm_node_id": 12588878472
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12596434790,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.399577,
+          43.697106
+        ]
+      },
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "8",
+        "capacity:cargo_bike": "4",
+        "cargo_bike": "yes",
+        "colour": "red",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2qMkN8B",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "quantity": "4",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2025-02-17T19:58:52+00:00",
+        "meta_osm_node_id": 12596434790
       }
     },
     {
