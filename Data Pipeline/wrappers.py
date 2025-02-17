@@ -122,7 +122,11 @@ class BikeDataToronto(BikeData):
         output_geojson["features"] = transformed_features
 
         if format == "geodataframe":
-            return geopandas.GeoDataFrame.from_features(output_geojson, crs=4326)
+            return (
+                geopandas.GeoDataFrame.from_features(output_geojson, crs=4326)
+                .convert_dtypes()
+                .astype({"capacity": "Int64"})
+            )
         elif format == "geojson":
             return output_geojson
         else:
@@ -201,7 +205,9 @@ class BikeDataOSM(BikeData):
         if format="geojson": dict
           geojson format
         """
-        features = geopandas.GeoDataFrame.from_features(self.response_geojson, crs=4326)
+        features = geopandas.GeoDataFrame.from_features(
+            self.response_geojson, crs=4326
+        ).convert_dtypes()
 
         # apply filters
         filtered_features = filter_properties(features)
@@ -299,8 +305,11 @@ class BikeLockersToronto(BikeData):
         # apply transforms
         transformed_gdf = transform_properties(filtered_gdf)
 
+        # convert dtypes
+        typed_gdf = transformed_gdf.convert_dtypes().astype({"capacity": "Int64"})
+
         # add global properties
-        meta_gdf = transformed_gdf.assign(
+        meta_gdf = typed_gdf.assign(
             meta_source="Source data from the City of Toronto Bicycle Locker webpage)",
             meta_source_last_updated=self.last_updated.isoformat(),
         )

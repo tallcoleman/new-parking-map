@@ -78,7 +78,7 @@ def group_proximate_rings(rings, radius=5.0):
     )
 
     # convert back to WGS 84 lat/long
-    out_rings = rings_UTM17N.to_crs(4326)
+    out_rings = rings_UTM17N.to_crs(4326).astype({"quantity": "Int64"})
 
     return out_rings
 
@@ -175,7 +175,7 @@ def group_proximate_racks(racks, radius=30.0):
     ).drop("cluster", axis=1)
 
     # convert back to WGS 84 lat/long
-    out_racks = racks_UTM17N_recombined.to_crs(4326)
+    out_racks = racks_UTM17N_recombined.to_crs(4326).astype({"quantity": "Int64"})
 
     return out_racks
 

@@ -198,8 +198,10 @@ def run_pipeline():
     # get output files, do further processing and combine
     city_data = {}
     for dataset in sources["city"]["datasets"]:
-        gdf = geopandas.read_file(ofp / f"{dataset['dataset_name']}-normalized.geojson")
-        gdf["meta_source_last_updated"] = gdf["meta_source_last_updated"].astype("str")
+        gdf = geopandas.read_file(
+            ofp / f"{dataset['dataset_name']}-normalized.geojson"
+        ).convert_dtypes()
+        gdf = gdf.astype({"meta_source_last_updated": "str", "capacity": "Int64"})
         gdf = ref_cols_to_str(gdf)
         gdf = gdf.explode(index_parts=False)
         gdf.insert(0, "source", dataset["dataset_name"])
@@ -225,10 +227,14 @@ def run_pipeline():
     # get output files, do further processing and combine
     osm_data_list = []
     for dataset in sources["osm"]["datasets"]:
-        gdf = geopandas.read_file(ofp / f"{dataset['dataset_name']}-normalized.geojson")
-        gdf["meta_source_last_updated"] = gdf["meta_source_last_updated"].astype("str")
-        gdf["meta_feature_last_updated"] = gdf["meta_feature_last_updated"].astype(
-            "str"
+        gdf = geopandas.read_file(
+            ofp / f"{dataset['dataset_name']}-normalized.geojson"
+        ).convert_dtypes()
+        gdf = gdf.astype(
+            {
+                "meta_source_last_updated": "str",
+                "meta_feature_last_updated": "str",
+            }
         )
         osm_data_list.append(gdf)
 
@@ -255,7 +261,9 @@ def run_pipeline():
     lockers_data_list = []
     for dataset in sources["lockers"]["datasets"]:
         gdf = geopandas.read_file(ofp / f"{dataset['dataset_name']}-normalized.geojson")
-        gdf["meta_source_last_updated"] = gdf["meta_source_last_updated"].astype("str")
+        gdf = gdf.convert_dtypes().astype(
+            {"meta_source_last_updated": "str", "capacity": "Int64"}
+        )
         lockers_data_list.append(gdf)
 
     lockers: geopandas.GeoDataFrame = pd.concat(lockers_data_list)
