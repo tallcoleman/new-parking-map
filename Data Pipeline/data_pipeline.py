@@ -288,13 +288,15 @@ def run_pipeline():
 
     # drop all osm with operator="City of Toronto" (case/space-insensitive) unless they have ref tag.
     # this also retains osm points with ANY value for "ref:open.toronto.ca", including "ref.open.toronto.ca"="no"
-    operator_not_city_test = (
+    operator_not_city_and_no_ref_test = (
         osm_combined["operator"].str.contains(  # noqa: E712
             r"city\s*?of\s*?toronto", case=False, regex=True
         )
         != True
+    ) & (~open_toronto_ca_test)
+    osm_filtered = pd.concat(
+        [city_verified_osm, osm_combined[operator_not_city_and_no_ref_test]]
     )
-    osm_filtered = pd.concat([city_verified_osm, osm_combined[operator_not_city_test]])
 
     # drop city data points in the manual exclusion file
     city_exclusions_path = Path(
