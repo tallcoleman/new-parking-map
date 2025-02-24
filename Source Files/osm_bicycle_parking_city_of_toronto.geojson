@@ -267,9 +267,9 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "capacity": "2",
         "covered": "no",
-        "meta_feature_last_updated": "2021-11-06T20:34:29+00:00",
+        "operator": "University of Toronto",
+        "meta_feature_last_updated": "2025-02-21T23:01:02+00:00",
         "meta_osm_node_id": 390546362
       }
     },
@@ -734,10 +734,13 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "capacity": "2",
+        "bicycle_parking": "bollard",
+        "capacity": "8",
         "covered": "no",
         "description": "4 ring post",
-        "meta_feature_last_updated": "2025-01-30T21:50:42+00:00",
+        "operator": "University of Toronto",
+        "quantity": "4",
+        "meta_feature_last_updated": "2025-02-21T23:01:02+00:00",
         "meta_osm_node_id": 772941930
       }
     },
@@ -898,10 +901,12 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
+        "bicycle_parking": "bollard",
         "capacity": "10",
         "covered": "no",
-        "meta_feature_last_updated": "2022-02-16T13:35:50+00:00",
+        "operator": "University of Toronto",
+        "quantity": "5",
+        "meta_feature_last_updated": "2025-02-21T23:01:02+00:00",
         "meta_osm_node_id": 773000497
       }
     },
@@ -946,10 +951,12 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
+        "bicycle_parking": "bollard",
         "capacity": "10",
         "covered": "no",
-        "meta_feature_last_updated": "2022-02-16T13:35:55+00:00",
+        "operator": "University of Toronto",
+        "quantity": "5",
+        "meta_feature_last_updated": "2025-02-21T23:01:02+00:00",
         "meta_osm_node_id": 773000508
       }
     },
@@ -1342,11 +1349,13 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
-        "capacity": "2",
+        "bicycle_parking": "bollard",
+        "capacity": "16",
         "covered": "no",
         "description": "8 ring post silver",
-        "meta_feature_last_updated": "2021-11-06T20:33:33+00:00",
+        "operator": "City of Toronto",
+        "quantity": "8",
+        "meta_feature_last_updated": "2025-02-21T23:01:02+00:00",
         "meta_osm_node_id": 775376995
       }
     },
@@ -1485,8 +1494,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.399231,
-          43.667497
+          -79.399389,
+          43.667535
         ]
       },
       "properties": {
@@ -1495,7 +1504,8 @@
         "capacity": "2",
         "covered": "no",
         "description": "Rings and posts",
-        "meta_feature_last_updated": "2021-11-06T20:28:09+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-02-21T23:01:02+00:00",
         "meta_osm_node_id": 782139315
       }
     },
@@ -1675,24 +1685,6 @@
         "quantity": "6",
         "meta_feature_last_updated": "2024-07-19T22:41:27+00:00",
         "meta_osm_node_id": 810328269
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 828418481,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.397958,
-          43.668029
-        ]
-      },
-      "properties": {
-        "amenity": "bicycle_parking",
-        "covered": "no",
-        "note": "ring and post from west end of OISE to Bedford",
-        "meta_feature_last_updated": "2022-02-16T13:39:41+00:00",
-        "meta_osm_node_id": 828418481
       }
     },
     {
@@ -2566,8 +2558,10 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "covered": "no",
         "description": "Ring post",
-        "meta_feature_last_updated": "2011-02-04T23:50:28+00:00",
+        "meta_feature_last_updated": "2025-02-21T23:01:02+00:00",
         "meta_osm_node_id": 1136585762
       }
     },
@@ -2950,9 +2944,13 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "24",
         "covered": "no",
         "description": "Ring post black",
-        "meta_feature_last_updated": "2021-11-06T20:34:12+00:00",
+        "operator": "University of Toronto",
+        "quantity": "12",
+        "meta_feature_last_updated": "2025-02-21T23:01:02+00:00",
         "meta_osm_node_id": 1153347326
       }
     },
@@ -21643,7 +21641,9 @@
         "bicycle_parking": "rack",
         "capacity": "2",
         "covered": "no",
-        "meta_feature_last_updated": "2021-11-06T20:28:15+00:00",
+        "fixme": "Is this ring post still here?",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-02-21T23:01:02+00:00",
         "meta_osm_node_id": 9208660297
       }
     },
@@ -42763,7 +42763,11 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-10-13T19:55:14+00:00",
+        "bicycle_parking": "wall_loops",
+        "capacity": "10",
+        "covered": "no",
+        "operator": "University of Toronto",
+        "meta_feature_last_updated": "2025-02-21T23:01:02+00:00",
         "meta_osm_node_id": 12248942125
       }
     },
@@ -46669,9 +46673,12 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
+        "bicycle_parking": "bollard",
+        "capacity": "54",
         "covered": "no",
-        "meta_feature_last_updated": "2023-04-21T18:05:22+00:00",
+        "operator": "University of Toronto",
+        "quantity": "27",
+        "meta_feature_last_updated": "2025-02-21T23:01:02+00:00",
         "meta_osm_node_id": 392619976
       }
     },
