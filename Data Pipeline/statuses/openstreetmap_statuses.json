@@ -1,8 +1,8 @@
 {
   "osm_bicycle_parking_city_of_toronto": {
-    "last_updated": "2025-03-02T19:42:30+00:00",
-    "num_normalized_features": 2290,
-    "last_checked": "2025-03-03T09:02:05.702563+00:00",
+    "last_updated": "2025-03-07T19:16:45+00:00",
+    "num_normalized_features": 2292,
+    "last_checked": "2025-03-08T15:05:03.044340+00:00",
     "days_since_source_update": 0
   }
 }

@@ -1647,26 +1647,6 @@
     },
     {
       "type": "Feature",
-      "id": 810328262,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.387864,
-          43.657697
-        ]
-      },
-      "properties": {
-        "access": "private",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "note": "Private bicycle parking for SickKids employees only, enclosed by chain link fence",
-        "operator": "Hospital for Sick Children",
-        "meta_feature_last_updated": "2024-08-04T19:31:55+00:00",
-        "meta_osm_node_id": 810328262
-      }
-    },
-    {
-      "type": "Feature",
       "id": 810328269,
       "geometry": {
         "type": "Point",
@@ -45271,7 +45251,8 @@
       },
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-12-07T16:08:34+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2025-03-07T19:16:45+00:00",
         "meta_osm_node_id": 12402704881
       }
     },
@@ -46523,6 +46504,43 @@
         "quantity": "8",
         "meta_feature_last_updated": "2025-03-01T19:30:12+00:00",
         "meta_osm_node_id": 12628943443
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12634767628,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.388538,
+          43.657611
+        ]
+      },
+      "properties": {
+        "access": "private",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "note": "Private bicycle parking for SickKids employees only, enclosed by chain link fence",
+        "operator": "Hospital for Sick Children",
+        "meta_feature_last_updated": "2025-03-04T01:29:44+00:00",
+        "meta_osm_node_id": 12634767628
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12640996896,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.385797,
+          43.642821
+        ]
+      },
+      "properties": {
+        "access": "private",
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2025-03-06T15:00:05+00:00",
+        "meta_osm_node_id": 12640996896
       }
     },
     {
@@ -48580,6 +48598,32 @@
         "amenity": "bicycle_parking",
         "meta_feature_last_updated": "2024-08-22T03:45:57+00:00",
         "meta_osm_node_id": 1309519570
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1364392681,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.387863,
+            43.65773
+          ],
+          [
+            -79.387605,
+            43.657784
+          ]
+        ]
+      },
+      "properties": {
+        "access": "private",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "note": "Private bicycle parking for SickKids employees only, enclosed by chain link fence",
+        "operator": "Hospital for Sick Children",
+        "meta_feature_last_updated": "2025-03-04T01:29:44+00:00",
+        "meta_osm_node_id": 1364392681
       }
     }
   ]
