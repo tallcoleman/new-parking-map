@@ -340,7 +340,10 @@ def run_pipeline():
     # special handling for ring and post features from "street-furniture-bicycle-parking"
     furniture = city_data["street-furniture-bicycle-parking"]
     furniture_bollards = furniture[furniture["bicycle_parking"] == "bollard"]
-    furniture_not_bollards = furniture[furniture["bicycle_parking"] != "bollard"]
+    furniture_not_bollards = furniture[
+        (furniture["bicycle_parking"] != "bollard")
+        | (furniture["bicycle_parking"].isna())
+    ]
 
     agg_bollards = group_proximate_rings(furniture_bollards)
     city_data["street-furniture-bicycle-parking"] = pd.concat(
@@ -366,7 +369,10 @@ def run_pipeline():
         ]
     )
     city_racks = city_combined[city_combined["bicycle_parking"] == "rack"]
-    city_not_racks = city_combined[city_combined["bicycle_parking"] != "rack"]
+    city_not_racks = city_combined[
+        (city_combined["bicycle_parking"] != "rack")
+        | (city_combined["bicycle_parking"].isna())
+    ]
 
     # no duplicates at TMU apparently
     city_racks = city_racks.assign(
