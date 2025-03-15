@@ -423,5 +423,20 @@
     ],
     "reason": "removed",
     "notes": "Per survey, no longer there. Recent construction in area."
+  },
+  {
+    "survey_date": "2025-03-14",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "140" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "4" }
+    ],
+    "reason": "removed",
+    "notes": "Did not survey in person. Per Google Street View, appears to have been removed circa 2020."
+  },
+  {
+    "survey_date": "2025-03-14",
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "5" }],
+    "reason": "missing",
+    "notes": "Did not survey in person. Per Google Street View, there is no TTC property or bike rack in this location."
   }
 ]
