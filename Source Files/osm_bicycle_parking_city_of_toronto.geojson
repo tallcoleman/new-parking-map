@@ -27910,8 +27910,17 @@
         ]
       },
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2023-09-13T23:22:49+00:00",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "119",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "3",
+        "meta_feature_last_updated": "2025-03-15T02:25:02+00:00",
         "meta_osm_node_id": 11189329524
       }
     },
@@ -45925,8 +45934,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.445031,
-          43.654648
+          -79.445051,
+          43.65466
         ]
       },
       "properties": {
@@ -45934,7 +45943,7 @@
         "colour": "silver",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-02-01T23:12:15+00:00",
+        "meta_feature_last_updated": "2025-03-15T03:06:48+00:00",
         "meta_osm_node_id": 12550053066
       }
     },
@@ -48455,12 +48464,12 @@
             43.653511
           ],
           [
-            -79.4459,
-            43.653517
+            -79.445895,
+            43.65352
           ],
           [
-            -79.445911,
-            43.653547
+            -79.445905,
+            43.653553
           ],
           [
             -79.445979,
