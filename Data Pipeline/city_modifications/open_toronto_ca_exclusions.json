@@ -438,5 +438,11 @@
     "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "5" }],
     "reason": "missing",
     "notes": "Did not survey in person. Per Google Street View, there is no TTC property or bike rack in this location."
+  },
+  {
+    "survey_date": "2025-03-23",
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "121" }],
+    "reason": "missing",
+    "notes": "Did not survey in person. Per Google Street View, there is no record of a bike rack being placed anywhere around this building."
   }
 ]
