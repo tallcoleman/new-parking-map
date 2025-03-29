@@ -15,8 +15,8 @@
         padding: 0;
       }
       #map {
-        width: 700px;
-        height: 200px;
+        width: 3000px;
+        height: 2000px;
         /* position: absolute; */
         /* top: 0; */
         /* bottom: 0; */
@@ -53,8 +53,8 @@
       const map = new mapboxgl.Map({
         container: "map",
         style: "mapbox://styles/oj-s/cjn55n32z02il2tqw208pp8dh",
-        center: [-79.378, 43.658],
-        zoom: 13.0,
+        center: [-79.378, 43.72],
+        zoom: 11.7,
       });
 
       map.on("click", function (e) {
@@ -294,6 +294,7 @@
         console.log("entries: ", entries[0].geometry.coordinates);
 
         let tableContent = [];
+        tableContent.push(`<p>${entries.length} entries</p>`);
         tableContent.push(`<table><thead><tr>`);
         for (const col of Object.keys(entries[0].properties)) {
           tableContent.push(`<th>${col}</th>`);
