@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Display a map</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        width: 700px;
+        height: 200px;
+        /* position: absolute; */
+        /* top: 0; */
+        /* bottom: 0; */
+        /* width: 100%; */
+      }
+      .mapboxgl-popup-content h3 {
+        background: #25c252;
+        color: #fff;
+        margin: 0;
+        display: block;
+        padding: 10px;
+      }
+      .mapboxgl-popup-content h4 {
+        background: #fff;
+        margin: 0;
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: #2c3b42;
+      }
+      .mapboxgl-popup-content {
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="data">Data Here</div>
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1Ijoib2otcyIsImEiOiJjamw3OGk2ZGYxMGRpM2txa2pjdnk0cmRrIn0.yGkgnv2YDDnrqDL5MO58Nw";
+      const map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/oj-s/cjn55n32z02il2tqw208pp8dh",
+        center: [-79.378, 43.658],
+        zoom: 13.0,
+      });
+
+      map.on("click", function (e) {
+        var features = map.queryRenderedFeatures(e.point, {
+          layers: ["bikeparking2-0-existing"],
+        });
+
+        if (!features.length) {
+          return;
+        }
+
+        var feature = features[0];
+
+        var popup = new mapboxgl.Popup({ offset: [0, -15] })
+          .setLngLat(feature.geometry.coordinates)
+          .setHTML(
+            "<h3>" +
+              "Address: " +
+              feature.properties.ADDRESSNUM +
+              " " +
+              feature.properties.ADDRESSSTR +
+              "</h3><h4>" +
+              "Road Side: " +
+              feature.properties.SIDE +
+              "</h4><h4>" +
+              "Parking Type: " +
+              feature.properties.ASSETTYPE +
+              "</h4><h4>" +
+              "Ward: " +
+              feature.properties.WARD +
+              "</h4>"
+          )
+          .setLngLat(feature.geometry.coordinates)
+          .addTo(map);
+      });
+
+      map.on("mouseenter", "bikeparking2-0-existing", function () {
+        map.getCanvas().style.cursor = "pointer";
+      });
+
+      map.on("mouseleave", "bikeparking2-0-existing", function () {
+        map.getCanvas().style.cursor = "";
+      });
+
+      map.addControl(new mapboxgl.NavigationControl());
+
+      const PARKING_LAYER = "bySource";
+      const pso = {
+        // show OSM as blue and City as black
+        bySource: {
+          nodes: {
+            type: "circle",
+            paint: {
+              "circle-color": [
+                "match",
+                ["get", "meta_source"],
+                "Source data from OpenStreetMap (See: https://www.openstreetmap.org/copyright)",
+                "blue",
+                "black",
+              ],
+              "circle-opacity": 0.5,
+              "circle-stroke-width": [
+                "case",
+                ["boolean", ["feature-state", "selected"], false],
+                2,
+                0,
+              ],
+              "circle-stroke-color": "red", // only shows if stroke width > 0
+              "circle-radius": [
+                "match",
+                ["get", "bicycle_parking"],
+                "bollard",
+                3,
+                "post_hoop",
+                3,
+                "stands",
+                3,
+                "hoops",
+                3,
+                5,
+              ],
+            },
+          },
+          ways: {
+            type: "fill",
+            paint: {
+              "fill-color": [
+                "case",
+                ["boolean", ["feature-state", "selected"], false],
+                "red",
+                [
+                  "match",
+                  ["get", "meta_source"],
+                  "Source data from OpenStreetMap (See: https://www.openstreetmap.org/copyright)",
+                  "blue",
+                  "black",
+                ],
+              ],
+              "fill-opacity": 0.5,
+            },
+          },
+        },
+        byQuality: {
+          nodes: {
+            type: "circle",
+            paint: {
+              "circle-color": [
+                "match",
+                ["get", "bicycle_parking"],
+                [
+                  "bollard",
+                  "rack",
+                  "stands",
+                  "post_hoop",
+                  "safe_loops",
+                  "hoops",
+                  "wide_stands",
+                  "two-tier",
+                ],
+                "#0000E5",
+                [
+                  "wall_loops",
+                  "wave",
+                  "ground_slots",
+                  "handlebar_holder",
+                  "crossbar",
+                  "anchors",
+                  "lean_and_stick",
+                ],
+                "#d99726",
+                ["lockers", "building", "shed"],
+                "#dc267f",
+                ["None"],
+                "grey",
+                "grey",
+              ],
+              "circle-stroke-width": [
+                "case",
+                ["boolean", ["feature-state", "selected"], false],
+                2,
+                0,
+              ],
+              "circle-stroke-color": "red", // only shows if stroke width > 0
+              "circle-radius": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                // if capacity > 4, then 5px at zoom 10, else 3px
+                10,
+                ["case", [">", ["to-number", ["get", "capacity"], 0], 4], 5, 3],
+                // if capacity > 4 then 16px at zoom 22, else 10px
+                22,
+                ["case", [">", ["to-number", ["get", "capacity"], 0], 4], 16, 10],
+              ],
+            },
+          },
+          ways: {
+            type: "fill",
+            paint: {
+              "fill-color": [
+                "case",
+                ["boolean", ["feature-state", "selected"], false],
+                "red",
+                [
+                  "match",
+                  ["get", "bicycle_parking"],
+                  [
+                    "bollard",
+                    "rack",
+                    "stands",
+                    "post_hoop",
+                    "safe_loops",
+                    "hoops",
+                    "wide_stands",
+                    "two-tier",
+                  ],
+                  "#0000E5",
+                  [
+                    "wall_loops",
+                    "wave",
+                    "ground_slots",
+                    "handlebar_holder",
+                    "crossbar",
+                    "anchors",
+                    "lean_and_stick",
+                  ],
+                  "#d99726",
+                  ["lockers", "building", "shed"],
+                  "#dc267f",
+                  ["None"],
+                  "grey",
+                  "grey",
+                ],
+              ],
+              "fill-opacity": 0.5,
+            },
+          },
+        },
+      };
+
+      const displayData =
+        "https://raw.githubusercontent.com/tallcoleman/new-parking-map/main/Display%20Files/open_toronto_ca_unclustered.geojson";
+      const osmData =
+        "https://raw.githubusercontent.com/tallcoleman/new-parking-map/main/Display%20Files/openstreetmap.geojson";
+
+      map.on("load", () => {
+        map.addSource("bicycle-parking", {
+          type: "geojson",
+          data: displayData,
+          generateId: true,
+        });
+        map.addSource("osm-parking", {
+          type: "geojson",
+          data: osmData,
+          generateId: true,
+        });
+        map.addLayer({
+          id: "bicycle-parking-nodes",
+          type: pso[PARKING_LAYER].nodes.type,
+          source: "bicycle-parking",
+          filter: ["match", ["geometry-type"], ["Point"], true, false],
+          paint: pso[PARKING_LAYER].nodes.paint,
+        });
+        map.addLayer({
+          id: "bicycle-parking-osm",
+          type: pso[PARKING_LAYER].nodes.type,
+          source: "osm-parking",
+          filter: ["match", ["geometry-type"], ["Point"], true, false],
+          paint: pso[PARKING_LAYER].nodes.paint,
+        });
+
+        // get and display the data
+        const dataDiv = document.getElementById("data");
+        const entries = map.querySourceFeatures("composite", {
+          sourceLayer: "Bikeparking2.0_existing",
+        });
+        console.log("entries: ", entries[0].geometry.coordinates);
+
+        let tableContent = [];
+        tableContent.push(`<table><thead><tr>`);
+        for (const col of Object.keys(entries[0].properties)) {
+          tableContent.push(`<th>${col}</th>`);
+        }
+        tableContent.push(`<th>Lon</th><th>Lat</th>`);
+        tableContent.push(`</tr></thead>`);
+        tableContent.push(`<tbody>`);
+        for (const feature of entries) {
+          tableContent.push(`<tr>`);
+          for (const property of Object.values(feature.properties)) {
+            tableContent.push(`<td>${property}</td>`);
+          }
+          const [lon, lat] = feature.geometry.coordinates;
+          tableContent.push(`<td>${lon}</td><td>${lat}</td>`);
+          tableContent.push(`</tr>`);
+        }
+        tableContent.push(`</table`);
+        dataDiv.innerHTML = tableContent.join("");
+      });
+    </script>
+  </body>
+</html>
