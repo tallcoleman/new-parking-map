@@ -29,7 +29,11 @@
         "meta_has_change_room": "Yes",
         "meta_has_tools_and_pump": "Yes",
         "meta_has_vending_machine": "Yes",
-        "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-bike-stations-indoor/",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-bike-stations-indoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-bike-stations-indoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
         "meta_source_last_updated": "2025-03-27T14:19:24.333661+00:00"
       },
       "geometry": {
@@ -70,7 +74,11 @@
         "meta_has_change_room": "No",
         "meta_has_tools_and_pump": "No",
         "meta_has_vending_machine": "No",
-        "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-bike-stations-indoor/",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-bike-stations-indoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-bike-stations-indoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
         "meta_source_last_updated": "2025-03-27T14:19:24.333661+00:00"
       },
       "geometry": {
@@ -111,7 +119,11 @@
         "meta_has_change_room": "Yes",
         "meta_has_tools_and_pump": "Yes",
         "meta_has_vending_machine": "Yes",
-        "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-bike-stations-indoor/",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-bike-stations-indoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-bike-stations-indoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
         "meta_source_last_updated": "2025-03-27T14:19:24.333661+00:00"
       },
       "geometry": {
@@ -152,7 +164,11 @@
         "meta_has_change_room": "Yes",
         "meta_has_tools_and_pump": "Yes",
         "meta_has_vending_machine": "Yes",
-        "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-bike-stations-indoor/",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-bike-stations-indoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-bike-stations-indoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
         "meta_source_last_updated": "2025-03-27T14:19:24.333661+00:00"
       },
       "geometry": {
@@ -193,7 +209,11 @@
         "meta_has_change_room": "Yes",
         "meta_has_tools_and_pump": "Yes",
         "meta_has_vending_machine": "Yes",
-        "meta_source": "https://open.toronto.ca/dataset/bicycle-parking-bike-stations-indoor/",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-bike-stations-indoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-bike-stations-indoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
         "meta_source_last_updated": "2025-03-27T14:19:24.333661+00:00"
       },
       "geometry": {
