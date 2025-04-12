@@ -157,7 +157,7 @@ def group_proximate_racks(racks, radius=30.0):
         "meta_borough": "first",  # unique per point
         "meta_ward_name": "first",  # unique per point
         "meta_ward_number": "first",  # unique per point
-        "meta_source": flist,  # debug
+        "meta_source": "first",  # unique per point
         "meta_source_dataset": flist,
         "meta_source_url": flist,
         "meta_source_license": "first",  # does not vary
