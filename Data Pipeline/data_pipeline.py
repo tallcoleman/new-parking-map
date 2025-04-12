@@ -307,6 +307,9 @@ def run_pipeline():
     ) | osm_combined["operator"].isna()
     osm_filtered = pd.concat(
         [city_verified_osm, osm_combined[operator_not_city_and_no_ref_test]]
+    ).to_crs(32617)  # change to UTM 17 N for centroid calculation
+    osm_centroid = osm_filtered.set_geometry(osm_filtered.geometry.centroid).to_crs(
+        4326
     )
 
     # drop city data points in the manual exclusion file
@@ -401,7 +404,7 @@ def run_pipeline():
     city_full = city_full.drop("tmu", axis=1)
 
     # make combined set from all sources
-    all_sources = pd.concat([city_full, osm_filtered, lockers_unmapped])
+    all_sources = pd.concat([city_full, osm_centroid, lockers_unmapped])
 
     # Save display files
     # ------------------
@@ -426,9 +429,9 @@ def run_pipeline():
         )
 
     with open(dfp / "openstreetmap.geojson", "w") as f:
-        f.write(dt_cols_to_str(osm_filtered).to_json(na="drop", drop_id=True, indent=2))
+        f.write(dt_cols_to_str(osm_centroid).to_json(na="drop", drop_id=True, indent=2))
     with open(dfp_archive / "openstreetmap.geojson", "w") as f:
-        f.write(dt_cols_to_str(osm_filtered).to_json(na="drop", drop_id=True, indent=2))
+        f.write(dt_cols_to_str(osm_centroid).to_json(na="drop", drop_id=True, indent=2))
 
     with open(dfp / "toronto_lockers.geojson", "w") as f:
         f.write(
