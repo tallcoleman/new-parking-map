@@ -57,11 +57,11 @@ Folder content is as follows:
 
 Main script is `Data Pipeline/data_pipeline.py`
 
+You will need [uv installed](https://docs.astral.sh/uv/getting-started/installation/) to run the script.
+
 Run with:
 ```bash
-$ . .venv/bin/activate
-$ pip install -r requirements.txt # if needed
-$ python "Data Pipeline/data_pipeline.py"
+$ uv run "Data Pipeline/data_pipeline.py"
 ```
 
 ### Data Sources:

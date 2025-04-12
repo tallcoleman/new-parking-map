@@ -330,7 +330,10 @@ def run_pipeline():
         ]
     city_unclustered = city_data.copy()
     city_unclustered_combined = pd.concat(
-        [dataset for name, dataset in city_unclustered.items()]
+        [
+            dataset.dropna(axis="columns", how="all")
+            for name, dataset in city_unclustered.items()
+        ]
     )
 
     # drop city lockers already in OpenStreetMap
@@ -366,9 +369,12 @@ def run_pipeline():
     # combine city datasets (bicycle stations excluded)
     city_combined = pd.concat(
         [
-            city_data["bicycle-parking-high-capacity-outdoor"],
-            city_data["bicycle-parking-racks"],
-            city_data["street-furniture-bicycle-parking"],
+            df.dropna(axis="columns", how="all")
+            for df in [
+                city_data["bicycle-parking-high-capacity-outdoor"],
+                city_data["bicycle-parking-racks"],
+                city_data["street-furniture-bicycle-parking"],
+            ]
         ]
     )
     city_racks = city_combined[city_combined["bicycle_parking"] == "rack"]

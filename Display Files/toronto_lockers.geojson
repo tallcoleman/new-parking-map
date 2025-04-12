@@ -14,7 +14,10 @@
         "access": "customers",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
         "description": "Bayview Subway Station: North side of Sheppard Ave., east of Bayview Ave.",
-        "meta_source": "Source data from the City of Toronto Bicycle Locker webpage)",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
+        "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
+        "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
         "meta_source_last_updated": "2021-06-11 16:28:18-04:00"
       },
       "geometry": {
@@ -38,14 +41,17 @@
         "access": "customers",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
         "description": "Don Mills Subway Station: Northeast corner of Don Mills Rd. and Sheppard Ave. E.",
-        "meta_source": "Source data from the City of Toronto Bicycle Locker webpage)",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
+        "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
+        "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
         "meta_source_last_updated": "2021-06-11 16:28:18-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -79.3446491,
-          43.777874299999986
+          43.77787429999999
         ]
       }
     },
@@ -62,7 +68,10 @@
         "access": "customers",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
         "description": "Eglinton GO: In parking lot, east of the station house",
-        "meta_source": "Source data from the City of Toronto Bicycle Locker webpage)",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
+        "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
+        "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
         "meta_source_last_updated": "2021-06-11 16:28:18-04:00"
       },
       "geometry": {
@@ -86,7 +95,10 @@
         "access": "customers",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
         "description": "Etobicoke Civic Centre: Located on the south side, before the outside ATM",
-        "meta_source": "Source data from the City of Toronto Bicycle Locker webpage)",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
+        "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
+        "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
         "meta_source_last_updated": "2021-06-11 16:28:18-04:00"
       },
       "geometry": {
@@ -110,14 +122,17 @@
         "access": "customers",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
         "description": "Exhibition Place: On the south side of Exhibition GO Station",
-        "meta_source": "Source data from the City of Toronto Bicycle Locker webpage)",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
+        "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
+        "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
         "meta_source_last_updated": "2021-06-11 16:28:18-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -79.4208711,
-          43.6348816
+          43.63488159999999
         ]
       }
     },
@@ -134,7 +149,10 @@
         "access": "customers",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
         "description": "Finch GO: Just north of the station house on the east side of Yonge St.",
-        "meta_source": "Source data from the City of Toronto Bicycle Locker webpage)",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
+        "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
+        "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
         "meta_source_last_updated": "2021-06-11 16:28:18-04:00"
       },
       "geometry": {
@@ -158,7 +176,10 @@
         "access": "customers",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
         "description": "Finch Subway Station: Located on the west side of Yonge St. beside the passenger drop-off and pick-up",
-        "meta_source": "Source data from the City of Toronto Bicycle Locker webpage)",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
+        "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
+        "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
         "meta_source_last_updated": "2021-06-11 16:28:18-04:00"
       },
       "geometry": {
@@ -182,7 +203,10 @@
         "access": "customers",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
         "description": "Long Branch GO Station: Located outside the station house at Lakeshore Rd. and Browns Line",
-        "meta_source": "Source data from the City of Toronto Bicycle Locker webpage)",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
+        "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
+        "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
         "meta_source_last_updated": "2021-06-11 16:28:18-04:00"
       },
       "geometry": {
@@ -206,7 +230,10 @@
         "access": "customers",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
         "description": "Rouge Hill GO Station: Located on the north side of the tracks near the eastern most bike shelter",
-        "meta_source": "Source data from the City of Toronto Bicycle Locker webpage)",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
+        "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
+        "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
         "meta_source_last_updated": "2021-06-11 16:28:18-04:00"
       },
       "geometry": {
@@ -230,7 +257,10 @@
         "access": "customers",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
         "description": "Scarborough GO Station: Located on the south side of the tracks next to the bike shelter",
-        "meta_source": "Source data from the City of Toronto Bicycle Locker webpage)",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
+        "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
+        "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
         "meta_source_last_updated": "2021-06-11 16:28:18-04:00"
       },
       "geometry": {
@@ -254,14 +284,17 @@
         "access": "customers",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
         "description": "Yorkdale Subway: Located outside of the Yorkdale Subway Station under the bridge",
-        "meta_source": "Source data from the City of Toronto Bicycle Locker webpage)",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
+        "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
+        "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
         "meta_source_last_updated": "2021-06-11 16:28:18-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -79.4485662,
-          43.723467699999986
+          43.72346769999999
         ]
       }
     },
@@ -278,7 +311,10 @@
         "access": "customers",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
         "description": "Kipling Station: Located west of the subway at parking lot",
-        "meta_source": "Source data from the City of Toronto Bicycle Locker webpage)",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
+        "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
+        "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
         "meta_source_last_updated": "2021-06-11 16:28:18-04:00"
       },
       "geometry": {
