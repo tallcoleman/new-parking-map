@@ -177,13 +177,13 @@ map.on("load", () => {
   const filterRacksOnly = [
     "all",
     ["match", ["geometry-type"], ["Point"], true, false],
-    // ["in", "open.toronto.ca", ["get", "meta_source"]],
+    // ["in", "City of Toronto", ["get", "meta_source"]],
     [
       "any",
       [
         "match",
-        ["get", "meta_source"],
-        "https://open.toronto.ca/dataset/street-furniture-bicycle-parking/",
+        ["get", "meta_source_dataset"],
+        "street-furniture-bicycle-parking",
         false,
         true,
       ],
@@ -194,7 +194,7 @@ map.on("load", () => {
   const filterAllTypes = [
     "all",
     ["match", ["geometry-type"], ["Point"], true, false],
-    // ["in", "open.toronto.ca", ["get", "meta_source"]],
+    // ["in", "City of Toronto", ["get", "meta_source"]],
   ];
   map.addLayer({
     id: "bicycle-parking-nodes",

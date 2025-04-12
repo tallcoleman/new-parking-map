@@ -7,7 +7,7 @@ export const parkingStyleOptions = {
         "circle-color": [
           "match",
           ["get", "meta_source"],
-          "Source data from OpenStreetMap (See: https://www.openstreetmap.org/copyright)",
+          "OpenStreetMap",
           "blue",
           "black",
         ],
@@ -40,13 +40,7 @@ export const parkingStyleOptions = {
           "case",
           ["boolean", ["feature-state", "selected"], false],
           "red",
-          [
-            "match",
-            ["get", "meta_source"],
-            "Source data from OpenStreetMap (See: https://www.openstreetmap.org/copyright)",
-            "blue",
-            "black",
-          ],
+          ["match", ["get", "meta_source"], "OpenStreetMap", "blue", "black"],
         ],
         "fill-opacity": 0.5,
       },

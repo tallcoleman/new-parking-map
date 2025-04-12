@@ -1,18 +1,18 @@
 import { bicycleParkingDescriptions as bpd } from "./bicycle_parking descriptions.js";
 
 const POPUP_MEDIA_QUERY = "(width > 700px)";
-const POPUP_DESKTOP_PAD = {right: 375};
-const popupMobilePad = (mapHeight) => ({bottom: Math.round(mapHeight / 2)});
+const POPUP_DESKTOP_PAD = { right: 375 };
+const popupMobilePad = (mapHeight) => ({ bottom: Math.round(mapHeight / 2) });
 
 export class PopUpHandler {
   #selectedFeatures = null;
   /**
    * Class to encapsulate functions and properties managing map popups
-   * @param {maplibregl.Map} map 
+   * @param {maplibregl.Map} map
    * @param {string[]} layers Map layers to check for popup values
-   * @param {Node} popUpContainer 
+   * @param {Node} popUpContainer
    * @param {Node} layoutTarget
-   * @param {string} activeClass 
+   * @param {string} activeClass
    */
   constructor(map, layers, popUpContainer, layoutTarget, activeClass) {
     this.map = map;
@@ -30,19 +30,18 @@ export class PopUpHandler {
       <div class="puh-content">
       </div>`;
 
-    document.getElementById("puh-button-close")
-      .addEventListener("click", () => {
-        this.hidePopUp();
-        this.selectedFeatures = null;
+    document.getElementById("puh-button-close").addEventListener("click", () => {
+      this.hidePopUp();
+      this.selectedFeatures = null;
     });
 
     // change pointer on leave/exit feature
     for (const layer of layers) {
-      this.map.on('mouseenter', layer, () => {
-        this.map.getCanvas().style.cursor = 'pointer';
+      this.map.on("mouseenter", layer, () => {
+        this.map.getCanvas().style.cursor = "pointer";
       });
-      this.map.on('mouseleave', layer, () => {
-        this.map.getCanvas().style.cursor = '';
+      this.map.on("mouseleave", layer, () => {
+        this.map.getCanvas().style.cursor = "";
       });
     }
   }
@@ -55,16 +54,16 @@ export class PopUpHandler {
     if (this.#selectedFeatures?.length > 0) {
       for (const feature of this.#selectedFeatures) {
         this.map.setFeatureState(
-          {source: feature.source, id: feature.id},
-          {selected: false},
+          { source: feature.source, id: feature.id },
+          { selected: false }
         );
       }
     }
     if (features?.length > 0) {
       for (const feature of features) {
         this.map.setFeatureState(
-          {source: feature.source, id: feature.id},
-          {selected: true},
+          { source: feature.source, id: feature.id },
+          { selected: true }
         );
       }
       this.#selectedFeatures = features;
@@ -74,11 +73,10 @@ export class PopUpHandler {
   }
 
   fromPoint(point) {
-    const features = this.map.queryRenderedFeatures(
-      Object.values(point),
-      {'layers': this.layers}
-    );
-    if (features.length > 0) {  
+    const features = this.map.queryRenderedFeatures(Object.values(point), {
+      layers: this.layers,
+    });
+    if (features.length > 0) {
       this.updatePopUpContent(features);
       this.showPopUp();
       this.selectedFeatures = features;
@@ -100,8 +98,8 @@ export class PopUpHandler {
   zoomAndFlyTo(feature, zoomLevel = 15) {
     this.map.resize();
 
-    const mapHeight = document.getElementById('map').offsetHeight;
-    const flyToPadding = window.matchMedia(POPUP_MEDIA_QUERY).matches 
+    const mapHeight = document.getElementById("map").offsetHeight;
+    const flyToPadding = window.matchMedia(POPUP_MEDIA_QUERY).matches
       ? POPUP_DESKTOP_PAD
       : popupMobilePad(mapHeight);
     zoomLevel = Math.max(zoomLevel, this.map.getZoom());
@@ -125,31 +123,28 @@ export class PopUpHandler {
 
   updatePopUpContent(features) {
     const oneFeature = features.length === 1;
-    this.popUpContainer.querySelector(".puh-header h2")
-      .textContent = `${features.length} feature${oneFeature ? "" : "s"}`;
+    this.popUpContainer.querySelector(".puh-header h2").textContent =
+      `${features.length} feature${oneFeature ? "" : "s"}`;
 
     let content = [];
     for (const feature of features) {
-      content.push(this.featureDetailsSummary(
-        feature.properties,
-        oneFeature,
-      ));
+      content.push(this.featureDetailsSummary(feature.properties, oneFeature));
     }
-    this.popUpContainer.querySelector(".puh-content")
-      .innerHTML = content.join("");
+    this.popUpContainer.querySelector(".puh-content").innerHTML = content.join("");
   }
 
   featureDetailsSummary(properties, oneFeature = false) {
-    const capacityDescription = properties['capacity'] ?
-      ` (capacity ${properties['capacity']})` : "";
-    const parkingType = properties['bicycle_parking'] ?? "unknown type";
+    const capacityDescription = properties["capacity"]
+      ? ` (capacity ${properties["capacity"]})`
+      : "";
+    const parkingType = properties["bicycle_parking"] ?? "unknown type";
     const typeDescription = bpd?.[parkingType] ?? parkingType;
 
     let content = [];
     content.push(`<details${oneFeature ? " open" : ""}>`);
     content.push(`<summary>${typeDescription}${capacityDescription}</summary>`);
     content.push(`<div class="puh-details-content">`);
-    content.push(`<p>${properties['meta_source']}</p>`);
+    content.push(`<p>${properties["meta_source"]}</p>`);
     content.push(`<dl>`);
     for (const [key, value] of Object.entries(properties)) {
       content.push(`
@@ -160,7 +155,7 @@ export class PopUpHandler {
     content.push(`</dl>`);
     content.push(`</div>`);
     content.push(`</details>`);
-  
+
     return content.join("");
   }
 }
