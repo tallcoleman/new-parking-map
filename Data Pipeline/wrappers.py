@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from copy import deepcopy
 from datetime import datetime, timezone
 
 from bs4 import BeautifulSoup
@@ -103,7 +104,11 @@ class BikeDataToronto(BikeData):
 
         # define global properties
         global_props = {
-            "meta_source": f"https://open.toronto.ca/dataset/{self.dataset_name}/",
+            "meta_source": "City of Toronto",
+            "meta_source_dataset": self.dataset_name,
+            "meta_source_url": f"https://open.toronto.ca/dataset/{self.dataset_name}/",
+            "meta_source_license": "Open Government Licence - Toronto",
+            "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
             "meta_source_last_updated": self.last_updated.isoformat(),
         }
 
@@ -165,22 +170,34 @@ class BikeDataOSM(BikeData):
 
     @property
     def response_geojson(self):
-        """GeoJSON returned from request with added "meta_" properties indicating datetime the feature was last edited and OSM node id"""
+        """GeoJSON returned from request with only the tag values under 'properties' plus added "meta_" properties indicating datetime the feature was last edited and OSM feature id"""
 
-        # add datetime feature was last updated from metadata
-        response_out = self._response.copy()
-        for feature in response_out["features"]:
+        response_out = deepcopy(self._response)
+        for idf, feature in enumerate(self._response["features"]):
+            # get datetime feature was last updated from metadata
             [feature_last_updated] = [
                 element["timestamp"]
                 for element in self._metadata["elements"]
-                if element["id"] == feature["id"]
+                if (
+                    element["id"] == feature["properties"]["id"]
+                    and element["type"] == feature["properties"]["type"]
+                )
             ]
             # convert "Z" suffix to "+00:00"
             feature_last_updated = datetime.fromisoformat(
                 feature_last_updated
             ).isoformat()
-            feature["properties"]["meta_feature_last_updated"] = feature_last_updated
-            feature["properties"]["meta_osm_node_id"] = feature["id"]
+            # convert type and id to single osm_id field
+            meta_osm_id = (
+                f"{feature['properties']['type']}/{feature['properties']['id']}"
+            )
+            # only keep tags and meta as properties
+            response_out["features"][idf]["properties"] = feature["properties"][
+                "tags"
+            ] | {
+                "meta_feature_last_updated": feature_last_updated,
+                "meta_osm_id": meta_osm_id,
+            }
 
         return response_out
 
@@ -216,10 +233,10 @@ class BikeDataOSM(BikeData):
 
         # add global properties
         filtered_features = filtered_features.assign(
-            meta_source="Source data from OpenStreetMap (See: https://www.openstreetmap.org/copyright)"
-        )
-        filtered_features = filtered_features.assign(
-            meta_source_last_updated=self.last_updated.isoformat()
+            meta_source="OpenStreetMap",
+            meta_source_license="Open Data Commons Open Database License (ODbL)",
+            meta_source_license_url="https://www.openstreetmap.org/copyright",
+            meta_source_last_updated=self.last_updated.isoformat(),
         )
 
         # apply transforms
@@ -239,6 +256,7 @@ class BikeLockersToronto(BikeData):
 
     def __init__(self, dataset_name: str, page_url: str):
         self.dataset_name = dataset_name
+        self.page_url = page_url
 
         # get webpage
         response = requests.get(page_url)
@@ -310,7 +328,10 @@ class BikeLockersToronto(BikeData):
 
         # add global properties
         meta_gdf = typed_gdf.assign(
-            meta_source="Source data from the City of Toronto Bicycle Locker webpage)",
+            meta_source="City of Toronto",
+            meta_source_dataset="City of Toronto Bicycle Locker webpage",
+            meta_source_url=self.page_url,
+            meta_source_license="https://www.toronto.ca/home/copyright-information/",
             meta_source_last_updated=self.last_updated.isoformat(),
         )
 
