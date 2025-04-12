@@ -61,6 +61,10 @@ def group_proximate_rings(rings, radius=5.0):
         "meta_ward_name": summarize_freq,
         "meta_ward_number": summarize_freq,
         "meta_source": "first",  # does not vary
+        "meta_source_dataset": "first",  # does not vary
+        "meta_source_url": "first",  # does not vary
+        "meta_source_license": "first",  # does not vary
+        "meta_source_license_url": "first",  # does not vary
         "meta_source_last_updated": "first",  # does not vary
         "quantity": "sum",
     }
@@ -154,6 +158,10 @@ def group_proximate_racks(racks, radius=30.0):
         "meta_ward_name": "first",  # unique per point
         "meta_ward_number": "first",  # unique per point
         "meta_source": flist,  # debug
+        "meta_source_dataset": flist,
+        "meta_source_url": flist,
+        "meta_source_license": "first",  # does not vary
+        "meta_source_license_url": "first",  # does not vary
         "meta_source_last_updated": flist,  # debug
         "seasonal": flist,  # debug
         "meta_status": flist,  # debug
