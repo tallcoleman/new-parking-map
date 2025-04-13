@@ -1,4 +1,4 @@
-# New Toronto Bicycle Parking Map
+# New Toronto Bicycle Parking Map Data
 
 This script downloads, filters, and transforms data from two major sources: City of Toronto Open Data and OpenStreetMap. 
 
@@ -43,6 +43,7 @@ Link: https://demo-map-app.new-parking-map.pages.dev/CurrentMap/
 
 - This shows the old data layer currently used for https://bikespace.ca/ParkingMap (in red) along with the current up-to-date data from the City open datasets (in black) and OpenStreetMap (in blue). 
 - There are some bicycle parking points in the old data layer that are not currently available in any City open data set or OpenStreetMap that should be added to OpenStreetMap.
+- For the dataset, see [datasets/old_parking_data in the bikespace repo](https://github.com/bikespace/bikespace/tree/main/datasets/old_parking_data)
 
 
 ## Development
