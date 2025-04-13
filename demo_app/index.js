@@ -75,7 +75,7 @@ map.on("load", () => {
 
   // add in data sources
   const displayData =
-    "https://raw.githubusercontent.com/tallcoleman/new-parking-map/main/Display%20Files/all_sources.geojson";
+    "https://raw.githubusercontent.com/bikespace/parking-map-data/main/Display%20Files/all_sources.geojson";
   const bikeLaneURL = "data/cycling-network.geojson";
   const bikeTheftURL = "data/bicycle-thefts.geojson";
 
