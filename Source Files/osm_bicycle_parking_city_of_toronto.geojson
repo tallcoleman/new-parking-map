@@ -22833,16 +22833,16 @@
       "type": "Feature",
       "properties": {
         "access": "no",
-        "amenity": "bicycle_parking",
         "bicycle_parking": "building",
         "bike_ride": "yes",
+        "construction:amenity": "bicycle_parking",
         "covered": "yes",
         "description": "In construction bicycle facility at west entrance of Kennedy station of Eglinton LRT",
         "image": "https://flic.kr/p/2prKo3b",
         "indoor": "yes",
         "lit": "yes",
         "operator": "Metrolinx",
-        "meta_feature_last_updated": "2024-01-11T00:13:19+00:00",
+        "meta_feature_last_updated": "2025-04-12T20:15:36+00:00",
         "meta_osm_id": "node/10085728372"
       },
       "geometry": {
@@ -29529,18 +29529,19 @@
       "type": "Feature",
       "properties": {
         "access": "no",
-        "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
         "bike_ride": "yes",
         "capacity": "22",
+        "construction:amenity": "bicycle_parking",
         "covered": "yes",
-        "description": "bicycle stabds outside west entrnace for kennedy station of Eglinton LRT",
+        "description": "bicycle stands outside west entrance for Kennedy station of Eglinton LRT",
         "fee": "no",
+        "fixme": "Are these bike stands still here or removed again with additional construction?",
         "image": "https://flic.kr/p/2prKo3b",
         "indoor": "no",
         "operator": "Metrolinx",
         "quantity": "11",
-        "meta_feature_last_updated": "2024-01-11T00:13:19+00:00",
+        "meta_feature_last_updated": "2025-04-12T20:15:36+00:00",
         "meta_osm_id": "node/11506994065"
       },
       "geometry": {
@@ -29588,10 +29589,11 @@
         "covered": "no",
         "description": "under construction",
         "fee": "no",
+        "fixme": "Are these bike stands still here or have they been removed with additional construction?",
         "image": "https://flic.kr/p/2prKrb5",
         "operator": "Metrolinx",
         "quantity": "4",
-        "meta_feature_last_updated": "2024-01-11T00:13:19+00:00",
+        "meta_feature_last_updated": "2025-04-12T20:15:36+00:00",
         "meta_osm_id": "node/11506994067"
       },
       "geometry": {
@@ -44983,6 +44985,28 @@
         "coordinates": [
           -79.4277604,
           43.6298622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "5",
+        "covered": "no",
+        "fee": "no",
+        "operator": "FreshCo",
+        "operator:type": "business",
+        "meta_feature_last_updated": "2025-04-12T19:37:41+00:00",
+        "meta_osm_id": "node/12750435740"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3754698,
+          43.6693116
         ]
       }
     },
