@@ -444,5 +444,17 @@
     "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "121" }],
     "reason": "missing",
     "notes": "Did not survey in person. Per Google Street View, there is no record of a bike rack being placed anywhere around this building."
+  },
+  {
+    "survey_date": "2025-04-26",
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "216" }],
+    "reason": "missing",
+    "notes": "Could not locate"
+  },
+  {
+    "survey_date": "2025-04-26",
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "40" }],
+    "reason": "removed",
+    "notes": "Could not locate. Last photo of this parking lane corral in Google Street View is from 2019."
   }
 ]
