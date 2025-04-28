@@ -205,14 +205,14 @@
         "operator": "University of Toronto",
         "operator:type": "public",
         "quantity": "22",
-        "meta_feature_last_updated": "2024-07-14T02:48:50+00:00",
+        "meta_feature_last_updated": "2025-04-25T11:16:39+00:00",
         "meta_osm_id": "node/390546355"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3937996,
-          43.6613249
+          -79.3937973,
+          43.6612845
         ]
       }
     },
@@ -230,14 +230,14 @@
         "operator": "University of Toronto",
         "operator:type": "public",
         "quantity": "9",
-        "meta_feature_last_updated": "2024-07-14T02:48:50+00:00",
+        "meta_feature_last_updated": "2025-04-25T11:16:39+00:00",
         "meta_osm_id": "node/390546359"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3940468,
-          43.6618554
+          -79.3940598,
+          43.66184
         ]
       }
     },
@@ -1455,18 +1455,17 @@
         "cargo_bike": "yes",
         "covered": "no",
         "fee": "no",
-        "fixme": "Location may need to be adjusted when path geometry is updated to reflect new renovations",
         "operator": "University of Toronto",
         "operator:type": "public",
         "quantity": "7",
-        "meta_feature_last_updated": "2024-07-14T02:48:50+00:00",
+        "meta_feature_last_updated": "2025-04-25T11:16:39+00:00",
         "meta_osm_id": "node/783622469"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3944872,
-          43.6611281
+          -79.3945134,
+          43.6611553
         ]
       }
     },
@@ -1481,18 +1480,17 @@
         "cargo_bike": "yes",
         "covered": "no",
         "fee": "no",
-        "fixme": "Location may need to be adjusted when path geometry is updated to reflect new renovations",
         "operator": "University of Toronto",
         "operator:type": "public",
         "quantity": "10",
-        "meta_feature_last_updated": "2024-07-14T02:48:50+00:00",
+        "meta_feature_last_updated": "2025-04-25T11:16:39+00:00",
         "meta_osm_id": "node/783622471"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3946066,
-          43.6611099
+          -79.3946401,
+          43.6611061
         ]
       }
     },
@@ -19319,7 +19317,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2021-10-20T22:54:58+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2025-04-23T14:38:48+00:00",
         "meta_osm_id": "node/9188573036"
       },
       "geometry": {
@@ -21827,8 +21826,10 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
+        "capacity": "12",
         "colour": "grey",
-        "meta_feature_last_updated": "2022-06-25T00:41:50+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2025-04-27T22:57:00+00:00",
         "meta_osm_id": "node/9845510099"
       },
       "geometry": {
@@ -22117,8 +22118,10 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
+        "capacity": "4",
         "colour": "grey",
-        "meta_feature_last_updated": "2022-07-30T12:47:31+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2025-04-27T19:26:41+00:00",
         "meta_osm_id": "node/9920863445"
       },
       "geometry": {
@@ -22134,8 +22137,10 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
+        "capacity": "8",
         "colour": "grey",
-        "meta_feature_last_updated": "2022-07-30T12:47:31+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2025-04-27T19:26:36+00:00",
         "meta_osm_id": "node/9920863447"
       },
       "geometry": {
@@ -29531,20 +29536,18 @@
     {
       "type": "Feature",
       "properties": {
-        "access": "no",
+        "access": "yes",
+        "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
         "bike_ride": "yes",
         "capacity": "22",
-        "construction:amenity": "bicycle_parking",
         "covered": "yes",
         "description": "bicycle stands outside west entrance for Kennedy station of Eglinton LRT",
         "fee": "no",
-        "fixme": "Are these bike stands still here or removed again with additional construction?",
         "image": "https://flic.kr/p/2prKo3b",
-        "indoor": "no",
         "operator": "Metrolinx",
         "quantity": "11",
-        "meta_feature_last_updated": "2025-04-12T20:15:36+00:00",
+        "meta_feature_last_updated": "2025-04-25T11:07:55+00:00",
         "meta_osm_id": "node/11506994065"
       },
       "geometry": {
@@ -29584,19 +29587,18 @@
     {
       "type": "Feature",
       "properties": {
-        "access": "yes",
-        "amenity": "bicycle_parking",
+        "access": "no",
         "bicycle_parking": "stands",
         "bike_ride": "yes",
         "capacity": "8",
+        "construction:amenity": "bicycle_parking",
         "covered": "no",
         "description": "under construction",
         "fee": "no",
-        "fixme": "Are these bike stands still here or have they been removed with additional construction?",
         "image": "https://flic.kr/p/2prKrb5",
         "operator": "Metrolinx",
         "quantity": "4",
-        "meta_feature_last_updated": "2025-04-12T20:15:36+00:00",
+        "meta_feature_last_updated": "2025-04-25T11:07:55+00:00",
         "meta_osm_id": "node/11506994067"
       },
       "geometry": {
@@ -32376,14 +32378,14 @@
         "fee": "no",
         "operator": "City of Toronto",
         "operator:type": "government",
-        "meta_feature_last_updated": "2024-07-11T21:25:03+00:00",
+        "meta_feature_last_updated": "2025-04-22T15:21:52+00:00",
         "meta_osm_id": "node/11799873197"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3940725,
-          43.6558329
+          -79.3940571,
+          43.6558253
         ]
       }
     },
@@ -32593,14 +32595,14 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-04-08T00:54:20+00:00",
+        "meta_feature_last_updated": "2025-04-22T19:25:21+00:00",
         "meta_osm_id": "node/11800637608"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3942971,
-          43.655785
+          -79.3942958,
+          43.655777
         ]
       }
     },
@@ -32608,14 +32610,14 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-04-08T00:54:20+00:00",
+        "meta_feature_last_updated": "2025-04-22T19:25:21+00:00",
         "meta_osm_id": "node/11800641116"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3943499,
-          43.6557702
+          -79.3943462,
+          43.6557668
         ]
       }
     },
@@ -32653,7 +32655,10 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-04-08T00:54:23+00:00",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "meta_feature_last_updated": "2025-04-22T14:58:11+00:00",
         "meta_osm_id": "node/11800697572"
       },
       "geometry": {
@@ -32668,14 +32673,14 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-04-08T00:54:20+00:00",
+        "meta_feature_last_updated": "2025-04-22T19:25:21+00:00",
         "meta_osm_id": "node/11800697934"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3943261,
-          43.6557732
+          -79.3943224,
+          43.6557698
         ]
       }
     },
@@ -32683,7 +32688,10 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-04-08T00:54:23+00:00",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "meta_feature_last_updated": "2025-04-22T14:58:20+00:00",
         "meta_osm_id": "node/11800699301"
       },
       "geometry": {
@@ -32698,14 +32706,14 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-04-08T00:54:20+00:00",
+        "meta_feature_last_updated": "2025-04-22T19:25:21+00:00",
         "meta_osm_id": "node/11800700975"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.394418,
-          43.6557593
+          -79.3944153,
+          43.6557498
         ]
       }
     },
@@ -34976,7 +34984,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2024-06-28T20:15:21+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-04-26T20:54:25+00:00",
         "meta_osm_id": "node/12018504473"
       },
       "geometry": {
@@ -34990,10 +34999,18 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "safe_loops",
         "capacity": "5",
-        "meta_feature_last_updated": "2024-06-28T20:15:21+00:00",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack angled",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2025-04-26T20:54:25+00:00",
         "meta_osm_id": "node/12018504474"
       },
       "geometry": {
@@ -35010,7 +35027,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2024-06-28T20:15:21+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-04-26T20:54:25+00:00",
         "meta_osm_id": "node/12018504477"
       },
       "geometry": {
@@ -35027,7 +35045,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2024-06-28T20:15:21+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-04-26T20:54:25+00:00",
         "meta_osm_id": "node/12018504478"
       },
       "geometry": {
@@ -35590,14 +35609,14 @@
         "operator": "University of Toronto",
         "operator:type": "public",
         "quantity": "5",
-        "meta_feature_last_updated": "2024-07-14T02:48:50+00:00",
+        "meta_feature_last_updated": "2025-04-25T11:16:39+00:00",
         "meta_osm_id": "node/12052318806"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3946226,
-          43.660794
+          -79.394637,
+          43.6607914
         ]
       }
     },
@@ -35615,14 +35634,14 @@
         "operator": "University of Toronto",
         "operator:type": "public",
         "quantity": "11",
-        "meta_feature_last_updated": "2024-07-14T02:48:50+00:00",
+        "meta_feature_last_updated": "2025-04-25T11:16:39+00:00",
         "meta_osm_id": "node/12052318807"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3941868,
-          43.6621785
+          -79.3942209,
+          43.6621889
         ]
       }
     },
@@ -45046,6 +45065,333 @@
     {
       "type": "Feature",
       "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "meta_feature_last_updated": "2025-04-22T15:14:06+00:00",
+        "meta_osm_id": "node/12776501235"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3936357,
+          43.6558952
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "meta_feature_last_updated": "2025-04-22T19:25:21+00:00",
+        "meta_osm_id": "node/12776501237"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3937288,
+          43.6559023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "meta_feature_last_updated": "2025-04-22T19:25:21+00:00",
+        "meta_osm_id": "node/12776501238"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3936924,
+          43.6559093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "meta_feature_last_updated": "2025-04-22T15:14:06+00:00",
+        "meta_osm_id": "node/12776501239"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.393778,
+          43.6558689
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "5",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack angled",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2025-04-26T20:54:25+00:00",
+        "meta_osm_id": "node/12790260589"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3951445,
+          43.647948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "12",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "two stacker racks",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "quantity": "2",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "41",
+        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-27659",
+        "meta_feature_last_updated": "2025-04-26T20:54:25+00:00",
+        "meta_osm_id": "node/12790260590"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3971491,
+          43.6501841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "5",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack angled",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2025-04-26T20:54:25+00:00",
+        "meta_osm_id": "node/12790260591"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3945395,
+          43.6480781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "12",
+        "cargo_bike": "no",
+        "colour": "blue",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Toronto District School Board",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2025-04-26T20:54:25+00:00",
+        "meta_osm_id": "node/12790260592"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3949022,
+          43.6503772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "27",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "22",
+        "meta_feature_last_updated": "2025-04-26T20:54:25+00:00",
+        "meta_osm_id": "node/12790260593"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.384965,
+          43.6481227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "14",
+        "capacity:cargo_bike": "7",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "description": "corral in parking lane",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "50",
+        "meta_feature_last_updated": "2025-04-26T20:54:25+00:00",
+        "meta_osm_id": "node/12790260594"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.396849,
+          43.6503817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "57",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "80",
+        "meta_feature_last_updated": "2025-04-26T20:54:25+00:00",
+        "meta_osm_id": "node/12790260595"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3975923,
+          43.6513081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "48",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "49",
+        "meta_feature_last_updated": "2025-04-26T20:54:25+00:00",
+        "meta_osm_id": "node/12790260596"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.385215,
+          43.6480878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "covered": "no",
+        "description": "two hanger racks",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "quantity": "2",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "184",
+        "meta_feature_last_updated": "2025-04-26T20:54:25+00:00",
+        "meta_osm_id": "node/12790260597"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3843637,
+          43.6471335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "4",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2025-04-27T16:15:43+00:00",
+        "meta_osm_id": "node/12791912608"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3945315,
+          43.6765095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
@@ -46272,24 +46618,24 @@
         "coordinates": [
           [
             [
-              -79.3960784,
-              43.6473011
+              -79.3961076,
+              43.6472951
             ],
             [
-              -79.396175,
-              43.6472812
+              -79.3962526,
+              43.647265
             ],
             [
-              -79.3961808,
-              43.6472961
+              -79.3962579,
+              43.6472783
             ],
             [
-              -79.3960843,
-              43.647316
+              -79.3961129,
+              43.6473083
             ],
             [
-              -79.3960784,
-              43.6473011
+              -79.3961076,
+              43.6472951
             ]
           ]
         ]
