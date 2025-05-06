@@ -101,7 +101,7 @@ map.on("load", () => {
     source: "bicycle-lanes",
     filter: [
       "match",
-      ["get", "INFRA_LOWORDER"],
+      ["get", "INFRA_HIGHORDER"],
       [
         "Sharrows - Wayfinding",
         "Sharrows - Arterial - Connector",
@@ -118,7 +118,7 @@ map.on("load", () => {
       "line-width": 3,
       "line-color": [
         "match",
-        ["get", "INFRA_LOWORDER"],
+        ["get", "INFRA_HIGHORDER"],
         ["Cycle Track", "Cycle Track - Contraflow", "Bi-Directional Cycle Track"],
         "hsl(137, 68%, 23%)",
         [
@@ -142,7 +142,7 @@ map.on("load", () => {
     source: "bicycle-lanes",
     filter: [
       "match",
-      ["get", "INFRA_LOWORDER"],
+      ["get", "INFRA_HIGHORDER"],
       [
         "Sharrows - Wayfinding",
         "Sharrows - Arterial - Connector",
@@ -160,7 +160,7 @@ map.on("load", () => {
       "line-dasharray": [1, 2],
       "line-color": [
         "match",
-        ["get", "INFRA_LOWORDER"],
+        ["get", "INFRA_HIGHORDER"],
         [
           "Sharrows - Wayfinding",
           "Sharrows - Arterial - Connector",
