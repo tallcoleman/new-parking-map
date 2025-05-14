@@ -294,17 +294,17 @@ def run_pipeline():
     for dataset_name, dataset in city_data.items():
         city_data[dataset_name] = dataset[~dataset.isin(id_lists).any(axis=1)]
 
-    # drop all osm with operator="City of Toronto" (case/space-insensitive) unless they have ref tag.
+    # drop all osm with operator="City of Toronto" (case/space-insensitive) unless they have ref tag or unless they are a locker (for which no ref match can currently be made).
     # this also retains osm points with ANY value for "ref:open.toronto.ca", including "ref.open.toronto.ca"="no"
     operator_not_city_and_no_ref_test = (
         (
-            osm_combined["operator"].str.contains(  # noqa: E712
+            ~osm_combined["operator"].str.contains(
                 r"city\s*?of\s*?toronto", case=False, regex=True
             )
-            != True
+            | osm_combined["operator"].isna()
         )
-        & (~open_toronto_ca_test)
-    ) | osm_combined["operator"].isna()
+        | (osm_combined["bicycle_parking"] == "lockers")
+    ) & (~open_toronto_ca_test)
     osm_filtered = pd.concat(
         [city_verified_osm, osm_combined[operator_not_city_and_no_ref_test]]
     ).to_crs(32617)  # change to UTM 17 N for centroid calculation
