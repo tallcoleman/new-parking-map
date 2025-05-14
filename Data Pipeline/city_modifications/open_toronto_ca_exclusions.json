@@ -456,5 +456,21 @@
     "ids": [{ "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "40" }],
     "reason": "removed",
     "notes": "Could not locate. Last photo of this parking lane corral in Google Street View is from 2019."
+  },
+  {
+    "survey_date": "2025-05-13",
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "113" }],
+    "reason": "missing",
+    "notes": "Could not locate."
+  },
+  {
+    "survey_date": "2025-05-13",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "64" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "88" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-35298" }
+    ],
+    "reason": "removed",
+    "notes": "Could not locate. May have been moved to where there is a corral now on the SE corner of Nelson & Duncan or may have been removed."
   }
 ]
