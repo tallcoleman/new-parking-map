@@ -2911,8 +2911,9 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
+        "covered": "no",
         "description": "between road and sidewalk",
-        "meta_feature_last_updated": "2015-03-26T02:59:35+00:00",
+        "meta_feature_last_updated": "2025-05-24T23:00:24+00:00",
         "meta_osm_id": "node/1279876378"
       },
       "geometry": {
@@ -46466,6 +46467,39 @@
         "coordinates": [
           -79.4431425,
           43.6590851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-05-20T16:54:15+00:00",
+        "meta_osm_id": "node/12851363629"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4764313,
+          43.651334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "colour": "blue",
+        "meta_feature_last_updated": "2025-05-24T16:00:11+00:00",
+        "meta_osm_id": "node/12860974644"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4365008,
+          43.6399744
         ]
       }
     },
