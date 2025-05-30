@@ -232,7 +232,7 @@
       { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "14" }
     ],
     "reason": "removed",
-    "notes": "Appears to have been removed circa 2016 per streetview"
+    "notes": "Could not locate"
   },
   {
     "survey_date": "2024-09-29",
@@ -241,7 +241,7 @@
       { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "110" }
     ],
     "reason": "missing",
-    "notes": "Could not locate on survey; also could not locate via streetview history. May be a data entry error?"
+    "notes": "Could not locate on survey"
   },
   {
     "survey_date": "2024-09-29",
@@ -265,13 +265,13 @@
     "survey_date": "2024-09-29",
     "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-30214" }],
     "reason": "removed",
-    "notes": "Removed circa 2019 per google streetview."
+    "notes": "Could not locate"
   },
   {
     "survey_date": "2023-12-31",
     "ids": [{ "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "104" }],
     "reason": "removed",
-    "notes": "Appears to be CafeTO removal per google streetview"
+    "notes": "Could not locate"
   },
   {
     "survey_date": "2023-12-31",
@@ -280,13 +280,13 @@
       { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "61" }
     ],
     "reason": "removed",
-    "notes": "Appears to have been removed circa or after 2021 per google streetview"
+    "notes": "Could not locate"
   },
   {
     "survey_date": "2024-01-02",
     "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "230" }],
     "reason": "missing",
-    "notes": "Could not locate in person or on google streetview"
+    "notes": "Could not locate in person"
   },
   {
     "survey_date": "2024-04-07",
@@ -315,13 +315,13 @@
       { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "137" }
     ],
     "reason": "missing",
-    "notes": "Was not able to locate racks matching descriptions either in person or via StreetView. Most likely candidate is https://www.openstreetmap.org/node/12280421215 but still has some discrepancies compared to datasets."
+    "notes": "Was not able to locate racks matching descriptions. Most likely candidate is https://www.openstreetmap.org/node/12280421215 but still has some discrepancies compared to datasets."
   },
   {
     "survey_date": "2024-10-27",
     "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-44016" }],
     "reason": "removed",
-    "notes": "There was a corral here circa 2015-2017 per StreetView but otherwise no rack here in the last 7-8 years."
+    "notes": "Could not locate"
   },
   {
     "survey_date": "2024-10-27",
@@ -345,7 +345,7 @@
     "survey_date": "2024-10-31",
     "ids": [{ "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "62" }],
     "reason": "removed",
-    "notes": "Appears to have been removed between 2021 and 2023 (likely due to construction) per Google Streetview."
+    "notes": "Could not locate"
   },
   {
     "survey_date": "2024-11-02",
@@ -354,7 +354,7 @@
       { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "217" }
     ],
     "reason": "removed",
-    "notes": "Appears to have been removed between May 2019 and Oct 2020 per Google Streetview."
+    "notes": "Could not locate"
   },
   {
     "survey_date": "2024-11-02",
@@ -363,19 +363,19 @@
       { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "54" }
     ],
     "reason": "removed",
-    "notes": "Appears to have been removed between Feb and Nov 2021 per Google Streetview."
+    "notes": "Could not locate"
   },
   {
     "survey_date": "2024-11-02",
     "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-21478" }],
     "reason": "removed",
-    "notes": "Removed for construction; per Streetview was removed between Sep 2019 and Jan 2021."
+    "notes": "Removed for construction"
   },
   {
     "survey_date": "2024-11-02",
     "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-12699" }],
     "reason": "removed",
-    "notes": "Visible on Google Streetview as of Sep 2022, so must have been removed at some point after."
+    "notes": "Could not locate"
   },
   {
     "survey_date": "2024-11-03",
@@ -385,7 +385,7 @@
       { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-15184" }
     ],
     "reason": "removed",
-    "notes": "Removed between Sep 2019 and Oct 2020, per Google streetview, likely due to construction."
+    "notes": "Could not locate"
   },
   {
     "survey_date": "2024-11-03",
@@ -400,19 +400,19 @@
       { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "17" }
     ],
     "reason": "removed",
-    "notes": "Per Streetview, appears to have been a capacity 8 stacker rack before; has now been replaced with a capacity 4 stacker rack in a similar location after construction to put in a protected bike lane."
+    "notes": "Could not locate; recent construction to put in a protected bike lane."
   },
   {
     "survey_date": "2024-11-10",
     "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-06839" }],
     "reason": "missing",
-    "notes": "Wheelbender rack visible in older Google Streetview images; now gone."
+    "notes": "Could not locate"
   },
   {
     "survey_date": "2024-11-26",
     "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-06902" }],
     "reason": "removed",
-    "notes": "Appears to have been removed when the History music venue was constructed. Rack visible in Google street view history (now gone) is a wheelbender."
+    "notes": "Could not locate; recent construction in area for History music venue"
   },
   {
     "survey_date": "2025-03-01",
@@ -425,27 +425,6 @@
     "notes": "Per survey, no longer there. Recent construction in area."
   },
   {
-    "survey_date": "2025-03-14",
-    "ids": [
-      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "140" },
-      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "4" }
-    ],
-    "reason": "removed",
-    "notes": "Did not survey in person. Per Google Street View, appears to have been removed circa 2020."
-  },
-  {
-    "survey_date": "2025-03-14",
-    "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "5" }],
-    "reason": "missing",
-    "notes": "Did not survey in person. Per Google Street View, there is no TTC property or bike rack in this location."
-  },
-  {
-    "survey_date": "2025-03-23",
-    "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "121" }],
-    "reason": "missing",
-    "notes": "Did not survey in person. Per Google Street View, there is no record of a bike rack being placed anywhere around this building."
-  },
-  {
     "survey_date": "2025-04-26",
     "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "216" }],
     "reason": "missing",
@@ -455,7 +434,7 @@
     "survey_date": "2025-04-26",
     "ids": [{ "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "40" }],
     "reason": "removed",
-    "notes": "Could not locate. Last photo of this parking lane corral in Google Street View is from 2019."
+    "notes": "Could not locate."
   },
   {
     "survey_date": "2025-05-13",
