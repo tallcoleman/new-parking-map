@@ -3617,14 +3617,14 @@
         "covered": "no",
         "description": "Green rack with circular stands",
         "fee": "no",
-        "meta_feature_last_updated": "2024-01-01T15:14:04+00:00",
+        "meta_feature_last_updated": "2025-05-30T23:43:58+00:00",
         "meta_osm_id": "node/2532703731"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3928028,
-          43.6886329
+          -79.3928194,
+          43.6886264
         ]
       }
     },
@@ -3677,14 +3677,14 @@
         "covered": "no",
         "description": "Green rack with circular stands",
         "fee": "no",
-        "meta_feature_last_updated": "2024-01-01T15:14:04+00:00",
+        "meta_feature_last_updated": "2025-05-30T23:43:58+00:00",
         "meta_osm_id": "node/2545503845"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3928207,
-          43.6886891
+          -79.3928421,
+          43.688685
         ]
       }
     },
@@ -4260,14 +4260,14 @@
         "check_date": "2024-08-29",
         "covered": "no",
         "note": "grey ring and post",
-        "meta_feature_last_updated": "2024-08-29T23:41:52+00:00",
+        "meta_feature_last_updated": "2025-05-30T23:43:58+00:00",
         "meta_osm_id": "node/2849687169"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3923179,
-          43.6885769
+          -79.3923673,
+          43.6885714
         ]
       }
     },
@@ -26380,22 +26380,6 @@
     {
       "type": "Feature",
       "properties": {
-        "amenity": "bicycle_parking",
-        "covered": "no",
-        "meta_feature_last_updated": "2025-04-16T19:12:46+00:00",
-        "meta_osm_id": "node/11189329520"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3249001,
-          43.8193801
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "wall_loops",
@@ -46500,6 +46484,190 @@
         "coordinates": [
           -79.4365008,
           43.6399744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2025-05-26T20:33:50+00:00",
+        "meta_osm_id": "node/12865422089"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.505567,
+          43.675294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2025-05-26T20:34:39+00:00",
+        "meta_osm_id": "node/12865454218"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4946248,
+          43.6894203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "4",
+        "covered": "no",
+        "description": "wave rack",
+        "fee": "no",
+        "operator": "Bridlewood Mall",
+        "operator:type": "business",
+        "meta_feature_last_updated": "2025-05-30T11:34:13+00:00",
+        "meta_osm_id": "node/12875167950"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3184614,
+          43.7990527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "covered": "no",
+        "description": "stacker rack, wheel holder maxwidth 9cm",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "140",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "4",
+        "meta_feature_last_updated": "2025-05-30T11:34:13+00:00",
+        "meta_osm_id": "node/12875167951"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.317379,
+          43.8211368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "6",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Bridlewood Mall",
+        "operator:type": "business",
+        "meta_feature_last_updated": "2025-05-30T11:34:13+00:00",
+        "meta_osm_id": "node/12875167952"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3188804,
+          43.799806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "4",
+        "covered": "no",
+        "description": "wave rack",
+        "fee": "no",
+        "operator": "Bridlewood Mall",
+        "operator:type": "business",
+        "meta_feature_last_updated": "2025-05-30T11:34:13+00:00",
+        "meta_osm_id": "node/12875167953"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3189256,
+          43.7997949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "6",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Bridlewood Mall",
+        "operator:type": "business",
+        "meta_feature_last_updated": "2025-05-30T11:34:13+00:00",
+        "meta_osm_id": "node/12875167954"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3189623,
+          43.7997887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "5",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Scarborough Health Network",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2025-05-30T11:34:13+00:00",
+        "meta_osm_id": "node/12875167955"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3095939,
+          43.8022248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "colour": "gray",
+        "meta_feature_last_updated": "2025-06-01T11:44:39+00:00",
+        "meta_osm_id": "node/12878792854"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.531217,
+          43.6427949
         ]
       }
     },
