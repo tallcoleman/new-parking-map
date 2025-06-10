@@ -1,10 +1,14 @@
-# New Toronto Bicycle Parking Map Data
+# Toronto Bicycle Parking Map Data
 
-This script downloads, filters, and transforms data from two major sources: City of Toronto Open Data and OpenStreetMap. 
+This script downloads, filters, and transforms data from two major sources: City of Toronto Open Data and OpenStreetMap. The goal of the script is to provide a clean and uniform data set of bicycle parking locations in Toronto.
 
-The goal of the script is to provide a clean and uniform data set that can be used to create a map provided on [bikespace.ca](https://bikespace.ca/) that helps cyclists find bicycle parking in Toronto.
+## [BikeSpace Parking Map](https://bikespace.ca/parking-map)
 
-Current proof of concept maps that use this data:
+The data is used for the BikeSpace parking map available at [bikespace.ca/parking-map](https://bikespace.ca/parking-map).
+
+## Prototype Maps
+
+Proof of concept maps that also use this data:
 
 ### [Map Demo](https://demo-map-app.new-parking-map.pages.dev/)
 
@@ -14,7 +18,7 @@ Link: https://demo-map-app.new-parking-map.pages.dev/
 - You can click on the features to see more details.
 - If you click on the heading at the top it will provide some more information and has a button to optionally show a bike theft heatmap. (source: https://open.toronto.ca/dataset/bicycle-thefts/)
 - The City of Toronto bike network is shown for context (source: https://open.toronto.ca/dataset/cycling-network/)
-- This is a proof of concept, we hope to make a better map available through bikespace.ca (see, e.g. https://github.com/bikespace/bikespace/issues/155)
+- This is a prototype used to help design the bicycle parking map now available on bikespace.ca
 
 ### [Quest Map](https://quest-map.new-parking-map.pages.dev/)
 
@@ -41,7 +45,7 @@ How to fix:
 
 Link: https://demo-map-app.new-parking-map.pages.dev/CurrentMap/
 
-- This shows the old data layer currently used for https://bikespace.ca/ParkingMap (in red) along with the current up-to-date data from the City open datasets (in black) and OpenStreetMap (in blue). 
+- This shows the old data layer previously used for https://bikespace.ca/ParkingMap (in red) along with the current up-to-date data from the City open datasets (in black) and OpenStreetMap (in blue). 
 - There are some bicycle parking points in the old data layer that are not currently available in any City open data set or OpenStreetMap that should be added to OpenStreetMap.
 - For the dataset, see [datasets/old_parking_data in the bikespace repo](https://github.com/bikespace/bikespace/tree/main/datasets/old_parking_data)
 
@@ -111,6 +115,6 @@ De-duplication of bicycle racks across multiple City datasets - in many cases, r
 
 Reasons:
 
-- `removed`: Not found via survey, but past evidence (e.g. Google Streetview) confirms it was in the described location, and there is a probable cause for removal (e.g. construction, CafeTO installation).
+- `removed`: Not found via survey, but there is a probable cause for removal (e.g. construction, CafeTO installation).
 - `missing`: Not found via survey.
 - `area_survey`: Used for cases where address-geolocated points are insufficiently distinguishable in order to map data to found features 1:1. Should survey comprehensively, add all found features to OpenStreetMap, and then add the relevant data points to the exclusion list with this reason tag.
