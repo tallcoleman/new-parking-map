@@ -268,6 +268,28 @@ def run_pipeline():
 
     lockers: geopandas.GeoDataFrame = pd.concat(lockers_data_list)
 
+    # save full normalized data without any deduplication or clustering
+    all_normalized_unprocessed = pd.concat(
+        [
+            *city_data.values(),
+            osm_combined,
+            lockers,
+        ]
+    )
+
+    with open(ofp / "all_normalized_unprocessed.geojson", "w") as f:
+        f.write(
+            dt_cols_to_str(all_normalized_unprocessed).to_json(
+                na="drop", drop_id=True, indent=2
+            )
+        )
+    with open(ofp_archive / "all_normalized_unprocessed.geojson", "w") as f:
+        f.write(
+            dt_cols_to_str(all_normalized_unprocessed).to_json(
+                na="drop", drop_id=True, indent=2
+            )
+        )
+
     # Downstream: City Data Selection
     # -------------------------------
     print("Applying downstream processing: City Data Selection...")
