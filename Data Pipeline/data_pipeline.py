@@ -23,7 +23,7 @@ from shapely import Polygon
 import overpass
 
 from pandas.api.types import is_datetime64_any_dtype
-from custom_types.geojson_types import GeoJSONFeatureCollection
+from custom_types import GeoJSONFeatureCollection
 
 import conversions
 from wrappers import BikeData, BikeDataToronto, BikeDataOSM, BikeLockersToronto
