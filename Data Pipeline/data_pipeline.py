@@ -67,6 +67,7 @@ def save_output(
     output_paths = [path]
     if archive_name:
         output_paths.append(path / archive_name)
+        print("Archive folder option enabled")
 
     if isinstance(output, geopandas.GeoDataFrame):
         for op in output_paths:
