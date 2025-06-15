@@ -7,9 +7,11 @@
 # IMPORTS
 # -------
 
+from argparse import ArgumentParser
 from datetime import datetime, timezone
 from itertools import chain
 import json
+from typing import Literal
 from zoneinfo import ZoneInfo
 
 import geojson
@@ -21,6 +23,7 @@ from shapely import Polygon
 import overpass
 
 from pandas.api.types import is_datetime64_any_dtype
+from custom_types.geojson_types import GeoJSONFeatureCollection
 
 import conversions
 from wrappers import BikeData, BikeDataToronto, BikeDataOSM, BikeLockersToronto
@@ -50,14 +53,38 @@ def dt_cols_to_str(gdf: geopandas.GeoDataFrame) -> geopandas.GeoDataFrame:
         gdf = gdf.astype({c: "string" for c in json_not_supported_cols})
     return gdf
 
-    # SCRIPT EXECUTION
-    # ----------------
+
+def save_output(
+    output: GeoJSONFeatureCollection | geopandas.GeoDataFrame,
+    *,
+    path: Path,
+    file_name: str,
+    archive_name: str | None = None,
+    na: Literal["null", "drop", "keep"] = "drop",
+):
+    """Save GeoJSON dict or GeoPandas Geodataframe to file. If archive_name is specified, the file will also be saved in an archive folder in the same path."""
+
+    output_paths = [path]
+    if archive_name:
+        output_paths.append(path / archive_name)
+
+    if isinstance(output, geopandas.GeoDataFrame):
+        for op in output_paths:
+            op.mkdir(exist_ok=True)
+            with open(op / file_name, "w") as f:
+                f.write(dt_cols_to_str(output).to_json(na=na, drop_id=True, indent=2))
+    else:
+        for op in output_paths:
+            op.mkdir(exist_ok=True)
+            with open(op / file_name, "w") as f:
+                geojson.dump(output, f, indent=2)
 
 
-print("Loading sources and statuses...")
+# SCRIPT EXECUTION
+# ----------------
 
 
-def run_pipeline():
+def run_pipeline(*, archive=False):
     """Main function to run the data processing pipeline."""
 
     # get today's date and use to set output folders
@@ -65,19 +92,14 @@ def run_pipeline():
     today_toronto_isodate = datetime.now(ZoneInfo("America/Toronto")).strftime(
         "%Y-%m-%d"
     )
+    archive_name = f"{today_toronto_isodate}/" if archive else None
 
     sfp = Path("Source Files/")
-    sfp_archive = sfp / f"{today_toronto_isodate}/"
     ofp = Path("Output Files/")
-    ofp_archive = ofp / f"{today_toronto_isodate}/"
     dfp = Path("Display Files/")
-    dfp_archive = dfp / f"{today_toronto_isodate}/"
-
-    for p in [sfp, sfp_archive, ofp, ofp_archive, dfp, dfp_archive]:
-        if not p.exists():
-            p.mkdir()
 
     # load in details and status
+    print("Loading sources and statuses...")
 
     def load_paths(paths: dict) -> dict:
         data = {}
@@ -142,10 +164,12 @@ def run_pipeline():
         )
 
         # save source file
-        with open(sfp / f"{bike_data.dataset_name}.geojson", "w") as f:
-            geojson.dump(bike_data.response_geojson, f, indent=2)
-        with open(sfp_archive / f"{bike_data.dataset_name}.geojson", "w") as f:
-            geojson.dump(bike_data.response_geojson, f, indent=2)
+        save_output(
+            bike_data.response_geojson,
+            path=sfp,
+            file_name=f"{bike_data.dataset_name}.geojson",
+            archive_name=archive_name,
+        )
 
         # get normalized output
         filter_properties = conversions.get_filter(bike_data.dataset_name)
@@ -154,12 +178,13 @@ def run_pipeline():
 
         # save normalized output
         na_option = "drop" if isinstance(bike_data, BikeDataOSM) else "null"
-        with open(ofp / f"{bike_data.dataset_name}-normalized.geojson", "w") as f:
-            f.write(normalized_gdf.to_json(na=na_option, drop_id=True, indent=2))
-        with open(
-            ofp_archive / f"{bike_data.dataset_name}-normalized.geojson", "w"
-        ) as f:
-            f.write(normalized_gdf.to_json(na=na_option, drop_id=True, indent=2))
+        save_output(
+            normalized_gdf,
+            path=ofp,
+            file_name=f"{bike_data.dataset_name}-normalized.geojson",
+            archive_name=archive_name,
+            na=na_option,
+        )
 
         num_normalized_features = len(normalized_gdf)
 
@@ -276,19 +301,13 @@ def run_pipeline():
             lockers,
         ]
     )
-
-    with open(ofp / "all_normalized_unprocessed.geojson", "w") as f:
-        f.write(
-            dt_cols_to_str(all_normalized_unprocessed).to_json(
-                na="drop", drop_id=True, indent=2
-            )
-        )
-    with open(ofp_archive / "all_normalized_unprocessed.geojson", "w") as f:
-        f.write(
-            dt_cols_to_str(all_normalized_unprocessed).to_json(
-                na="drop", drop_id=True, indent=2
-            )
-        )
+    save_output(
+        all_normalized_unprocessed,
+        path=ofp,
+        file_name="all_normalized_unprocessed.geojson",
+        archive_name=archive_name,
+        na="drop",
+    )
 
     # Downstream: City Data Selection
     # -------------------------------
@@ -432,49 +451,58 @@ def run_pipeline():
     # ------------------
     print("Saving display files...")
 
-    with open(dfp / "open_toronto_ca.geojson", "w") as f:
-        f.write(dt_cols_to_str(city_full).to_json(na="drop", drop_id=True, indent=2))
-    with open(dfp_archive / "open_toronto_ca.geojson", "w") as f:
-        f.write(dt_cols_to_str(city_full).to_json(na="drop", drop_id=True, indent=2))
-
-    with open(dfp / "open_toronto_ca_unclustered.geojson", "w") as f:
-        f.write(
-            dt_cols_to_str(city_unclustered_combined).to_json(
-                na="drop", drop_id=True, indent=2
-            )
-        )
-    with open(dfp_archive / "open_toronto_ca_unclustered.geojson", "w") as f:
-        f.write(
-            dt_cols_to_str(city_unclustered_combined).to_json(
-                na="drop", drop_id=True, indent=2
-            )
-        )
-
-    with open(dfp / "openstreetmap.geojson", "w") as f:
-        f.write(dt_cols_to_str(osm_centroid).to_json(na="drop", drop_id=True, indent=2))
-    with open(dfp_archive / "openstreetmap.geojson", "w") as f:
-        f.write(dt_cols_to_str(osm_centroid).to_json(na="drop", drop_id=True, indent=2))
-
-    with open(dfp / "toronto_lockers.geojson", "w") as f:
-        f.write(
-            dt_cols_to_str(lockers_unmapped).to_json(na="drop", drop_id=True, indent=2)
-        )
-    with open(dfp_archive / "toronto_lockers.geojson", "w") as f:
-        f.write(
-            dt_cols_to_str(lockers_unmapped).to_json(na="drop", drop_id=True, indent=2)
-        )
-
-    with open(dfp / "all_sources.geojson", "w") as f:
-        f.write(dt_cols_to_str(all_sources).to_json(na="drop", drop_id=True, indent=2))
-    with open(dfp_archive / "all_sources.geojson", "w") as f:
-        f.write(dt_cols_to_str(all_sources).to_json(na="drop", drop_id=True, indent=2))
+    save_output(
+        city_full,
+        path=dfp,
+        file_name="open_toronto_ca.geojson",
+        archive_name=archive_name,
+        na="drop",
+    )
+    save_output(
+        city_unclustered_combined,
+        path=dfp,
+        file_name="open_toronto_ca_unclustered.geojson",
+        archive_name=archive_name,
+        na="drop",
+    )
+    save_output(
+        osm_centroid,
+        path=dfp,
+        file_name="openstreetmap.geojson",
+        archive_name=archive_name,
+        na="drop",
+    )
+    save_output(
+        lockers_unmapped,
+        path=dfp,
+        file_name="toronto_lockers.geojson",
+        archive_name=archive_name,
+        na="drop",
+    )
+    save_output(
+        all_sources,
+        path=dfp,
+        file_name="all_sources.geojson",
+        archive_name=archive_name,
+        na="drop",
+    )
 
 
 # Script Execution
 # ----------------
 
-
+# run from command line `python data_pipeline.py
 if __name__ == "__main__":
-    run_pipeline()
+    # parse script arguments from command line
+    parser = ArgumentParser(
+        description="""A copy of outputs can optionally be put in a date-stamped archive folder using --archive"""
+    )
+    parser.add_argument(
+        "-a",
+        "--archive",
+        action="store_true",
+        help="Create a date-stamped archive folder alongside outputs",
+    )
+    args = parser.parse_args()
 
-    # run from command line `python data_pipeline.py
+    run_pipeline(archive=args.archive)
