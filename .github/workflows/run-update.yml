@@ -26,7 +26,7 @@ jobs:
     - name: Install the project
       run: uv sync --all-extras
     - name: Run data pipeline script
-      run: uv run "Data Pipeline/data_pipeline.py"
+      run: uv run "Data Pipeline/data_pipeline.py" --archive
     - name: Update repository
       run: |
         git config user.email ${{ secrets.BOT_EMAIL }}
