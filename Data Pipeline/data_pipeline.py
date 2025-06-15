@@ -67,7 +67,6 @@ def save_output(
     output_paths = [path]
     if archive_name:
         output_paths.append(path / archive_name)
-        print("Archive folder option enabled")
 
     if isinstance(output, geopandas.GeoDataFrame):
         for op in output_paths:
@@ -93,7 +92,9 @@ def run_pipeline(*, archive=False):
     today_toronto_isodate = datetime.now(ZoneInfo("America/Toronto")).strftime(
         "%Y-%m-%d"
     )
-    archive_name = f"{today_toronto_isodate}/" if archive else None
+    archive_name = f"archive/{today_toronto_isodate}/" if archive else None
+    if archive:
+        print("Archive folder option enabled")
 
     sfp = Path("Source Files/")
     ofp = Path("Output Files/")
