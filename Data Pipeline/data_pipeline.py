@@ -295,7 +295,8 @@ def run_pipeline(*, archive=False):
 
     # save full normalized data without any deduplication or clustering
     all_normalized_unprocessed = pd.concat(
-        [
+        df.dropna(axis="columns", how="all")
+        for df in [
             *city_data.values(),
             osm_combined,
             lockers,
