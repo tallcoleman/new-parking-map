@@ -51129,7 +51129,8 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
-        "meta_feature_last_updated": "2025-08-23T14:25:55+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-10-15T01:08:21+00:00",
         "meta_osm_id": "node/13092576677"
       },
       "geometry": {
@@ -52346,7 +52347,8 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
-        "meta_feature_last_updated": "2025-08-24T15:19:36+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-10-15T00:50:04+00:00",
         "meta_osm_id": "node/13094678102"
       },
       "geometry": {
@@ -99907,6 +99909,55 @@
         "coordinates": [
           -79.5814604,
           43.7279323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "bike_ride": "yes",
+        "capacity": "4",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "quantity": "2",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2026-10-15T00:06:22+00:00",
+        "meta_osm_id": "node/14285297891"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2705527,
+          43.7507251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "6",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "quantity": "3",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2026-10-15T00:06:22+00:00",
+        "meta_osm_id": "node/14285297892"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2705244,
+          43.7507688
         ]
       }
     },
