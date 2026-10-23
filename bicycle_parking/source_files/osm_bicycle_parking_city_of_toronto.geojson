@@ -93312,14 +93312,14 @@
         "operator": "City of Toronto",
         "operator:type": "government",
         "ref:open.toronto.ca": "no",
-        "meta_feature_last_updated": "2026-03-08T18:22:15+00:00",
+        "meta_feature_last_updated": "2026-10-23T06:57:47+00:00",
         "meta_osm_id": "node/13627154897"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4250982,
-          43.6673229
+          -79.425126,
+          43.6673106
         ]
       }
     },
